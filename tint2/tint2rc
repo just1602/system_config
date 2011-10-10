@@ -6,19 +6,19 @@
 # ID 1
 rounded = 0
 border_width = 0
-background_color = #000000 0
+background_color = #FFFFFF 20
 border_color = #FFFFFF 0
 
 # ID 2
-rounded = 1
+rounded = 0
 border_width = 0
-background_color = #999999 25
+background_color = #66CCFF 30
 border_color = #FFFFFF 48
 
 # ID 3
-rounded = 1
+rounded = 0
 border_width = 0
-background_color = #999999 20
+background_color = #999999 25
 border_color = #FFFFFF 68
 
 # Panel
@@ -65,11 +65,11 @@ task_iconified_icon_asb = 70 0 0
 
 # Fonts
 task_font = Droid Sans 7
-task_font_color = #FFFFFF 80
-task_active_font_color = #FFFFFF 80
+task_font_color = #000000 80
+task_active_font_color = #000000 80
 task_urgent_font_color = #FF0000 100
-task_iconified_font_color = #FFFFFF 40
-font_shadow = 0
+task_iconified_font_color = #000000 40
+font_shadow = 1
 
 # System Tray
 systray = 1

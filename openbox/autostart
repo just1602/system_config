@@ -1,6 +1,6 @@
 #!/bin/bash
 
-feh --bg-fill /home/justin/images/tree.jpg &
+feh --bg-fill /home/justin/images/mountain.jpg &
 tint2 &
 urxvt -e ncmpcpp &
 conky &
