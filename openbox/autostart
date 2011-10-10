@@ -1,0 +1,6 @@
+#!/bin/bash
+
+feh --bg-fill /home/justin/images/tree.jpg &
+tint2 &
+urxvt -e ncmpcpp &
+conky &
