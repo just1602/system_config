@@ -79,4 +79,20 @@
   )
 (global-set-key "\C-x1" 'reset-window-config)
 
+;; php-mode
+(require 'php-mode)
 
+;; mmm-mode
+(require 'mmm-auto)
+
+(mmm-add-classes
+ '((php-in-html
+        :submode php-mode
+        :front "<[%?]"
+        :back "[%?]>")))
+(add-hook 'html-mode-hook '(lambda ()
+                (setq mmm-classes '(php-in-html))
+                 (set-face-background
+                  'mmm-default-submode-face "LightYellow2")
+                (mmm-mode-on)))
+(provide 'mmm-php)
