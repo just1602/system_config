@@ -6,6 +6,9 @@ xrandr --output DVI-0 --mode 1920x1080
 xrandr --output DVI-1 --mode 1920x1080
 xrandr --output DVI-1 --left-of DVI-0
 
+## numlock activation
+numlockx &
+
 feh --bg-fill --no-xinerama /home/justin/images/tree.jpeg &
 tint2 &
 urxvt -e ncmpcpp &
