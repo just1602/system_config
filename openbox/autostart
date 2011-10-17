@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ## dual screen configuration
-xrandr --output DVI-0 -s 3840x1920
+xrandr --output DVI-0 -s 3840x1080
 xrandr --output DVI-0 --mode 1920x1080
 xrandr --output DVI-1 --mode 1920x1080
 xrandr --output DVI-1 --left-of DVI-0

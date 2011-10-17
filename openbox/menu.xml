@@ -75,6 +75,13 @@
 			</item>
 		</menu>
 		<menu id="root-menu-3600dev" label="Dev">
+			<item label="CodeBlock">
+				<action name="Execute">
+					<execute>
+						codeblock
+					</execute>
+				</action>
+			</item>
 			<item label="Monodevelop">
 				<action name="Execute">
 					<execute>
@@ -127,20 +134,45 @@
 				</action>
 			</item>
 		</menu>
-		<item label="LibOO">
-			<action name="Execute">
-				<execute>
-					libreoffice
-				</execute>
-			</action>
-		</item>
-		<item label="Gimp">
-			<action name="Execute">
-				<execute>
-					gimp
-				</execute>
-			</action>
-		</item>
+		<menu id="office" label="Office">
+			<item label="FbReader">
+				<action name="Execute">
+					<execute>
+						fbreader
+					</execute>
+				</action>
+			</item>
+			<item label="OO.o">
+				<action name="Execute">
+					<execute>
+						libreoffice
+					</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="media" label="Media">
+			<item label="Audacity">
+				<action name="Execute">
+					<execute>
+						audacity
+					</execute>
+				</action>
+			</item>
+			<item label="Avidemux">
+				<action name="Execute">
+					<execute>
+						avidemux2_gtk
+					</execute>
+				</action>
+			</item>
+			<item label="Gimp">
+				<action name="Execute">
+					<execute>
+						gimp
+					</execute>
+				</action>
+			</item>
+		</menu>
 		<item label="VBox">
 			<action name="Execute">
 				<execute>
