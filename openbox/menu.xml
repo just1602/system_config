@@ -142,7 +142,7 @@
 					</execute>
 				</action>
 			</item>
-			<item label="OO.o">
+			<item label="LibOO">
 				<action name="Execute">
 					<execute>
 						libreoffice
