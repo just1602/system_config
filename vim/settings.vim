@@ -20,6 +20,7 @@ filetype plugin indent on
 
 " colorscheme configuration {{{
 colorscheme molokai
+set background=dark
 "}}}
 
 "" file type indentation {{{
