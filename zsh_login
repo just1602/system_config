@@ -1,7 +1,0 @@
-################################################
-# file : .zsh_login
-# description : executed script at zsh login
-# author : Justin Lavoie <jlavoie1602@gmail.com>
-#################################################
-#!/bin/zsh
-uptime

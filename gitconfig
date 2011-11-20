@@ -1,0 +1,15 @@
+[user]
+	email = jlavoie1602@gmail.com
+	name = Justn Lavoie
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+	decorate = auto
+	ui = auto
+	showbranch = auto
+	grep = auto
+[core]
+	editor = "vim"
+	pager = "less"
