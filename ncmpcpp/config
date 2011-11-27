@@ -176,7 +176,7 @@ tag_editor_album_format = "{(%y) }%b"
 ## text attributes listed above.
 ##
 #
-now_playing_prefix = "$b"
+now_playing_prefix = "♫ $b"
 #
 now_playing_suffix = "$/b"
 #
