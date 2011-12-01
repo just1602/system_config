@@ -18,7 +18,7 @@
 		<item label="Editor">
 			<action name="Execute">
 				<execute>
-					gedit
+					urxvt -e vim
 				</execute>
 			</action>
 		</item>
@@ -41,7 +41,7 @@
 			<item label="Torrent">
 				<action name="Execute">
 					<execute>
-						transmission-gtk
+						urxvt -e rtorrent
 					</execute>
 				</action>
 			</item>
@@ -56,13 +56,6 @@
 				<action name="Execute">
 					<execute>
 						pidgin
-					</execute>
-				</action>
-			</item>
-			<item label="Twitter">
-				<action name="Execute">
-					<execute>
-						hotot
 					</execute>
 				</action>
 			</item>
