@@ -11,7 +11,7 @@
 		<item label="www">
 			<action name="Execute">
 				<execute>
-					firefox
+					chromium
 				</execute>
 			</action>
 		</item>
@@ -31,6 +31,13 @@
 		</item>
 		<separator/>
 		<menu id="internet" label="Internet">
+			<item label="Firefox">
+				<action name="Execute">
+					<execute>
+						firefox
+					</execute>
+				</action>
+			</item>
 			<item label="Skype">
 				<action name="Execute">
 					<execute>
