@@ -18,3 +18,4 @@
 	st = status
 	co = checkout
 	br = branch
+	ps = push
