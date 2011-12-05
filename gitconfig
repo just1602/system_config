@@ -13,3 +13,8 @@
 [core]
 	editor = "vim"
 	pager = "less"
+[alias]
+	com = commit -a
+	st = status
+	co = checkout
+	br = branch
