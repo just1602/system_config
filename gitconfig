@@ -19,3 +19,4 @@
 	co = checkout
 	br = branch
 	ps = push
+	pu = pull
