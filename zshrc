@@ -18,6 +18,6 @@ prompt gentoo
 
 # alias
 alias ls='ls --color=auto'
+alias grep='grep --color=auto'
 ## l = ls
 alias l='ls --color=auto'
-alias grep='grep --color=auto'
