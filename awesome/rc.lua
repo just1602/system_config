@@ -407,5 +407,6 @@ client.add_signal("unfocus", function(c) c.border_color = beautiful.border_norma
 
 -- xscreensaver daemon
 os.execute("xscreensaver -nosplash &")
+os.setlocale("en_CA.UTF-8")
 
 -- }}}
