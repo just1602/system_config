@@ -7,11 +7,36 @@ require("beautiful")
 -- Notification library
 require("naughty")
 
--- Vicious library
+--vicious library
 require("vicious")
+-- {{{ Error handling
+-- Check if awesome encountered an error during startup and fell back to
+-- another config (This code will only ever execute for the fallback config)
+if awesome.startup_errors then
+    naughty.notify({ preset = naughty.config.presets.critical,
+                     title = "Oops, there were errors during startup!",
+                     text = awesome.startup_errors })
+end
+
+-- Handle runtime errors after startup
+do
+    local in_error = false
+    awesome.add_signal("debug::error", function (err)
+      -- Make sure we don't go into an endless error loop
+        if in_error then return end
+        in_error = true
+
+        naughty.notify({ preset = naughty.config.presets.critical,
+                         title = "Oops, an error happened!",
+                         text = err })
+        in_error = false
+    end)
+end
+-- }}}
+
 -- {{{ Variable definitions
 -- Themes define colours, icons, and wallpapers
---beautiful.init("/home/justin/.config/awesome/default/theme.lua")
+beautiful.init("/home/justin/.config/awesome/default/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
 terminal = "urxvt"
@@ -45,6 +70,11 @@ layouts =
 
 -- {{{ Tags
 -- Define a tag table which hold all screen tags.
+--tags = {}
+--for s = 1, screen.count() do
+    -- Each screen has its own tag table.
+--    tags[s] = awful.tag({ 1, 2, 3, 4, 5, 6, 7, 8, 9 }, s, layouts[1])
+--end
 
 tags = {
 	settings = {
@@ -52,7 +82,7 @@ tags = {
 		layout = { layouts[1], layouts[1], layouts[1], layouts[1] }
 	},
 	{ names = { "[foo]", "[irc]", "[dev]" },
-	layout = { layouts[2], layouts[2], layouts[2] }
+		layout = { layouts[2], layouts[2], layouts[2] }
 		}
 	}
 }
@@ -67,7 +97,7 @@ end
 -- Create a laucher widget and a main menu
 myawesomemenu = {
    { "manual", terminal .. " -e man awesome" },
-   { "edit config", editor_cmd .. " " .. awful.util.getdir("config") .. "/rc.lua" },
+   { "edit config", editor_cmd .. " " .. awesome.conffile },
    { "restart", awesome.restart },
    { "quit", awesome.quit }
 }
@@ -146,15 +176,23 @@ for s = 1, screen.count() do
                            awful.button({ }, 5, function () awful.layout.inc(layouts, -1) end)))
     -- Create a taglist widget
     mytaglist[s] = awful.widget.taglist(s, awful.widget.taglist.label.all, mytaglist.buttons)
-    
+
+    -- Create a tasklist widget
+    mytasklist[s] = awful.widget.tasklist(function(c)
+                                              return awful.widget.tasklist.label.currenttags(c, s)
+                                          end, mytasklist.buttons)
+
+
     -- Initialize widget
     memwidget = widget({ type = "textbox" })
     -- Register widget
     vicious.register(memwidget, vicious.widgets.mem, '| <span color="white">RAM :</span> <span color="#95C749">$1% ($2MB/$3MB)</span> |', 13)
 
+
     -- CPU Widget
     cpuwidget = widget({ type = "textbox" })
     vicious.register(cpuwidget, vicious.widgets.cpu, '|<span color="white"> CPU :</span> <span color="#5F7B8A">$1%</span> ')
+
 
     -- MPD widget
     mpdwidget = widget({ type = "textbox" })
@@ -166,16 +204,6 @@ for s = 1, screen.count() do
 			   return ' <span color="white">MPD : </span>' .. '<span color="#D2B48C">' .. args["{Artist}"] .. '</span>' .. ' <span color="white">-</span> ' .. '<span color="#CD5C5C">' .. args["{Title}"] .. '</span>' .. ' : ' .. '<span color="#95C749">' .. args["{volume}"] .. '%' .. '</span>'  ..  ' | '
 			end
 		     end, 10)
-
-    -- hddtempwidget
-    --hddtempwidget = widget({ type = "textbox" })
-    --vicious.register(hddtempwidget, vicious.widgets.hddtemp, '${/dev/sda} °C ', 19)
-
-    -- Create a tasklist widget
-    mytasklist[s] = awful.widget.tasklist(function(c)
-                                              return awful.widget.tasklist.label.currenttags(c, s)
-                                          end, mytasklist.buttons)
-
 
     -- Create the wibox
     mywibox[s] = awful.wibox({ position = "top", screen = s })
@@ -189,12 +217,10 @@ for s = 1, screen.count() do
         },
         mylayoutbox[s],
         mytextclock,
-	mpdwidget,
-	memwidget,
-	cpuwidget,
-	hddtempwidget,
+		mpdwidget,
+		memwidget,
+		cpuwidget,
         s == 1 and mysystray or nil,
-        --mytasklist[s],
         layout = awful.widget.layout.horizontal.rightleft
     }
 end
@@ -241,18 +267,14 @@ globalkeys = awful.util.table.join(
         end),
 
     -- Multimedia keys
-    awful.key({ }, "XF86AudioRaiseVolume", function () awful.util.spawn("amixer set Master 5dB+") end),
-    awful.key({ }, "XF86AudioLowerVolume", function () awful.util.spawn("amixer set Master 5dB-") end),
-    awful.key({ }, "XF86AudioPlay", function () awful.util.spawn("ncmpcpp play") end),
-    awful.key({ }, "XF86AudioStop", function () awful.util.spawn("ncmpcpp pause") end),
-    awful.key({ }, "XF86AudioNext", function () awful.util.spawn("ncmpcpp next") end),
-    awful.key({ }, "XF86AudioPrev", function () awful.util.spawn("ncmpcpp prev") end),
-	
-
-    -- lock keys
-    awful.key({ modkey, "Control" }, "l", function () awful.util.spawn("xscreensaver-command -lock") end),
-
-    -- Standard program
+	awful.key({ }, "XF86AudioRaiseVolume", function () awful.util.spawn("amixer set Master 5dB+") end),
+	awful.key({ }, "XF86AudioLowerVolume", function () awful.util.spawn("amixer set Master 5dB-") end),
+	awful.key({ }, "XF86AudioPlay", function () awful.util.spawn("ncmpcpp play") end),
+	awful.key({ }, "XF86AudioStop", function () awful.util.spawn("ncmpcpp pause") end),
+	awful.key({ }, "XF86AudioNext", function () awful.util.spawn("ncmpcpp next") end),
+	awful.key({ }, "XF86AudioPrev", function () awful.util.spawn("ncmpcpp prev") end),
+		
+	-- Standard program
     awful.key({ modkey,           }, "Return", function () awful.util.spawn(terminal) end),
     awful.key({ modkey, "Control" }, "r", awesome.restart),
     awful.key({ modkey, "Shift"   }, "q", awesome.quit),
@@ -365,15 +387,16 @@ awful.rules.rules = {
     { rule = { class = "gimp" },
       properties = { floating = true } },
     -- Set Firefox to always map on tags number 2 of screen 1.
-    { rule = { class = "Firefox" },
-      properties = { tag = tags[1][1] } },
-    { rule = { class = "Thunderbird" },
-      properties = { tag = tags[1][3] } },
-    { rule = { class = "Pidgin"},
-      properties = { tag = tags[1][4] } },
-    { rule = { class = "Weechat" },
-      properties = { tag = tags[2][2] } },
-    
+     { rule = { class = "Firefox" },
+       properties = { tag = tags[1][1] } },
+	{ rule = { class = "Chromium" },
+	   properties = { tag = tags[1][1] } },
+	{ rule = { class = "Thunderbird" },
+	  properties = { tag = tags[1][3] } },
+	{ rule = { class = "Pidgin" },
+	  properties = { tag = tags[1][4] } },
+	{ rule = { class = "Weechat" },
+	  properties = { tag = tags[2][2] } },
 }
 -- }}}
 
@@ -408,10 +431,7 @@ client.add_signal("focus", function(c) c.border_color = beautiful.border_focus e
 client.add_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 
 -- program on startup
---os.execute("xrandr --output DVI-0 -s 3840x1080")
---os.execute("xrandr --output DVI-0 --mode 1920x1080")
---os.execute("xrandr --output DVI-1 --mode 1920x1080")
---os.execute("xrandr --output DVI-1 --left-of DVI-0")
 os.execute("conky &")
 os.setlocale("en_CA.UTF-8")
+
 -- }}}
