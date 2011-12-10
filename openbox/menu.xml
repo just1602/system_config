@@ -78,7 +78,7 @@
 			<item label="CodeBlock">
 				<action name="Execute">
 					<execute>
-						codeblock
+						codeblocks
 					</execute>
 				</action>
 			</item>
