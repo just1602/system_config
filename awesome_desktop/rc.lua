@@ -36,7 +36,7 @@ end
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, and wallpapers
-beautiful.init("/home/justin/.config/awesome/default/theme.lua")
+beautiful.init("/home/justin/.config/awesome/theme/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
 terminal = "urxvt"

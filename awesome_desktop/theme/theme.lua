@@ -6,17 +6,17 @@ theme = {}
 
 theme.font          = "Droid 8"
 
-theme.bg_normal     = "#222222"
-theme.bg_focus		= "#666666"
-theme.bg_urgent     = "#ff0000"
-theme.bg_minimize   = "#444444"
+theme.bg_normal     = "#292D2D"
+theme.bg_focus		= "#01B0F0"
+theme.bg_urgent     = "#FF358B"
+theme.bg_minimize   = "#ffffff"
 
 theme.fg_normal     = "#aaaaaa"
 theme.fg_focus      = "#ffffff"
 theme.fg_urgent     = "#ffffff"
 theme.fg_minimize   = "#ffffff"
 
-theme.border_width  = "1"
+theme.border_width  = "0"
 theme.border_normal = "#000000"
 theme.border_focus  = "#535d6c"
 theme.border_marked = "#91231c"
@@ -74,7 +74,7 @@ theme.titlebar_maximized_button_normal_active = "/usr/share/awesome/themes/defau
 theme.titlebar_maximized_button_focus_active  = "/usr/share/awesome/themes/default/titlebar/maximized_focus_active.png"
 
 -- You can use your own command to set your wallpaper
-theme.wallpaper_cmd = { "feh --no-xinerama --bg-fill /home/justin/images/no_time.jpg" }
+theme.wallpaper_cmd = { "feh --no-xinerama --bg-fill /home/justin/images/color.jpg" }
 
 -- You can use your own layout icons like this:
 theme.layout_fairh = "/usr/share/awesome/themes/default/layouts/fairhw.png"
