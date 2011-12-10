@@ -45,18 +45,33 @@ layouts =
 
 -- {{{ Tags
 -- Define a tag table which hold all screen tags.
-tags = {}
-for s = 1, screen.count() do
+--tags = {}
+--for s = 1, screen.count() do
     -- Each screen has its own tag table.
-    tags[s] = awful.tag({ 1, 2, 3, 4, 5, 6, 7, 8 }, s, layouts[1])
-    tags[1][1].name = '[foo]'
-    tags[1][2].name = '[irc]'
-    tags[1][3].name = '[im]'
-    tags[1][4].name = '[music]'
-    tags[1][5].name = '[mail]'
-    tags[1][6].name = '[www]'
-    tags[1][7].name = '[tweet]'
-    tags[1][8].name = '[dev]'
+--    tags[s] = awful.tag({ 1, 2, 3, 4, 5, 6, 7, 8 }, s, layouts[1])
+--   tags[1][1].name = '[foo]'
+--    tags[1][2].name = '[irc]'
+--    tags[1][3].name = '[im]'
+--    tags[1][4].name = '[music]'
+--    tags[1][5].name = '[mail]'
+--    tags[1][6].name = '[www]'
+--    tags[1][7].name = '[tweet]'
+--    tags[1][8].name = '[dev]'
+--end
+
+tags = {
+	settings = {
+		{ names = { "[www]", "[music]", "[mail]", "[im]" },
+		layout = { layouts[1], layouts[1], layouts[1], layouts[1] }
+	},
+	{ names = { "[foo]", "[irc]", "[dev]" },
+	layout = { layouts[2], layouts[2], layouts[2] }
+		}
+	}
+}
+
+for s = 1, screen.count() do
+	tags[s] = awful.tag(tags.settings[s].names, s, tags.settings[s].layout)
 end
 
 -- }}}
