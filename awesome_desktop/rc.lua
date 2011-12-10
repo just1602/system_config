@@ -11,7 +11,7 @@ require("naughty")
 require("vicious")
 -- {{{ Variable definitions
 -- Themes define colours, icons, and wallpapers
-beautiful.init("/usr/share/awesome/themes/default/theme.lua")
+beautiful.init("/home/justin/.config/awesome/default/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
 terminal = "urxvt"
@@ -58,6 +58,7 @@ for s = 1, screen.count() do
     tags[1][7].name = '[tweet]'
     tags[1][8].name = '[dev]'
 end
+
 -- }}}
 
 -- {{{ Menu
@@ -240,10 +241,11 @@ globalkeys = awful.util.table.join(
     -- Multimedia keys
     awful.key({ }, "XF86AudioRaiseVolume", function () awful.util.spawn("amixer set Master 5dB+") end),
     awful.key({ }, "XF86AudioLowerVolume", function () awful.util.spawn("amixer set Master 5dB-") end),
-
-    -- Backlight keys
-    awful.key({ }, "XF86MonBrightnessUp", function () awful.util.spawn("sudo /home/justin/.scripts/backlight +") end),
-    awful.key({ }, "XF86MonBrightnessDown", function () awful.util.spawn("sudo /home/justin/.scripts/backlight -") end),
+    awful.key({ }, "XF86AudioPlay", function () awful.util.spawn("ncmpcpp play") end),
+    awful.key({ }, "XF86AudioStop", function () awful.util.spawn("ncmpcpp pause") end),
+    awful.key({ }, "XF86AudioNext", function () awful.util.spawn("ncmpcpp next") end),
+    awful.key({ }, "XF86AudioPrev", function () awful.util.spawn("ncmpcpp prev") end),
+	
 
     -- lock keys
     awful.key({ modkey, "Control" }, "l", function () awful.util.spawn("xscreensaver-command -lock") end),
@@ -406,6 +408,10 @@ client.add_signal("focus", function(c) c.border_color = beautiful.border_focus e
 client.add_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 
 -- xscreensaver daemon
-os.execute("xscreensaver -nosplash &")
+os.execute("xrandr --output DVI-0 -s 3840x1080")
+os.execute("xrandr --output DVI-0 --mode 1920x1080")
+os.execute("xrandr --output DVI-1 --mode 1920x1080")
+os.execute("xrandr --output DVI-1 --left-of DVI-0")
+os.execute("conky &")
 
 -- }}}
