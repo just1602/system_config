@@ -11,7 +11,7 @@ require("naughty")
 require("vicious")
 -- {{{ Variable definitions
 -- Themes define colours, icons, and wallpapers
-beautiful.init("/home/justin/.config/awesome/default/theme.lua")
+--beautiful.init("/home/justin/.config/awesome/default/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
 terminal = "urxvt"
@@ -45,19 +45,6 @@ layouts =
 
 -- {{{ Tags
 -- Define a tag table which hold all screen tags.
---tags = {}
---for s = 1, screen.count() do
-    -- Each screen has its own tag table.
---    tags[s] = awful.tag({ 1, 2, 3, 4, 5, 6, 7, 8 }, s, layouts[1])
---   tags[1][1].name = '[foo]'
---    tags[1][2].name = '[irc]'
---    tags[1][3].name = '[im]'
---    tags[1][4].name = '[music]'
---    tags[1][5].name = '[mail]'
---    tags[1][6].name = '[www]'
---    tags[1][7].name = '[tweet]'
---    tags[1][8].name = '[dev]'
---end
 
 tags = {
 	settings = {
@@ -379,15 +366,13 @@ awful.rules.rules = {
       properties = { floating = true } },
     -- Set Firefox to always map on tags number 2 of screen 1.
     { rule = { class = "Firefox" },
-      properties = { tag = tags[1][6] } },
+      properties = { tag = tags[1][1] } },
     { rule = { class = "Thunderbird" },
-      properties = { tag = tags[1][5] } },
-    { rule = { class = "Hotot" },
-      properties = { tag = tags[1][7] } },
-    { rule = { class = "Pidgin"},
       properties = { tag = tags[1][3] } },
+    { rule = { class = "Pidgin"},
+      properties = { tag = tags[1][4] } },
     { rule = { class = "Weechat" },
-      properties = { tag = tags[1][2] } },
+      properties = { tag = tags[2][2] } },
     
 }
 -- }}}
@@ -422,11 +407,11 @@ end)
 client.add_signal("focus", function(c) c.border_color = beautiful.border_focus end)
 client.add_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 
--- xscreensaver daemon
-os.execute("xrandr --output DVI-0 -s 3840x1080")
-os.execute("xrandr --output DVI-0 --mode 1920x1080")
-os.execute("xrandr --output DVI-1 --mode 1920x1080")
-os.execute("xrandr --output DVI-1 --left-of DVI-0")
+-- program on startup
+--os.execute("xrandr --output DVI-0 -s 3840x1080")
+--os.execute("xrandr --output DVI-0 --mode 1920x1080")
+--os.execute("xrandr --output DVI-1 --mode 1920x1080")
+--os.execute("xrandr --output DVI-1 --left-of DVI-0")
 os.execute("conky &")
-
+os.setlocale("en_CA.UTF-8")
 -- }}}
