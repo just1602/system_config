@@ -11,7 +11,7 @@ require("naughty")
 require("vicious")
 -- {{{ Variable definitions
 -- Themes define colours, icons, and wallpapers
-beautiful.init("/usr/share/awesome/themes/default/theme.lua")
+beautiful.init("/home/justin/.config/awesome/theme/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
 terminal = "urxvt"
@@ -363,6 +363,8 @@ awful.rules.rules = {
     -- Set Firefox to always map on tags number 2 of screen 1.
     { rule = { class = "Firefox" },
       properties = { tag = tags[1][6] } },
+	{ rule = { class = "Chromium" },
+	  properties = { tag = tags[1][6] } },
     { rule = { class = "Thunderbird" },
       properties = { tag = tags[1][5] } },
     { rule = { class = "Hotot" },
