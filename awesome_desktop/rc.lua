@@ -81,8 +81,8 @@ tags = {
 		{ names = { "[www]", "[music]", "[mail]", "[im]" },
 		layout = { layouts[1], layouts[1], layouts[1], layouts[1] }
 	},
-	{ names = { "[foo]", "[irc]", "[dev]" },
-		layout = { layouts[2], layouts[2], layouts[2] }
+	{ names = { "[foo]", "[irc]", "[dev]", "[office]" },
+		layout = { layouts[2], layouts[2], layouts[2], layouts[2] }
 		}
 	}
 }

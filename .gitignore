@@ -2,3 +2,4 @@
 ncmpcpp/error.log
 *.bak
 emacs.d/ac-comphist.dat
+vim/.netrwhist
