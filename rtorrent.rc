@@ -106,3 +106,7 @@ session = ~/.session
 # before forcing. Overworked systems might need lower values to get a
 # decent hash checking rate.
 #hash_max_tries = 10
+
+## color / canvas path ##
+done_fg_color = 2
+active_fg_color = 1
