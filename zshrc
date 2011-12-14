@@ -3,6 +3,8 @@
 # zsh config file
 ##################
 
+set -o vi
+
 autoload -U compinit
 compinit
 
