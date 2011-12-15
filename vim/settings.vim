@@ -19,8 +19,8 @@ filetype plugin indent on
 "}}}
 
 " colorscheme configuration {{{
-colorscheme molokai
-set background=dark
+colorscheme zenburn 
+set background=light
 "}}}
 
 "" file type indentation {{{
