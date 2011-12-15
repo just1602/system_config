@@ -7,7 +7,7 @@ theme = {}
 theme.font          = "Droid 8"
 
 theme.bg_normal     = "#292D2D"
-theme.bg_focus	    = "#1869a0"
+theme.bg_focus	    = "#88ca2b"
 theme.bg_urgent     = "#FF358B"
 theme.bg_minimize   = "#ffffff"
 
