@@ -138,7 +138,7 @@ URxvt*scrollBar: false
 !
 !! Zenburn color-scheme
 urxvt*background:  #3f3f3f
-urxvt*foreground:  #dcdccc
+urxvt*foreground:  #ffffff
 ! black + red
 !urxvt*color0:     #3f3f3f
 urxvt*color0:      #1E2320
