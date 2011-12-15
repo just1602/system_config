@@ -1,5 +1,5 @@
 *~
-ncmpcpp/error.log
+*.log
 *.bak
 emacs.d/ac-comphist.dat
 vim/.netrwhist

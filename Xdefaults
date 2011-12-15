@@ -6,7 +6,7 @@ URxvt*foreground: #f2f2f2
 URxvt*background: #101010
 URxvt*font: xft:Droid Sans Mono:style=Medium :pixelsize=11
 URxvt*transparent: true
-URxvt*shading: 10
+URxvt*shading: 30
 URxvt*tint:white
 
 ! url clicable
