@@ -182,16 +182,16 @@ for s = 1, screen.count() do
                                               return awful.widget.tasklist.label.currenttags(c, s)
                                           end, mytasklist.buttons)
 
-
+	-- RAM widget
     -- Initialize widget
     memwidget = widget({ type = "textbox" })
     -- Register widget
-    vicious.register(memwidget, vicious.widgets.mem, '| <span color="white">RAM :</span> <span color="#95C749">$1% ($2MB/$3MB)</span> |', 13)
+    vicious.register(memwidget, vicious.widgets.mem, '| <span color="white">RAM :</span> <span color="#ACC1AC">$1% ($2MB/$3MB)</span> |', 13)
 
 
     -- CPU Widget
     cpuwidget = widget({ type = "textbox" })
-    vicious.register(cpuwidget, vicious.widgets.cpu, '|<span color="white"> CPU :</span> <span color="#5F7B8A">$1%</span> ')
+    vicious.register(cpuwidget, vicious.widgets.cpu, '|<span color="white"> CPU :</span> <span color="#8ACCCF">$1%</span> ')
 
 
     -- MPD widget
@@ -201,7 +201,7 @@ for s = 1, screen.count() do
 			if args["{state}"] == "Stop" then
 			   return " - "
 			else
-			   return ' <span color="white">MPD : </span>' .. '<span color="#D2B48C">' .. args["{Artist}"] .. '</span>' .. ' <span color="white">-</span> ' .. '<span color="#CD5C5C">' .. args["{Title}"] .. '</span>' .. ' : ' .. '<span color="#95C749">' .. args["{volume}"] .. '%' .. '</span>'  ..  ' | '
+			   return ' <span color="white">MPD : </span>' .. '<span color="#D2B48C">' .. args["{Artist}"] .. '</span>' .. ' <span color="white">-</span> ' .. '<span color="#705050">' .. args["{Title}"] .. '</span>' .. ' : ' .. '<span color="#ACC1AC">' .. args["{volume}"] .. '%' .. '</span>'  ..  ' | '
 			end
 		     end, 10)
 
