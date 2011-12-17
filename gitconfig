@@ -20,3 +20,5 @@
 	br = branch
 	ps = push
 	pu = pull
+[github]
+	user = just1602
