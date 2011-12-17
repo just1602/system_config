@@ -57,5 +57,7 @@ set fileencoding=utf-8
 "" Do **NOT** color php special fonction for color scheme compatibility {{{
 let php_special_functions = 0
 "}}}
+set laststatus=2 " Enables the status line at the bottom of Vim
+set statusline=%{GitBranch()}
 
 
