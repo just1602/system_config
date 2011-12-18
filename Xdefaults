@@ -2,8 +2,8 @@
 !URxvt*background: #000000
 
 ! sdkmvx color scheme
-!URxvt*foreground: #f2f2f2
-!URxvt*background: #101010
+URxvt*foreground: #f2f2f2
+URxvt*background: #101010
 URxvt*font: xft:Droid Sans Mono:style=Medium :pixelsize=11
 URxvt*transparent: true
 URxvt*shading: 2
@@ -27,36 +27,36 @@ URxvt*scrollBar: false
 ! color scheme graphox
 
 !black
-!   *color0: #222222
-!   *color8: #3C3C3C
+   *color0: #222222
+   *color8: #3C3C3C
     
 !red
-!   *color1: #CD5C5C
-!   *color9: #D69300
+   *color1: #CD5C5C
+   *color9: #D69300
     
 !green
-!    *color2: #95C749
-!   *color10: #AFD700
+    *color2: #95C749
+   *color10: #AFD700
     
 !yellow
-!   *color3: #D2B48C
-!   *color11: #FBFBB1
+   *color3: #D2B48C
+   *color11: #FBFBB1
    
 !blue
-!   *color4: #5F7B8A
-!   *color12: #71A9DD
+   *color4: #5F7B8A
+   *color12: #71A9DD
     
 !magenta
-!   *color5: #70466E
-!   *color13: #B67CB1
+   *color5: #70466E
+   *color13: #B67CB1
    
 !cyan
-!   *color6: #327777
-!   *color14: #63B8BE
+   *color6: #327777
+   *color14: #63B8BE
    
 !white
-!   *color7: #B1B1B1
-!   *color15: #FFFFFF
+   *color7: #B1B1B1
+   *color15: #FFFFFF
 
 
 
@@ -137,30 +137,30 @@ URxvt*scrollBar: false
 !urxvt*color15:    #e2e2e2
 !
 !! Zenburn color-scheme
-urxvt*background:  #3f3f3f
-urxvt*foreground:  #ffffff
+!urxvt*background:  #3f3f3f
+!urxvt*foreground:  #ffffff
 ! black + red
 !urxvt*color0:     #3f3f3f
-urxvt*color0:      #1E2320
-urxvt*color1:      #705050
+!urxvt*color0:      #1E2320
+!urxvt*color1:      #705050
 !! green + yellow
-urxvt*color2:      #60b48a
-urxvt*color3:      #dfaf8f
+!urxvt*color2:      #60b48a
+!urxvt*color3:      #dfaf8f
 !! blue + purple
-urxvt*color4:      #506070
-urxvt*color5:      #dc8cc3
+!urxvt*color4:      #506070
+!urxvt*color5:      #dc8cc3
 !! cyan + white
-urxvt*color6:      #8cd0d3
-urxvt*color7:      #dcdccc
+!urxvt*color6:      #8cd0d3
+!urxvt*color7:      #dcdccc
 !! bright-black + bright-red
-urxvt*color8:      #709080
-urxvt*color9:      #dca3a3
+!urxvt*color8:      #709080
+!urxvt*color9:      #dca3a3
 !! bright-green + bright-yellow
-urxvt*color10:     #c3bf9f
-urxvt*color11:     #f0dfaf
+!urxvt*color10:     #c3bf9f
+!urxvt*color11:     #f0dfaf
 !! bright-blue + bright-purple
-urxvt*color12:     #94bff3
-urxvt*color13:     #ec93d3
+!urxvt*color12:     #94bff3
+!urxvt*color13:     #ec93d3
 !! bright-cyan + bright-white
-urxvt*color14:     #93e0e3
-urxvt*color15:     #ffffff
+!urxvt*color14:     #93e0e3
+!urxvt*color15:     #ffffff
