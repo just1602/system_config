@@ -15,7 +15,7 @@
 	pager = "less"
 [alias]
 	com = commit -a
-	st = status
+	st = status -sb
 	co = checkout
 	br = branch
 	ps = push
