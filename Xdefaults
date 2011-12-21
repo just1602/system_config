@@ -2,8 +2,8 @@
 !URxvt*background: #000000
 
 ! sdkmvx color scheme
-URxvt*foreground: #f2f2f2
-URxvt*background: #101010
+!URxvt*foreground: #f2f2f2
+!URxvt*background: #101010
 URxvt*font: xft:Droid Sans Mono:style=Medium :pixelsize=11
 URxvt*transparent: true
 URxvt*shading: 2
@@ -27,140 +27,70 @@ URxvt*scrollBar: false
 ! color scheme graphox
 
 !black
-   *color0: #222222
-   *color8: #3C3C3C
+!   *color0: #222222
+!   *color8: #3C3C3C
     
 !red
-   *color1: #CD5C5C
-   *color9: #D69300
+!   *color1: #CD5C5C
+!   *color9: #D69300
     
 !green
-    *color2: #95C749
-   *color10: #AFD700
+!    *color2: #95C749
+!   *color10: #AFD700
     
 !yellow
-   *color3: #D2B48C
-   *color11: #FBFBB1
+!   *color3: #D2B48C
+!   *color11: #FBFBB1
    
 !blue
-   *color4: #5F7B8A
-   *color12: #71A9DD
+!   *color4: #5F7B8A
+!   *color12: #71A9DD
     
 !magenta
-   *color5: #70466E
-   *color13: #B67CB1
+!   *color5: #70466E
+!   *color13: #B67CB1
    
 !cyan
-   *color6: #327777
-   *color14: #63B8BE
+!   *color6: #327777
+!   *color14: #63B8BE
    
 !white
-   *color7: #B1B1B1
-   *color15: #FFFFFF
+!   *color7: #B1B1B1
+!   *color15: #FFFFFF
 
 
 
-! add1ktive color scheme
-
-!*color0: #1b1b1b
-
-!*color1: #ff6b6b
-
-!*color2: #a3d46e
-
-!*color3: #eaca75
-
-!*color4: #435e87
-
-!*color5: #cf8243
-
-!*color6: #789ec6
-
-!*color7: #ababab
-
-!*color8: #555753
-
-!*color9: #ff8d8d
-
-!*color10: #c8e7a8
-
-!*color11: #ffd155
-
-!*color12: #587aa4
-
-!*color13: #f6a24f
-
-!*color14: #46a4ff
-
-!*color15: #ababab
-
-
-!urxvt*foreground: #f2f2f2
-!urxvt*background: #101010
-
-! Normal
-! color0    black
-! color1    red
-! color2    green
-! color3    yellow
-! color4    blue
-! color5    purple
-! color6    cyan
-! color7    white
-
-!urxvt*color0:    #6c6c6c
-!urxvt*color1:    #e9897c
-!urxvt*color2:    #b6e77d
-!urxvt*color3:    #ecebbe
-!urxvt*color4:    #a9cdeb
-!urxvt*color5:    #ea96eb
-!urxvt*color6:    #c9caec
-!urxvt*color7:    #f2f2f2
-
-! Light
-! color8    black
-! color9    red
-! color10    green
-! color11    yellow
-! color12    blue
-! color13    purple
-! color14    cyan
-! color15    white
-
-!urxvt*color8:    #747474
-!urxvt*color9:    #f99286
-!urxvt*color10:    #c3f786
-!urxvt*color11:    #fcfbcc
-!urxvt*color12:    #b6defb
-!urxvt*color13:    #fba1fb
-!urxvt*color14:    #d7d9fc
-!urxvt*color15:    #e2e2e2
+! molokai colours
+urxvt.foreground:        white
+urxvt.background:        black
+! !urxvt.cursorColor:       #ff9900
+! !urxvt.cursorColor2:      #000000
+! !urxvt.colorBD:           #ffffff
+! !urxvt.colorIT:           #bbbbbb
+! !urxvt.colorUL:           #ff9900
+! !urxvt.underlineColor:    #999999
+*color0:     #262729
+*color8:     #554444
 !
-!! Zenburn color-scheme
-!urxvt*background:  #3f3f3f
-!urxvt*foreground:  #ffffff
-! black + red
-!urxvt*color0:     #3f3f3f
-!urxvt*color0:      #1E2320
-!urxvt*color1:      #705050
-!! green + yellow
-!urxvt*color2:      #60b48a
-!urxvt*color3:      #dfaf8f
-!! blue + purple
-!urxvt*color4:      #506070
-!urxvt*color5:      #dc8cc3
-!! cyan + white
-!urxvt*color6:      #8cd0d3
-!urxvt*color7:      #dcdccc
-!! bright-black + bright-red
-!urxvt*color8:      #709080
-!urxvt*color9:      #dca3a3
-!! bright-green + bright-yellow
-!urxvt*color10:     #c3bf9f
-!urxvt*color11:     #f0dfaf
-!! bright-blue + bright-purple
-!urxvt*color12:     #94bff3
-!urxvt*color13:     #ec93d3
-!! bright-cyan + bright-white
-!urxvt*color14:     #93e0e3
-!urxvt*color15:     #ffffff
+*color1:    #F92672
+*color9:    #FF669D
+!
+*color2:    #A6E22E
+*color10:   #BEED5F
+!
+*color3:    #FD971F
+*color11:   #FD971F
+!
+*color4 : #4682B4
+*color12: #4682B4
+!
+*color5 : #AE81FF
+*color13: #AE81FF
+!
+*color6 : #89b6e2
+*color14: #46a4ff
+!
+*color7 : #FFFFFF
+*color15: #FFFFFF
+
+
