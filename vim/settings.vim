@@ -20,12 +20,16 @@ filetype plugin indent on
 
 " colorscheme configuration {{{
 colorscheme molokai
-set background=dark
+set background=light
 "}}}
 
 "" file type indentation {{{
 filetype indent on
-""}}}
+
+"{{{ Keybinds
+nmap <F4> :TlistToggle<cr>
+
+"}}}
 
 "" some vim options {{{
 set showcmd
