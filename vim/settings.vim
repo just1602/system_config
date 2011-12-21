@@ -13,8 +13,18 @@ syntax on
 set t_Co=256
 "}}}
 
+"{{{ local: en_CA
+setlocal spelllang=en_ca
+"}}}
+
+"{{{  if filetype = gitcommir spellcheck on or filetype = tex
+autocmd FileType gitcommit set spell
+autocmd FileType tex set spell
+"}}}
+
 " Activate filetype plugins {{{
 filetype on
+filetype plugin on
 filetype plugin indent on
 "}}}
 
@@ -28,7 +38,12 @@ filetype indent on
 
 "{{{ Keybinds
 nmap <F4> :TlistToggle<cr>
+"}}}
 
+"{{{ Automatic shebang
+autocmd BufNewFile *.py 0put =\"#!/usr/bin/env python\<nl># -*- coding: utf-8 -*-\<nl>\"|$
+autocmd BufNewFile *.rb 0put =\"#/usr/bin/env ruby\<nl># -*- coding: utf-8 -*-\<nl>\"|$
+autocmd BufNewFile *.pl 0put=\"#/usr/bin/env perl\<nl>\"|$
 "}}}
 
 "" some vim options {{{
@@ -51,6 +66,7 @@ set cindent
 set showtabline=0
 set hlsearch
 set vb t_vb =
+set noswapfile
 "}}}
 
 "" File encoding configuration {{{
