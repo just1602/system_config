@@ -15,7 +15,7 @@ URxvt.urlLauncher:      /usr/bin/chromium
 URxvt.matcher.button:   1 
 
 !set term size
-URxvt.geometry: 90x20
+URxvt.geometry: 80x24
 
 ! tab
 !URxvt.perl-ext-common:  default,tabbed
