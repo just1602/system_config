@@ -38,6 +38,13 @@ filetype indent on
 
 "{{{ Keybinds
 nmap <F4> :TlistToggle<cr>
+
+"" map arrow to null and force myself to use hjkl
+noremap <Up> ""
+noremap <Down> ""
+noremap <Left> ""
+noremap <Right> ""
+
 "}}}
 
 "{{{ Automatic shebang
