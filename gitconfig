@@ -20,5 +20,6 @@
 	br = branch
 	ps = push
 	pu = pull
+	lg = log -p
 [github]
 	user = just1602
