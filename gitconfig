@@ -10,6 +10,23 @@
 	ui = auto
 	showbranch = auto
 	grep = auto
+
+[color "branch"]
+	current = green bold
+	locate = yellow
+	remote = blue bold
+
+[color "status"]
+	added = green bold
+	changed = blue bold
+	untracked = red bold
+
+[color "diff"]
+	meta = blue bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+
 [core]
 	editor = "vim"
 	pager = "less"
