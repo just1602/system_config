@@ -55,6 +55,13 @@ nmap <C-l> <C-W>l
 
 "}}}
 
+"{{{
+"" Enable syntastic syntax checking
+let g:syntastic_enable_signs = 1
+let g:syntastic_quiet_warnings = 1
+
+"}}}
+
 "{{{ Automatic shebang
 autocmd BufNewFile *.py 0put =\"#!/usr/bin/env python\<nl># -*- coding: utf-8 -*-\<nl>\"|$
 autocmd BufNewFile *.rb 0put =\"#/usr/bin/env ruby\<nl># -*- coding: utf-8 -*-\<nl>\"|$
