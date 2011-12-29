@@ -47,6 +47,12 @@ noremap <Down> ""
 noremap <Left> ""
 noremap <Right> ""
 
+"" Use Ctrl + h/j/k/l to browse splited window
+nmap <C-j> <C-W>j
+nmap <C-k> <C-W>k
+nmap <C-h> <C-W>h
+nmap <C-l> <C-W>l
+
 "}}}
 
 "{{{ Automatic shebang
