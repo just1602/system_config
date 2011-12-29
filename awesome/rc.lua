@@ -55,7 +55,7 @@ for s = 1, screen.count() do
     tags[1][4].name = '[music]'
     tags[1][5].name = '[mail]'
     tags[1][6].name = '[www]'
-    tags[1][7].name = '[tweet]'
+    tags[1][7].name = '[windows]'
     tags[1][8].name = '[dev]'
 end
 -- }}}
