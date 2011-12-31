@@ -34,7 +34,7 @@
 	com = commit -a
 	st = status -sb
 	co = checkout
-	br = branch
+	br = branch -av
 	ps = push
 	pu = pull
 	lg = log -p --graph
