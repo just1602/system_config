@@ -37,6 +37,6 @@
 	br = branch -av
 	ps = push
 	pu = pull
-	lg = log -p --graph
+	lg = log -p --graph --oneline --all
 [github]
 	user = just1602
