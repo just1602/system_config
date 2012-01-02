@@ -38,5 +38,6 @@
 	ps = push
 	pu = pull
 	lg = log -p --graph --oneline --all
+	di = diff
 [github]
 	user = just1602
