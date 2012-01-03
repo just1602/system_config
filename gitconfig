@@ -41,3 +41,5 @@
 	di = diff
 [github]
 	user = just1602
+[push]
+	default = current
