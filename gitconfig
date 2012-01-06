@@ -36,7 +36,7 @@
 	co = checkout
 	br = branch -av
 	ps = push
-	pu = pull
+	pu = pull --rebase
 	lg = log -p --graph --oneline --all
 	di = diff
 [github]
