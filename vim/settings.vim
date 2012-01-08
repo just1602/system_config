@@ -6,6 +6,8 @@
 " -----------------------------------------------------------------
 
 set nocompatible
+set ruler
+set ai
 
 " Syntax highlithing activation {{{
 syntax on
