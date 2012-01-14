@@ -63,7 +63,17 @@ let g:syntastic_enable_signs = 1
 let g:syntastic_quiet_warnings = 1
 
 "}}}
+"{{{
+"" Gist config
+" detect filetype
+let g:gist_detect_filetype = 1
 
+" open browser after the post
+let g:gist_browser_command = 'chromium %URL% &'
+
+" show private gist
+let g:gist_show_privates = 1
+"}}}
 "{{{ Automatic shebang
 autocmd BufNewFile *.py 0put =\"#!/usr/bin/env python\<nl># -*- coding: utf-8 -*-\<nl>\"|$
 autocmd BufNewFile *.rb 0put =\"#/usr/bin/env ruby\<nl># -*- coding: utf-8 -*-\<nl>\"|$
