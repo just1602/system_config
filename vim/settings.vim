@@ -73,6 +73,9 @@ let g:gist_browser_command = 'chromium %URL% &'
 
 " show private gist
 let g:gist_show_privates = 1
+
+" github token
+let g:github_token = $GITHUB_TOKEN
 "}}}
 "{{{ Automatic shebang
 autocmd BufNewFile *.py 0put =\"#!/usr/bin/env python\<nl># -*- coding: utf-8 -*-\<nl>\"|$
