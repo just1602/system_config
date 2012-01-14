@@ -41,5 +41,6 @@
 	di = diff
 [github]
 	user = just1602
+	token = GITHUB_TOKEN
 [push]
 	default = current
