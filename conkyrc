@@ -63,7 +63,7 @@ color2 95C749
 color3 B4AF91
     
 #blue
-color4 01B0F0
+color4 0f464b
     
 #magenta
 color5 70466E
@@ -78,26 +78,26 @@ color7 bbc4cc
 TEXT
 
 ${color4}Info${hr}
-${color3}Funtoo @ ${exec uname -n}
+${color7}Funtoo @ ${exec uname -n}
 $sysname : $kernel $machine
 Uptime : $uptime
 
 ${color4}Cpu${hr}
-${color3}${exec uname -p}
+${color7}${exec uname -p}
 Core1 : ${cpubar cpu1 5, 200}${offset 5}${cpu cpu1}%
 Core2 : ${cpubar cpu2 5, 200}${offset 5}${cpu cpu2}%
 Core3 : ${cpubar cpu3 5, 200}${offset 5}${cpu cpu3}%
 Core4 : ${cpubar cpu4 5, 200}${offset 5}${cpu cpu4}%
 
 ${color4}Mémoire${hr}
-${color3}RAM : $mem / $memmax 
+${color7}RAM : $mem / $memmax 
 ${offset 55}${membar 5, 200}${offset 5} $memperc%
 
 ${color4}SWAP : $swap / $swapmax
-${color3}${offset 55}${swapbar 5, 200}${offset 5} $swapperc%
+${color7}${offset 55}${swapbar 5, 200}${offset 5} $swapperc%
 
 ${color4}Network${hr}
-${color3}${offset 95} eth0
+${color7}${offset 95} eth0
 Lan : ${offset 9}${addr eth0}
 
 Down : ${totaldown eth0}${offset 15}Up : ${totalup eth0}
@@ -105,7 +105,7 @@ Down : ${totaldown eth0}${offset 15}Up : ${totalup eth0}
 ${offset 10}${downspeedgraph eth0 15, 95}${offset 8}${upspeedgraph eth0 15, 95}
 
 ${color4}Disques${hr}
-${color3}sda : ${execi 60 sudo hddtemp -n /dev/sda}°C ${offset 10}|${offset 10} sdb : ${execi 60 sudo hddtemp -n /dev/sdb | tail -n 1}°C
+${color7}sda : ${execi 60 sudo hddtemp -n /dev/sda}°C ${offset 10}|${offset 10} sdb : ${execi 60 sudo hddtemp -n /dev/sdb | tail -n 1}°C
 
 Root ${offset 10}: ${fs_used /} / ${fs_size /}${offset 10}${fs_used_perc /}%
 Home : ${fs_used /home} / ${fs_size /home}${offset 10}${fs_used_perc /home}%
@@ -113,8 +113,8 @@ Win ${offset 16}: ${fs_used /mnt/windows} / ${fs_size /mnt/windows}${offset 10}$
 Portage ${offset 0}: ${fs_used /var/tmp/portage} / ${fs_size /var/tmp/portage}${offset 10}${fs_used_perc /var/tmp/portage}%
 
 ${color4}Emerge${hr}
-${color3}${execi 1 if pgrep sandbox > /dev/null ; then genlop -cn ; else echo there is currently no package compiling; fi}
+${color7}${execi 1 if pgrep sandbox > /dev/null ; then genlop -cn ; else echo there is currently no package compiling; fi}
 
 ${color4}Mpd${hr}
-${color3}${offset 140}Now Playing
+${color7}${offset 140}Now Playing
 ${exec ncmpcpp --now-playing}
