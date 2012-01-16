@@ -33,8 +33,8 @@ filetype plugin indent on
 "}}}
 
 " colorscheme configuration {{{
-colorscheme molokai
-set background=light
+colorscheme mustang
+"set background=dark
 "}}}
 
 "" file type indentation {{{
