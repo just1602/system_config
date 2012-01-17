@@ -5,6 +5,8 @@
 ## urxvtd ##
 urxvtd -q -f -o &
 
+xcompmgr -CcFf -o .35 &
+
 ## mpd ##
 mpd
 
