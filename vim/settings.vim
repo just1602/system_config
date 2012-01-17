@@ -33,7 +33,7 @@ filetype plugin indent on
 "}}}
 
 " colorscheme configuration {{{
-colorscheme mustang
+colorscheme desert256
 "set background=dark
 "}}}
 
