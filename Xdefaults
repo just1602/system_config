@@ -6,7 +6,7 @@
 !URxvt*background: #101010
 URxvt*font: xft:Liberation Mono:style=normal:pixelsize=12
 URxvt*transparent: true
-!URxvt*shading: 0
+URxvt*shading: 0
 URxvt*tint:white
 
 ! url clicable

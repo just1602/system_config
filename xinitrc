@@ -5,10 +5,11 @@
 ## urxvtd ##
 urxvtd -q -f -o &
 
-xcompmgr -CcFf -o .35 &
+## transparency ##
+xcompmgr -CcFf &
 
 ## mpd ##
-mpd
+mpd &
 
 ## color on java interface
 wmname LG3D
