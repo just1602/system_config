@@ -3,7 +3,7 @@
 . ~/.github_token.sh
 
 ## urxvtd ##
-urxvtd -q -f -o &
+urxvtd -q -f -o 
 
 ## transparency ##
 xcompmgr -CcFf &

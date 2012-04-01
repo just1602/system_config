@@ -153,21 +153,6 @@ for s = 1, screen.count() do
     cpuwidget = widget({ type = "textbox" })
     vicious.register(cpuwidget, vicious.widgets.cpu, '|<span color="white"> CPU :</span> <span color="#5F7B8A">$1%</span> ')
 
-    -- MPD widget
-    mpdwidget = widget({ type = "textbox" })
-    vicious.register(mpdwidget, vicious.widgets.mpd,
-		     function (widget, args)
-			if args["{state}"] == "Stop" then
-			   return " - "
-			else
-			   return ' <span color="white">MPD : </span>' .. '<span color="#D2B48C">' .. args["{Artist}"] .. '</span>' .. ' <span color="white">-</span> ' .. '<span color="#CD5C5C">' .. args["{Title}"] .. '</span>' .. ' : ' .. '<span color="#95C749">' .. args["{volume}"] .. '%' .. '</span>'  ..  ' | '
-			end
-		     end, 10)
-
-    -- hddtempwidget
-    --hddtempwidget = widget({ type = "textbox" })
-    --vicious.register(hddtempwidget, vicious.widgets.hddtemp, '${/dev/sda} °C ', 19)
-
     -- Create a tasklist widget
     mytasklist[s] = awful.widget.tasklist(function(c)
                                               return awful.widget.tasklist.label.currenttags(c, s)
@@ -186,7 +171,6 @@ for s = 1, screen.count() do
         },
         mylayoutbox[s],
         mytextclock,
-	mpdwidget,
 	memwidget,
 	cpuwidget,
 	hddtempwidget,
