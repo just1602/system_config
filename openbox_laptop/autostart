@@ -1,0 +1,15 @@
+#!/bin/bash
+
+## dual screen configuration
+xrandr --output DVI-0 -s 3840x1080
+xrandr --output DVI-0 --mode 1920x1080
+xrandr --output DVI-1 --mode 1920x1080
+xrandr --output DVI-1 --left-of DVI-0
+
+## numlock activation
+numlockx &
+
+feh --bg-fill --no-xinerama /home/justin/images/no_time.jpg &
+tint2 &
+urxvt -e ncmpcpp &
+conky &

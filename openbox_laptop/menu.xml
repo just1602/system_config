@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/3.4/menu">
+	<menu id="root-menu" label="Openbox 3">
+		<item label="Term">
+			<action name="Execute">
+				<execute>
+					urxvt
+				</execute>
+			</action>
+		</item>
+		<item label="www">
+			<action name="Execute">
+				<execute>
+					chromium
+				</execute>
+			</action>
+		</item>
+		<item label="Editor">
+			<action name="Execute">
+				<execute>
+					urxvt -e vim
+				</execute>
+			</action>
+		</item>
+		<item label="File Manager">
+			<action name="Execute">
+				<execute>
+					pcmanfm
+				</execute>
+			</action>
+		</item>
+		<separator/>
+		<menu id="internet" label="Internet">
+			<item label="Firefox">
+				<action name="Execute">
+					<execute>
+						firefox
+					</execute>
+				</action>
+			</item>
+			<item label="Skype">
+				<action name="Execute">
+					<execute>
+						skype
+					</execute>
+				</action>
+			</item>
+			<item label="Torrent">
+				<action name="Execute">
+					<execute>
+						urxvt -e rtorrent
+					</execute>
+				</action>
+			</item>
+			<item label="Frostwire">
+				<action name="Execute">
+					<execute>
+						frostwire
+					</execute>
+				</action>
+			</item>
+			<item label="Pidgin">
+				<action name="Execute">
+					<execute>
+						pidgin
+					</execute>
+				</action>
+			</item>
+			<item label="Mail">
+				<action name="Execute">
+					<execute>
+						thunderbird
+					</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="root-menu-3600dev" label="Dev">
+			<item label="CodeBlock">
+				<action name="Execute">
+					<execute>
+						codeblocks
+					</execute>
+				</action>
+			</item>
+			<item label="Monodevelop">
+				<action name="Execute">
+					<execute>
+						monodevelop
+					</execute>
+				</action>
+			</item>
+			<item label="Glade">
+				<action name="Execute">
+					<execute>
+						glade
+					</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="music" label="Music">
+			<item label="ncmpcpp">
+				<action name="Execute">
+					<execute>
+						urxvt -e ncmpcpp
+					</execute>
+				</action>
+			</item>
+			<item label="Play">
+				<action name="Execute">
+					<execute>
+						ncmpcpp play
+					</execute>
+				</action>
+			</item>
+			<item label="Pause">
+				<action name="Execute">
+					<execute>
+						ncmpcpp pause
+					</execute>
+				</action>
+			</item>
+			<item label="Next">
+				<action name="Execute">
+					<execute>
+						ncmpcpp next
+					</execute>
+				</action>
+			</item>
+			<item label="Prev">
+				<action name="Execute">
+					<execute>
+						ncmpcpp prev
+					</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="office" label="Office">
+			<item label="FbReader">
+				<action name="Execute">
+					<execute>
+						fbreader
+					</execute>
+				</action>
+			</item>
+			<item label="LibOO">
+				<action name="Execute">
+					<execute>
+						libreoffice
+					</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="media" label="Media">
+			<item label="Audacity">
+				<action name="Execute">
+					<execute>
+						audacity
+					</execute>
+				</action>
+			</item>
+			<item label="Avidemux">
+				<action name="Execute">
+					<execute>
+						avidemux2_gtk
+					</execute>
+				</action>
+			</item>
+			<item label="Gimp">
+				<action name="Execute">
+					<execute>
+						gimp
+					</execute>
+				</action>
+			</item>
+		</menu>
+		<item label="VBox">
+			<action name="Execute">
+				<execute>
+					VirtualBox
+				</execute>
+			</action>
+		</item>
+		<separator/>
+		<menu id="system" label="Système">
+			<item label="Lxappearance">
+				<action name="Execute">
+					<execute>
+						lxappearance
+					</execute>
+				</action>
+			</item>
+			<item label="Obconf">
+				<action name="Execute">
+					<execute>
+						obconf
+					</execute>
+				</action>
+			</item>
+			<item label="Obmenu">
+				<action name="Execute">
+					<execute>
+						obmenu
+					</execute>
+				</action>
+			</item>
+		</menu>
+		<separator/>
+		<item label="Log Out">
+			<action name="Exit">
+				<prompt>
+					yes
+				</prompt>
+			</action>
+		</item>
+		<item label="PowerOFf">
+			<action name="Execute">
+				<execute>
+					sudo /sbin/poweroff
+				</execute>
+			</action>
+		</item>
+	</menu>
+</openbox_menu>
