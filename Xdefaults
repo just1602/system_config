@@ -4,14 +4,14 @@
 ! sdkmvx color scheme
 !URxvt*foreground: #f2f2f2
 !URxvt*background: #101010
-URxvt*font: xft:Liberation Mono:style=normal:pixelsize=12
+!URxvt*font: xft:Deja Vu Sans Mono :style=normal:pixelsize=12
 URxvt*transparent: true
 URxvt*shading: 0
 URxvt*tint:white
 
 ! url clicable
 URxvt.perl-ext-common:  default,matcher
-URxvt.urlLauncher:      /usr/bin/chromium
+URxvt.urlLauncher:      /usr/bin/firefox
 URxvt.matcher.button:   1 
 
 !set term size

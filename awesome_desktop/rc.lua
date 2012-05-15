@@ -269,10 +269,10 @@ globalkeys = awful.util.table.join(
     -- Multimedia keys
 	awful.key({ }, "XF86AudioRaiseVolume", function () awful.util.spawn("amixer set Master 5dB+") end),
 	awful.key({ }, "XF86AudioLowerVolume", function () awful.util.spawn("amixer set Master 5dB-") end),
-	awful.key({ }, "XF86AudioPlay", function () awful.util.spawn("ncmpcpp play") end),
-	awful.key({ }, "XF86AudioStop", function () awful.util.spawn("ncmpcpp pause") end),
-	awful.key({ }, "XF86AudioNext", function () awful.util.spawn("ncmpcpp next") end),
-	awful.key({ }, "XF86AudioPrev", function () awful.util.spawn("ncmpcpp prev") end),
+	awful.key({ }, "XF86AudioPlay", function () awful.util.spawn("cmus-remote -u") end),
+	awful.key({ }, "XF86AudioStop", function () awful.util.spawn("cmus-remote -s") end),
+	awful.key({ }, "XF86AudioNext", function () awful.util.spawn("cmus-remote -n") end),
+	awful.key({ }, "XF86AudioPrev", function () awful.util.spawn("cmus-remote -r") end),
 		
 	-- Standard program
     awful.key({ modkey,           }, "Return", function () awful.util.spawn(terminal) end),

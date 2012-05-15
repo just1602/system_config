@@ -23,7 +23,7 @@ xrandr --output DVI-0 --mode 1920x1080
 xrandr --output DVI-1 --mode 1920x1080
 xrandr --output DVI-1 --left-of DVI-0
 
-exec ck-launch-session dbus-launch --sh-syntax --exit-with-session awesome 
-#exec ck-launch-session dbus-launch --sh-syntax --exit-with-session openbox-session
+#exec ck-launch-session dbus-launch --sh-syntax --exit-with-session awesome 
+exec ck-launch-session dbus-launch --sh-syntax --exit-with-session openbox-session
 
-
+thunderbird &

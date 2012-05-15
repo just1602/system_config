@@ -323,7 +323,7 @@
     </keybind>
     <keybind key="W-t">
       <action name="Execute">
-        <execute>urxvt</execute>
+        <execute>terminal</execute>
       </action>
     </keybind>
     <keybind key="XF86AudioRaiseVolume">
