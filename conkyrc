@@ -93,7 +93,7 @@ ${color4}Mémoire${hr}
 ${color7}RAM : $mem / $memmax 
 ${offset 55}${membar 5, 200}${offset 5} $memperc%
 
-${color4}SWAP : $swap / $swapmax
+${color7}SWAP : $swap / $swapmax
 ${color7}${offset 55}${swapbar 5, 200}${offset 5} $swapperc%
 
 ${color4}Network${hr}
