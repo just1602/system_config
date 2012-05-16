@@ -26,4 +26,3 @@ xrandr --output DVI-1 --left-of DVI-0
 #exec ck-launch-session dbus-launch --sh-syntax --exit-with-session awesome 
 exec ck-launch-session dbus-launch --sh-syntax --exit-with-session openbox-session
 
-thunderbird &

@@ -13,3 +13,4 @@ feh --bg-fill --no-xinerama /home/justin/images/no_time.jpg &
 tint2 &
 urxvt -e ncmpcpp &
 conky &
+thunderbird &
