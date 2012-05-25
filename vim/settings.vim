@@ -117,4 +117,7 @@ let php_special_functions = 0
 set laststatus=2 " Enables the status line at the bottom of Vim
 set statusline=%{GitBranch()}
 
-
+"" CMake indentation and coloration
+autocmd BufRead,BufNewFile *.cmake,CMakeLists.txt,*.cmake.in runtime! indent/cmake.vim 
+autocmd BufRead,BufNewFile *.cmake,CMakeLists.txt,*.cmake.in setf cmake
+autocmd BufRead,BufNewFile *.ctest,*.ctest.in setf cmake
