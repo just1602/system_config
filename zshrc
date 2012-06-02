@@ -14,10 +14,14 @@ setopt correctall
 autoload -U promptinit
 promptinit
 
-prompt gentoo
+#prompt suse
 
 # alias
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 ## l = ls
 alias l='ls --color=auto'
+
+
+## custom prompt ##
+PS1=$'\e[0;32m%n\e[0m@\e[1;34m%m\e[1m:\e[0;33m%~\e[0m%# '

@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Nova-Blue_ob</name>
+    <name>Onyx</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -323,7 +323,7 @@
     </keybind>
     <keybind key="W-t">
       <action name="Execute">
-        <execute>terminal</execute>
+        <execute>urxvtc</execute>
       </action>
     </keybind>
     <keybind key="XF86AudioRaiseVolume">

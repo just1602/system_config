@@ -1,5 +1,15 @@
 #!/bin/bash
 
+## term server ##
+urxvtd -q -f -o
+
+## transparency ##
+xcompmgr -CcFf &
+
+#mpd &
+
+export LANG="en_CA.UTF-8"
+
 ## dual screen configuration
 xrandr --output DVI-0 -s 3840x1080
 xrandr --output DVI-0 --mode 1920x1080
