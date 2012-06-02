@@ -4,12 +4,13 @@
 ! sdkmvx color scheme
 !URxvt*foreground: #f2f2f2
 !URxvt*background: #101010
-xft.dpi: 96
-xft.antialias: true
-xft.rgba: rgb
-xft.hinting: true
-xft.hinstyle: hintslight
-URxvt*font:xft:DejaVu Sans Mono:style=normal:pixelsize=11
+xft*dpi: 96
+xft*antialias: true
+xft*rgba: rgb
+xft*hinting: true
+xft*hinstyle: hintslight
+!URxvt*font:xft:DejaVu Sans Mono:style=normal:pixelsize=11
+URxvt*font: xft:DejaVu Sans Mono:style=Bold:pixelsize=11
 URxvt*transparent: true
 URxvt*shading: 0
 URxvt*tint:white
