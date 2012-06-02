@@ -3,23 +3,17 @@
 	<menu id="root-menu" label="Openbox 3">
 		<item label="Term">
 			<action name="Execute">
-				<execute>
-					urxvt
-				</execute>
+				<execute>urxvtc</execute>
 			</action>
 		</item>
 		<item label="www">
 			<action name="Execute">
-				<execute>
-					chromium
-				</execute>
+				<execute>firefox</execute>
 			</action>
 		</item>
 		<item label="Editor">
 			<action name="Execute">
-				<execute>
-					urxvt -e vim
-				</execute>
+				<execute>urxvtc -e vim</execute>
 			</action>
 		</item>
 		<item label="File Manager">
@@ -38,31 +32,10 @@
 					</execute>
 				</action>
 			</item>
-			<item label="Skype">
-				<action name="Execute">
-					<execute>
-						skype
-					</execute>
-				</action>
-			</item>
 			<item label="Torrent">
 				<action name="Execute">
 					<execute>
 						urxvt -e rtorrent
-					</execute>
-				</action>
-			</item>
-			<item label="Frostwire">
-				<action name="Execute">
-					<execute>
-						frostwire
-					</execute>
-				</action>
-			</item>
-			<item label="Pidgin">
-				<action name="Execute">
-					<execute>
-						pidgin
 					</execute>
 				</action>
 			</item>
@@ -75,13 +48,6 @@
 			</item>
 		</menu>
 		<menu id="root-menu-3600dev" label="Dev">
-			<item label="CodeBlock">
-				<action name="Execute">
-					<execute>
-						codeblocks
-					</execute>
-				</action>
-			</item>
 			<item label="Monodevelop">
 				<action name="Execute">
 					<execute>
@@ -146,29 +112,6 @@
 				<action name="Execute">
 					<execute>
 						libreoffice
-					</execute>
-				</action>
-			</item>
-		</menu>
-		<menu id="media" label="Media">
-			<item label="Audacity">
-				<action name="Execute">
-					<execute>
-						audacity
-					</execute>
-				</action>
-			</item>
-			<item label="Avidemux">
-				<action name="Execute">
-					<execute>
-						avidemux2_gtk
-					</execute>
-				</action>
-			</item>
-			<item label="Gimp">
-				<action name="Execute">
-					<execute>
-						gimp
 					</execute>
 				</action>
 			</item>

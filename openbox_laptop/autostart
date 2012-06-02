@@ -2,10 +2,8 @@
 
 urxvtd -q -f -o &
 
-## numlock activation
-numlockx &
 
-feh --bg-fill --no-xinerama /home/justin/images/arch.png &
+feh --bg-fill --no-xinerama /home/justin/images/manif/22mai/haut.jpg &
 tint2 &
 urxvtc -e ncmpcpp &
-conky &
+#conky &
