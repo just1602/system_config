@@ -3,7 +3,7 @@
 	<menu id="root-menu" label="Openbox 3">
 		<item label="Term">
 			<action name="Execute">
-				<execute>terminal</execute>
+				<execute>urxvtc</execute>
 			</action>
 		</item>
 		<item label="www">
@@ -18,7 +18,7 @@
 		</item>
 		<item label="Editor">
 			<action name="Execute">
-				<execute>terminal -e vim</execute>
+				<execute>urxvtc -e vim</execute>
 			</action>
 		</item>
 		<separator/>
@@ -39,7 +39,7 @@
 			</item>
 			<item label="Torrent">
 				<action name="Execute">
-					<execute>terminal -e rtorrent</execute>
+					<execute>urxvtc -e rtorrent</execute>
 				</action>
 			</item>
 			<item label="Pidgin">
@@ -83,7 +83,7 @@
 		<menu id="music" label="Music">
 			<item label="ncmpcpp">
 				<action name="Execute">
-					<execute>terminal -e ncmpcpp</execute>
+					<execute>urxvtc -e ncmpcpp</execute>
 				</action>
 			</item>
 			<item label="Play">
