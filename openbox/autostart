@@ -19,7 +19,7 @@ xrandr --output DVI-1 --left-of DVI-0
 ## numlock activation
 numlockx &
 
-feh --bg-fill --no-xinerama /home/justin/images/no_time.jpg &
+feh --bg-fill --no-xinerama /home/justin/images/paint.jpg &
 tint2 &
 urxvt -e ncmpcpp &
 conky &

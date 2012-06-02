@@ -1,31 +1,31 @@
-!URxvt.foreground: #FFFFFF
-!URxvt.background: #000000
+!URxvt*foreground: #FFFFFF
+!URxvt*background: #000000
 
 ! sdkmvx color scheme
-!URxvt.foreground: #f2f2f2
-!URxvt.background: #101010
+!URxvt*foreground: #f2f2f2
+!URxvt*background: #101010
 xft.dpi: 96
 xft.antialias: true
 xft.rgba: rgb
 xft.hinting: true
 xft.hinstyle: hintslight
-URxvt.font:xft:DejaVu Sans Mono:style=normal:pixelsize=11
-URxvt.transparent: true
-URxvt.shading: 0
-URxvt.tint:white
+URxvt*font:xft:DejaVu Sans Mono:style=normal:pixelsize=11
+URxvt*transparent: true
+URxvt*shading: 0
+URxvt*tint:white
 
 ! url clicable
-URxvt.perl-ext-common:  default,matcher
-URxvt.urlLauncher:      /usr/bin/firefox
-URxvt.matcher.button:   1 
+URxvt*perl-ext-common:  default,matcher
+URxvt*urlLauncher:      /usr/bin/firefox
+URxvt*matcher.button:   1 
 
 !set term size
-URxvt.geometry: 80x24
+URxvt*geometry: 80x24
 
 ! tab
 !URxvt.perl-ext-common:  default,tabbed
 
-URxvt.scrollBar: false 
+URxvt*scrollBar: false 
 !URxvt.scrollBar_right: true
 !URxvt.scrollColor:  
 
@@ -66,36 +66,36 @@ URxvt.scrollBar: false
 
 
 ! molokai colours
-urxvt.foreground:        white
-urxvt.background:        black
+urxvt*foreground:        white
+urxvt*background:        black
 ! !urxvt.cursorColor:       #ff9900
 ! !urxvt.cursorColor2:      #000000
 ! !urxvt.colorBD:           #ffffff
 ! !urxvt.colorIT:           #bbbbbb
 ! !urxvt.colorUL:           #ff9900
 ! !urxvt.underlineColor:    #999999
-.color0:     #262729
-.color8:     #554444
+*color0:     #262729
+*color8:     #554444
 !
-.color1:    #F92672
-.color9:    #FF669D
+*color1:    #F92672
+*color9:    #FF669D
 !
-.color2:    #A6E22E
-.color10:   #BEED5F
+*color2:    #A6E22E
+*color10:   #BEED5F
 !
-.color3:    #FD971F
-.color11:   #FD971F
+*color3:    #FD971F
+*color11:   #FD971F
 !
-.color4 : #4682B4
-.color12: #4682B4
+*color4 : #4682B4
+*color12: #4682B4
 !
-.color5 : #AE81FF
-.color13: #AE81FF
+*color5 : #AE81FF
+*color13: #AE81FF
 !
-.color6 : #89b6e2
-.color14: #46a4ff
+*color6 : #89b6e2
+*color14: #46a4ff
 !
-.color7 : #FFFFFF
-.color15: #FFFFFF
+*color7 : #FFFFFF
+*color15: #FFFFFF
 
 
