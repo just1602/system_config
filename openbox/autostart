@@ -6,7 +6,7 @@ urxvtd -q -f -o
 ## transparency ##
 xcompmgr -CcFf &
 
-#mpd &
+mpd &
 
 export LANG="en_CA.UTF-8"
 
