@@ -392,6 +392,7 @@ client.add_signal("focus", function(c) c.border_color = beautiful.border_focus e
 client.add_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 
 -- xscreensaver daemon
+os.execute("urxvtd -q -f -o &")
 os.execute("xscreensaver -nosplash &")
 os.setlocale("en_CA.UTF-8")
 

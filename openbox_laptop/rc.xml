@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Mire_v2_grey</name>
+    <name>Murrina-Tangoesque</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -316,6 +316,11 @@
       </action>
     </keybind>
     <!-- Keybindings for running applications -->
+    <keybind key="W-l">
+      <action name="Execute">
+        <execute>xscreensaver-command -lock#</execute>
+      </action>
+    </keybind>
     <keybind key="W-r">
       <action name="Execute">
         <execute>gmrun</execute>

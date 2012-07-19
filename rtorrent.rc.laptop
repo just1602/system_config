@@ -108,5 +108,7 @@ session = ~/.session
 #hash_max_tries = 10
 
 ## color / canvas path ##
-done_fg_color = 2
-active_fg_color = 1
+#done_fg_color = 2
+#done_bg_color = 2
+#active_fg_color = 1
+#active_bg_color = 1
