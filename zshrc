@@ -14,7 +14,7 @@ setopt correctall
 autoload -U promptinit
 promptinit
 
-#prompt suse
+prompt suse
 
 # alias
 alias ls='ls --color=auto'
