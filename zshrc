@@ -17,7 +17,7 @@ promptinit
 autoload -U colors && colors
 #prompt suse
 
-PROMPT="%{$fg[green]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$fg[yellow]%}%1~ %{$reset_color%}%#"
+PROMPT="%{$fg[green]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$fg[yellow]%}%1~ %{$reset_color%}%# "
 
 # alias
 alias ls='ls --color=auto'
