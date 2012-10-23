@@ -14,11 +14,11 @@ max_peers = 100
 max_uploads = 10
 
 # Global upload and download rate in KiB. "0" for unlimited.
-#download_rate = 0
-#upload_rate = 0
+download_rate = 0
+upload_rate = 0
 
 # Default directory to save the downloaded torrents.
-directory = /mnt/data/telechargement
+directory = /mnt/data/telechargements
 
 # Default session directory. Make sure you don't run multiple instance
 # of rtorrent using the same session directory. Perhaps using a
@@ -109,4 +109,6 @@ session = ~/.session
 
 ## color / canvas path ##
 done_fg_color = 2
-active_fg_color = 1
+active_fg_color = 4
+done_bg_color = 0
+active_bg_color = 0
