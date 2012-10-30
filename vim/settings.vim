@@ -79,11 +79,13 @@ let g:github_token = $GITHUB_TOKEN
 "}}}
 "{{{ Automatic shebang
 autocmd BufNewFile *.py 0put =\"#!/usr/bin/env python\<nl># -*- coding: utf-8 -*-\<nl>\"|$
-autocmd BufNewFile *.rb 0put =\"#/usr/bin/env ruby\<nl># -*- coding: utf-8 -*-\<nl>\"|$
-autocmd BufNewFile *.pl 0put=\"#/usr/bin/env perl\<nl>\"|$
+autocmd BufNewFile *.rb 0put =\"#!/usr/bin/env ruby\<nl># -*- coding: utf-8 -*-\<nl>\"|$
+autocmd BufNewFile *.pl 0put=\"#!/usr/bin/env perl\<nl>\"|$
+autocmd BugNewFile *.sh 0put=\"#!/bin/bash\<nl>\"|$
 "}}}
 
 "" some vim options {{{
+set filetype=unix
 set showcmd
 set showmode
 set ignorecase "ignore case when searching
