@@ -33,8 +33,8 @@ filetype plugin indent on
 "}}}
 
 " colorscheme configuration {{{
-colorscheme darkburn
-"set background=dark
+colorscheme github
+set background=dark
 "}}}
 
 "" file type indentation {{{
