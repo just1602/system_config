@@ -18,7 +18,7 @@ set t_Co=256
 "}}}
 
 "{{{ local: en_CA
-setlocal spelllang=en_ca
+setlocal spelllang=fr_CA
 "}}}
 
 "{{{  if filetype = gitcommir spellcheck on or filetype = tex
@@ -33,7 +33,7 @@ filetype plugin indent on
 "}}}
 
 " colorscheme configuration {{{
-colorscheme github
+colorscheme darkburn
 set background=dark
 "}}}
 
