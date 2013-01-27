@@ -176,7 +176,7 @@ tag_editor_album_format = "{(%y) }%b"
 ## text attributes listed above.
 ##
 #
-now_playing_prefix = "♫ $b"
+now_playing_prefix = "> $b"
 #
 now_playing_suffix = "$/b"
 #
@@ -265,7 +265,7 @@ seek_time = "1"
 ## Note: You can specify third character which will
 ## be used to build 'empty' part of progressbar.
 ##
-progressbar_look = " ♪"
+progressbar_look = " >"
 #
 default_place_to_search_in = "database" (database/playlist)
 #

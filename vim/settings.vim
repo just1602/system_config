@@ -13,7 +13,7 @@ set ai
 syntax on
 "}}}
 
-" 356 colors support for terminal mode {{{
+" 256 colors support for terminal mode {{{
 set t_Co=256
 "}}}
 
