@@ -25,3 +25,5 @@ alias grep='grep --color=auto'
 ## l = ls
 alias l='ls --color=auto'
 
+## use mplayer2 instead of mplayer, but install mplayer for mencoder
+alias mplayer='mplayer2'
