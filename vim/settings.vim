@@ -33,7 +33,7 @@ filetype plugin indent on
 "}}}
 
 " colorscheme configuration {{{
-colorscheme darkburn
+colorscheme moria 
 set background=dark
 "}}}
 
