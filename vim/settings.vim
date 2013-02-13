@@ -113,3 +113,5 @@ autocmd BufRead,BufNewFile *.cmake,CMakeLists.txt,*.cmake.in runtime! indent/cma
 autocmd BufRead,BufNewFile *.cmake,CMakeLists.txt,*.cmake.in setf cmake
 autocmd BufRead,BufNewFile *.ctest,*.ctest.in setf cmake
 
+"" Fix é bug with tex file
+imap <buffer> <leader>it <Plug>Tex_InsertItemOnThisLine
