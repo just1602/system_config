@@ -18,7 +18,7 @@ set t_Co=256
 "}}}
 
 "{{{ local: en_CA
-setlocal spelllang=en
+setlocal spelllang=fr
 "}}}
 
 "{{{  if filetype = gitcommir spellcheck on or filetype = tex
