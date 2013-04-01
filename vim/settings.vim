@@ -33,8 +33,8 @@ filetype plugin indent on
 "}}}
 
 " colorscheme configuration {{{
-colorscheme moria 
-set background=dark
+colorscheme jellybeans 
+"set background=dark
 "}}}
 
 "" file type indentation {{{
