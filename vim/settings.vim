@@ -48,6 +48,14 @@ noremap <Up> ""
 noremap <Down> ""
 noremap <Left> ""
 noremap <Right> ""
+inoremap <Up> ""
+inoremap <Down> ""
+inoremap <Left> ""
+inoremap <Right> ""
+nnoremap <Up> ""
+nnoremap <Down> ""
+nnoremap <Left> ""
+nnoremap <Right> ""
 
 "" Use Ctrl + h/j/k/l to browse splited window
 nmap <C-j> <C-W>j
