@@ -30,3 +30,6 @@ alias mplayer='mplayer2'
 
 ## use eix -v
 alias eix='eix -v'
+
+## prevent urxvr-unicode256 to breakup ssh
+alias ssh='TERM=xterm ssh'
