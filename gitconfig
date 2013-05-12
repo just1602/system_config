@@ -31,7 +31,8 @@
 	editor = "vim"
 	pager = "less"
 [alias]
-	com = commit -a
+	cm = commit
+	cma = commit -a
 	st = status -sb
 	co = checkout
 	br = branch -av
