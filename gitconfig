@@ -40,7 +40,7 @@
 	pu = pull --rebase
 	lg = log -p --graph --oneline --all
 	di = diff
-	remote = remote -v
+	re = remote -v
 [github]
 	user = just1602
 [push]
