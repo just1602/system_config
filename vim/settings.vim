@@ -123,3 +123,6 @@ autocmd BufRead,BufNewFile *.ctest,*.ctest.in setf cmake
 
 "" Fix é bug with tex file
 imap <buffer> <leader>it <Plug>Tex_InsertItemOnThisLine
+
+"" .less file are css
+autocmd BufRead,BufNewFile *.less setfiletype css
