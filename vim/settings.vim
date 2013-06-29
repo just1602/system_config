@@ -23,7 +23,7 @@ setlocal spelllang=en
 
 "{{{  if filetype = gitcommir spellcheck on or filetype = tex
 autocmd FileType gitcommit set spell
-autocmd FileType tex set spell
+autocmd FileType tex set spell spelllang=fr
 "}}}
 
 " Activate filetype plugins {{{
@@ -123,9 +123,6 @@ autocmd BufRead,BufNewFile *.ctest,*.ctest.in setf cmake
 
 "" Fix é bug with tex file
 imap <buffer> <leader>it <Plug>Tex_InsertItemOnThisLine
-
-"" Latex spelllang
-autocmd BufRead,BufNewFile *.tex setlocal spell spelllang=fr 
 
 "" .less file are css
 autocmd BufRead,BufNewFile *.less setfiletype css
