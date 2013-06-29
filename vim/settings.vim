@@ -124,5 +124,8 @@ autocmd BufRead,BufNewFile *.ctest,*.ctest.in setf cmake
 "" Fix é bug with tex file
 imap <buffer> <leader>it <Plug>Tex_InsertItemOnThisLine
 
+"" Latex spelllang
+autocmd BufRead,BufNewFile *.tex setlocal spell spelllang=fr_CA 
+
 "" .less file are css
 autocmd BufRead,BufNewFile *.less setfiletype css
