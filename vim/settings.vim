@@ -125,7 +125,7 @@ autocmd BufRead,BufNewFile *.ctest,*.ctest.in setf cmake
 imap <buffer> <leader>it <Plug>Tex_InsertItemOnThisLine
 
 "" Latex spelllang
-autocmd BufRead,BufNewFile *.tex setlocal spell spelllang=fr_CA 
+autocmd BufRead,BufNewFile *.tex setlocal spell spelllang=fr 
 
 "" .less file are css
 autocmd BufRead,BufNewFile *.less setfiletype css
