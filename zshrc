@@ -3,6 +3,11 @@
 # zsh config file
 ##################
 
+# history
+export HISTSIZE=2000
+export HISTFILE="$HOME/.history"
+export SAVEHIST=$HISTSIZE
+
 autoload -U compinit
 compinit
 
