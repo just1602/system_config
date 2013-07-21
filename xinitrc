@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ## urxvtd ##
-#urxvtd -q -f -o 
+urxvtd -q -f -o 
 
 ## transparency ##
 #xcompmgr -CcFf &
@@ -21,7 +21,6 @@ xrandr --output DVI-0 --mode 1920x1080
 xrandr --output DVI-1 --mode 1920x1080
 xrandr --output DVI-1 --left-of DVI-0
 
-#exec ck-launch-session dbus-launch --sh-syntax --exit-with-session awesome 
+exec dbus-launch --sh-syntax --exit-with-session awesome 
 #exec ck-launch-session dbus-launch --sh-syntax --exit-with-session openbox-session
-exec ck-launch-session dbus-launch --sh-syntax --exit-with-session razor-session -w openbox
 
