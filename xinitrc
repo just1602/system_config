@@ -1,5 +1,8 @@
 #!/bin/bash
 
+## set french canadian keyboard
+setxkbmap -variant fr -layout ca
+
 ## urxvtd ##
 urxvtd -q -f -o 
 
@@ -13,7 +16,7 @@ mpd &
 wmname LG3D
 
 ## xscreensaver
-xscreensaver --no-splash &
+xscreensaver&
 
 ## export lang
 export LANG=en_CA.UTF-8
