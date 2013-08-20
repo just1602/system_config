@@ -129,3 +129,11 @@ let g:tex_flavor='latex'
 
 "" .less file are css
 autocmd BufRead,BufNewFile *.less setfiletype css
+
+"" 120 columns indicator
+if exists('+colorcolumn')
+	highlight ColorColumn ctermbg=red
+	set colorcolumn=121
+else
+	au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>121v.\+', -1)
+endif
