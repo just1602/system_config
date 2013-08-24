@@ -5,7 +5,7 @@ xft*hinting: true
 xft*hinstyle: hintslight
 URxvt*font: xft:DejaVu Sans Mono:size=9
 URxvt*transparent: true
-URxvt*shading: 0
+URxvt*shading: 35
 URxvt*tint:white
 
 ! url clicable
