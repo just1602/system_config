@@ -1,32 +1,30 @@
 #!/bin/bash
 
 ## set french canadian keyboard
-setxkbmap -variant fr -layout ca
+#setxkbmap -variant fr -layout ca
 
 ## urxvtd ##
 urxvtd -q -f -o 
 
 ## transparency ##
-xcompmgr -CcFf &
+#xcompmgr -CcFf &
 
 ## mpd ##
-mpd &
+#mpd &
 
 ## color on java interface
-wmname LG3D
+#wmname LG3D
 
 ## xscreensaver
-xscreensaver&
+#xscreensaver&
 
 ## export lang
-export LANG=en_CA.UTF-8
+#export LANG=en_CA.UTF-8
 
 ## dual screen 
-xrandr --output DVI-0 -s 3840x1080
-xrandr --output DVI-0 --mode 1920x1080
-xrandr --output DVI-1 --mode 1920x1080
-xrandr --output DVI-0 --left-of DVI-1
+xrandr --output DVI-0 --auto --output DVI-1 --auto --right-of DVI-0
 
-exec dbus-launch --sh-syntax --exit-with-session awesome 
+#exec dbus-launch --sh-syntax --exit-with-session awesome 
 #exec ck-launch-session dbus-launch --sh-syntax --exit-with-session openbox-session
+exec startxfce4
 
