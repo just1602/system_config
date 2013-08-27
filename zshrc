@@ -38,3 +38,15 @@ alias eix='eix -v'
 
 ## prevent urxvr-unicode256 to breakup ssh
 alias ssh='TERM=xterm ssh'
+
+## Set zsh to the vi mod
+set -o vi
+
+## Set the default editor
+export EDITOR=/usr/bin/vim
+
+## Set the default pager
+export PAGER=/usr/bin/less
+
+## Add the android sdk to the path
+export PATH=$PATH:/opt/android-sdk
