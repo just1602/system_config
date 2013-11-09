@@ -44,18 +44,18 @@ filetype indent on
 nmap <F4> :TlistToggle<cr>
 
 "" map arrow to null and force myself to use hjkl
-noremap <Up> ""
-noremap <Down> ""
-noremap <Left> ""
-noremap <Right> ""
-inoremap <Up> ""
-inoremap <Down> ""
-inoremap <Left> ""
-inoremap <Right> ""
-nnoremap <Up> ""
-nnoremap <Down> ""
-nnoremap <Left> ""
-nnoremap <Right> ""
+"noremap <Up> ""
+"noremap <Down> ""
+"noremap <Left> ""
+"noremap <Right> ""
+"inoremap <Up> ""
+"inoremap <Down> ""
+"inoremap <Left> ""
+"inoremap <Right> ""
+"nnoremap <Up> ""
+"nnoremap <Down> ""
+"nnoremap <Left> ""
+"nnoremap <Right> ""
 
 "" Use Ctrl + h/j/k/l to browse splited window
 nmap <C-j> <C-W>j
@@ -126,9 +126,6 @@ imap <buffer> <leader>it <Plug>Tex_InsertItemOnThisLine
 
 set grepprg=grep\ -nH\ $*
 let g:tex_flavor='latex'
-
-"" .less file are css
-autocmd BufRead,BufNewFile *.less setfiletype css
 
 "" 120 columns indicator
 if exists('+colorcolumn')
