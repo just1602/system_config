@@ -33,6 +33,8 @@ set autoindent
 set autowrite
 set spell
 
+" enable 256 colors
+set t_Co=256
 
 " tab setting
 set tabstop=4
