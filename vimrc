@@ -17,6 +17,12 @@ Bundle 'scrooloose/nerdtree'
 
 Bundle 'klen/python-mode'
 
+Bundle 'vim-scripts/LaTeX-Suite-aka-Vim-LaTeX'
+
+Bundle 'vim-scripts/AutoClose' 
+
+Bundle 'vim-scripts/c.vim'
+
 " Personnal config
 filetype indent on
 syntax on
