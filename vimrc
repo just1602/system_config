@@ -31,6 +31,7 @@ set background=light
 set number
 set autoindent
 set autowrite
+colorscheme jellybeans
 
 " enable 256 colors
 set t_Co=256
