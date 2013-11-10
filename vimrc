@@ -23,6 +23,12 @@ Bundle 'vim-scripts/AutoClose'
 
 Bundle 'vim-scripts/c.vim'
 
+Bundle 'vim-scripts/Django-Projects'
+
+Bundle 'vim-scripts/pythoncomplete'
+
+Bundle 'vim-scripts/vim-django-support'
+
 " Personnal config
 filetype indent on
 syntax on
@@ -32,6 +38,23 @@ set number
 set autoindent
 set autowrite
 colorscheme jellybeans
+
+" encoding configuration
+set encoding=utf-8
+set fileencoding=utf-8
+set termencoding=utf-8
+
+" no backup or swap file
+set nobackup
+set nowritebackup
+set noswapfile
+set autoread
+
+" search configuration
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
 
 " enable 256 colors
 set t_Co=256
@@ -45,6 +68,17 @@ set expandtab
 " make backspace working
 set backspace=indent,eol,start
 
+" color more than 80 char line
+set textwidth=80
+highlight ColorColumn ctermbg=Black
+let &colorcolumn="80,".join(range(80, 380),",")
+
+" make file don't expendtab
+autocmd FileType make setlocal noexpandtab
+
+" latex file configuration
+autocmd BufNewFile,BufRead *.tex setlocal spell spelllang=fr colorcolumn=
+let g:tex_comment_nospell=1
 
 " Powerline setup
 set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9
