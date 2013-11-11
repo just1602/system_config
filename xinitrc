@@ -15,14 +15,14 @@ urxvtd -q -f -o
 ## color on java interface
 #wmname LG3D
 
-## xscreensaver
-#xscreensaver&
-
 ## export lang
 #export LANG=en_CA.UTF-8
 
 ## dual screen 
 xrandr --output DVI-0 --auto --output DVI-1 --auto --right-of DVI-0
+
+## mute the pc speaker
+xset -b
 
 #exec dbus-launch --sh-syntax --exit-with-session awesome 
 #exec ck-launch-session dbus-launch --sh-syntax --exit-with-session openbox-session
