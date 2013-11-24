@@ -77,7 +77,7 @@ let &colorcolumn="80,".join(range(80, 380),",")
 autocmd FileType make setlocal noexpandtab
 
 " latex file configuration
-autocmd BufNewFile,BufRead *.tex setlocal spell spelllang=fr colorcolumn=
+autocmd BufNewFile,BufRead *.tex setlocal spell spelllang=fr colorcolumn= textwidth=9999
 let g:tex_comment_nospell=1
 
 " Powerline setup
