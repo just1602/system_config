@@ -43,6 +43,7 @@ colorscheme jellybeans
 set encoding=utf-8
 set fileencoding=utf-8
 set termencoding=utf-8
+set term=xterm
 
 " no backup or swap file
 set nobackup
