@@ -30,6 +30,7 @@ Bundle 'vim-scripts/pythoncomplete'
 Bundle 'vim-scripts/vim-django-support'
 
 " Personnal config
+set omnifunc=syntaxcomplete#Complete
 filetype indent on
 syntax on
 set mouse=a
@@ -70,7 +71,7 @@ set expandtab
 set backspace=indent,eol,start
 
 " color more than 80 char line
-set textwidth=80
+set textwidth=79
 highlight ColorColumn ctermbg=Black
 let &colorcolumn="80,".join(range(80, 380),",")
 
