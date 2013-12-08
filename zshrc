@@ -50,3 +50,6 @@ export PAGER=/usr/bin/less
 
 ## Add the android sdk to the path
 export PATH=$PATH:/opt/android-sdk
+
+## Add ruby gem to the path
+export PATH=$PATH:/home/justin/.gem/ruby/2.0.0/bin
