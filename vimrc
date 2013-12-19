@@ -34,7 +34,7 @@ set omnifunc=syntaxcomplete#Complete
 filetype indent on
 syntax on
 set mouse=a
-set background=light
+set background=dark
 set number
 set autoindent
 set autowrite
