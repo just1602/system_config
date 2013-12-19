@@ -38,7 +38,7 @@ set background=light
 set number
 set autoindent
 set autowrite
-colorscheme jellybeans
+colorscheme hybrid
 
 " encoding configuration
 set encoding=utf-8
