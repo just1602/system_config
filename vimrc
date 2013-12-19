@@ -82,6 +82,9 @@ autocmd FileType make setlocal noexpandtab
 autocmd BufNewFile,BufRead *.tex setlocal spell spelllang=fr colorcolumn= textwidth=9999
 let g:tex_comment_nospell=1
 
+" html file configuration"
+autocmd BufNewFile,BufRead *.tex setlocal spell spelllang=fr colorcolumn= textwidth=9999
+
 " Powerline setup
 set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9
 set laststatus=2
