@@ -185,3 +185,7 @@ let g:pymode_syntax_highlight_self = g:pymode_syntax_all
 
 " For fast machines
 let g:pymode_syntax_slow_sync = 0
+
+" Python syntax support for pyflakes
+let g:syntastic_python_python_exe = 'python3'
+let g:syntastic_python_checker = ['python', 'py3kwarn']

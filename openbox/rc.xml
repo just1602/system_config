@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>TropicBomb</name>
+    <name>Nova-Blue</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -321,9 +321,9 @@
         <execute>gmrun</execute>
       </action>
     </keybind>
-    <keybind key="W-t">
+    <keybind key="W-Return">
       <action name="Execute">
-        <execute>urxvtc</execute>
+        <execute>xfce4-terminal</execute>
       </action>
     </keybind>
     <keybind key="XF86AudioRaiseVolume">

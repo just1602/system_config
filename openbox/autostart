@@ -1,26 +1,16 @@
 #!/bin/bash
 
 ## term server ##
-urxvtd -q -f -o
+#urxvtd -q -f -o
 
 ## transparency ##
 xcompmgr -CcFf &
 
 mpd &
 
-export LANG="en_CA.UTF-8"
-
-## dual screen configuration
-xrandr --output DVI-0 -s 3840x1080
-xrandr --output DVI-0 --mode 1920x1080
-xrandr --output DVI-1 --mode 1920x1080
-xrandr --output DVI-1 --left-of DVI-0
-
-## numlock activation
-numlockx &
-
-feh --bg-fill --no-xinerama /home/justin/images/paint.jpg &
+feh --bg-center --no-xinerama /home/justin/images/water.jpg &
+dropboxd &
 tint2 &
-urxvt -e ncmpcpp &
-conky &
 thunderbird &
+firefox&
+sonata&

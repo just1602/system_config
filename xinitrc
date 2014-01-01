@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ## set french canadian keyboard
-#setxkbmap -variant fr -layout ca
+setxkbmap -variant fr -layout ca
 
 ## urxvtd ##
 #urxvtd -q -f -o 
@@ -13,7 +13,7 @@
 #mpd &
 
 ## color on java interface
-#wmname LG3D
+wmname LG3D
 
 ## export lang
 #export LANG=en_CA.UTF-8
@@ -25,6 +25,6 @@ xrandr --output DVI-0 --auto --output DVI-1 --auto --right-of DVI-0
 xset -b
 
 #exec dbus-launch --sh-syntax --exit-with-session awesome 
-#exec ck-launch-session dbus-launch --sh-syntax --exit-with-session openbox-session
-exec startxfce4
+exec dbus-launch --sh-syntax --exit-with-session openbox-session
+#exec startxfce4
 

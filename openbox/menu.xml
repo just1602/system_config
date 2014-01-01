@@ -3,22 +3,30 @@
 	<menu id="root-menu" label="Openbox 3">
 		<item label="Term">
 			<action name="Execute">
-				<execute>urxvtc</execute>
+				<execute>
+					urxvtc
+				</execute>
 			</action>
 		</item>
 		<item label="www">
 			<action name="Execute">
-				<execute>firefox</execute>
+				<execute>
+					firefox
+				</execute>
 			</action>
 		</item>
 		<item label="File Manager">
 			<action name="Execute">
-				<execute>pcmanfm</execute>
+				<execute>
+					thunar
+				</execute>
 			</action>
 		</item>
 		<item label="Editor">
 			<action name="Execute">
-				<execute>urxvtc -e vim</execute>
+				<execute>
+					xfce4-terminal -e vim
+				</execute>
 			</action>
 		</item>
 		<separator/>
@@ -39,7 +47,9 @@
 			</item>
 			<item label="Torrent">
 				<action name="Execute">
-					<execute>urxvtc -e rtorrent</execute>
+					<execute>
+						xfce4-terminal -e rtorrent
+					</execute>
 				</action>
 			</item>
 			<item label="Pidgin">
@@ -58,17 +68,17 @@
 			</item>
 		</menu>
 		<menu id="root-menu-3600dev" label="Dev">
+			<item label="qtcreator">
+				<action name="Execute">
+					<execute>
+						qtcreator
+					</execute>
+				</action>
+			</item>
 			<item label="CodeBlock">
 				<action name="Execute">
 					<execute>
 						codeblocks
-					</execute>
-				</action>
-			</item>
-			<item label="Monodevelop">
-				<action name="Execute">
-					<execute>
-						monodevelop
 					</execute>
 				</action>
 			</item>
@@ -81,9 +91,11 @@
 			</item>
 		</menu>
 		<menu id="music" label="Music">
-			<item label="ncmpcpp">
+			<item label="sonata">
 				<action name="Execute">
-					<execute>urxvtc -e ncmpcpp</execute>
+					<execute>
+						sonata
+					</execute>
 				</action>
 			</item>
 			<item label="Play">
@@ -116,6 +128,13 @@
 			</item>
 		</menu>
 		<menu id="office" label="Office">
+			<item label="texstudio">
+				<action name="Execute">
+					<execute>
+						texstudio
+					</execute>
+				</action>
+			</item>
 			<item label="FbReader">
 				<action name="Execute">
 					<execute>
@@ -191,11 +210,6 @@
 				<prompt>
 					yes
 				</prompt>
-			</action>
-		</item>
-		<item label="PowerOFf">
-			<action name="Execute">
-				<execute>sudo /etc/init.d/netmount stop &amp;&amp; sudo /sbin/poweroff</execute>
 			</action>
 		</item>
 	</menu>
