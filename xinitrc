@@ -24,6 +24,9 @@ xrandr --output DVI-0 --auto --output DVI-1 --auto --right-of DVI-0
 ## mute the pc speaker
 xset -b
 
+## turn on numlock
+numlockx &
+
 #exec dbus-launch --sh-syntax --exit-with-session awesome 
 exec dbus-launch --sh-syntax --exit-with-session openbox-session
 #exec startxfce4
