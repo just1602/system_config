@@ -338,12 +338,12 @@
     </keybind>
     <keybind key="XF86AudioPlay">
       <action name="Execute">
-        <execute>ncmpcpp play</execute>
+        <execute>ncmpcpp toggle</execute>
       </action>
     </keybind>
     <keybind key="XF86AudioStop">
       <action name="Execute">
-        <execute>ncmpcpp pause</execute>
+        <execute>ncmpcpp stop</execute>
       </action>
     </keybind>
     <keybind key="XF86AudioNext">
