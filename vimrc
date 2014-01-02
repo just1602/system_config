@@ -29,6 +29,8 @@ Bundle 'vim-scripts/pythoncomplete'
 
 Bundle 'vim-scripts/vim-django-support'
 
+Bundle 'vim-scripts/taglist.vim'
+
 " Personnal config
 set omnifunc=syntaxcomplete#Complete
 filetype indent on
@@ -81,6 +83,14 @@ autocmd FileType make setlocal noexpandtab
 " latex file configuration
 autocmd BufNewFile,BufRead *.tex setlocal spell spelllang=fr colorcolumn= textwidth=9999
 let g:tex_comment_nospell=1
+" LaTeX-suite completion
+set grepprg="grep -nH $*"
+" LaTeX-suite viewer configuration
+let g:Tex_ViewRule_pdf = "zathura"
+" LaTeX-suite reverse search
+let g:Tex_CompileRule_dvi = 'latex -src-specials -interaction=nonstopmode $*'
+" LaTeX-suite mutiple format
+let g:Tex_CompileMultipleFormats = 'dvi, pdf'
 
 " html file configuration"
 autocmd BufNewFile,BufRead *.tex setlocal spell spelllang=fr colorcolumn= textwidth=9999
@@ -92,6 +102,8 @@ set laststatus=2
 " NerdTree
 map <F2> :NERDTreeToggle<cr>
 
+" TagList
+map <F4> :TlistToggle<cr>"
 " Python-mode
 " Activate rope
 " Keys:
