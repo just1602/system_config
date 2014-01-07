@@ -31,6 +31,14 @@ Bundle 'vim-scripts/vim-django-support'
 
 Bundle 'vim-scripts/taglist.vim'
 
+Bundle 'vim-scripts/HTML5-Syntax-File'
+
+Bundle 'vim-scripts/html5.vim'
+
+Bundle 'vim-scripts/css3-syntax-plus'
+
+Bundle 'vim-scripts/Sass'
+
 " Personnal config
 set omnifunc=syntaxcomplete#Complete
 filetype indent on
@@ -83,17 +91,12 @@ autocmd FileType make setlocal noexpandtab
 " latex file configuration
 autocmd BufNewFile,BufRead *.tex setlocal spell spelllang=fr colorcolumn= textwidth=9999
 let g:tex_comment_nospell=1
-" LaTeX-suite completion
-set grepprg="grep -nH $*"
-" LaTeX-suite viewer configuration
-let g:Tex_ViewRule_pdf = "zathura"
-" LaTeX-suite reverse search
-let g:Tex_CompileRule_dvi = 'latex -src-specials -interaction=nonstopmode $*'
-" LaTeX-suite mutiple format
-let g:Tex_CompileMultipleFormats = 'dvi, pdf'
 
 " html file configuration"
-autocmd BufNewFile,BufRead *.tex setlocal spell spelllang=fr colorcolumn= textwidth=9999
+autocmd BufNewFile,BufRead *.html setlocal colorcolumn= textwidth=9999
+
+" css file configuration"
+autocmd BufNewFile,BufRead *.html setlocal tabstop=4 shiftwidth=4
 
 " Powerline setup
 set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9
@@ -103,7 +106,8 @@ set laststatus=2
 map <F2> :NERDTreeToggle<cr>
 
 " TagList
-map <F4> :TlistToggle<cr>"
+map <F4> :TlistToggle<cr>
+
 " Python-mode
 " Activate rope
 " Keys:
