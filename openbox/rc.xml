@@ -326,6 +326,11 @@
         <execute>xfce4-terminal</execute>
       </action>
     </keybind>
+    <keybind key="W-e">
+      <action name="Execute">
+        <execute>thunar</execute>
+      </action>
+    </keybind>
     <keybind key="XF86AudioRaiseVolume">
       <action name="Execute">
         <execute>amixer set Master 5dB+</execute>
