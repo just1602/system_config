@@ -48,6 +48,9 @@ export EDITOR=/usr/bin/vim
 ## Set the default pager
 export PAGER=/usr/bin/less
 
+## Add the jdk path
+export PATH=/usr/lib/jvm/java-7-openjdk/bin:$PATH
+
 ## Add the android sdk to the path
 export PATH=$PATH:/opt/android-sdk
 
