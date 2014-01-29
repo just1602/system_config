@@ -96,7 +96,10 @@ let g:tex_comment_nospell=1
 autocmd BufNewFile,BufRead *.html setlocal colorcolumn= textwidth=9999
 
 " css file configuration"
-autocmd BufNewFile,BufRead *.html setlocal tabstop=4 shiftwidth=4
+autocmd BufNewFile,BufRead *.css setlocal tabstop=4 shiftwidth=4
+
+" markown file configuration
+autocmd BufNewFile,BufRead *.md setlocal filetype=markdown colorcolumn= textwidth=9999
 
 " Powerline setup
 set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9
