@@ -55,4 +55,4 @@ export PATH=/usr/lib/jvm/java-7-openjdk/bin:$PATH
 export PATH=$PATH:/opt/android-sdk
 
 ## Add ruby gem to the path
-export PATH=$PATH:/home/justin/.gem/ruby/2.0.0/bin
+export PATH=$PATH:/home/justin/.gem/ruby/2.1.0/bin

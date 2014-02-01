@@ -8,7 +8,7 @@ xcompmgr -CcFf &
 
 mpd &
 
-feh --bg-center --no-xinerama /home/justin/images/water.jpg &
+feh --bg-center --no-xinerama /home/justin/images/railway.png &
 dropboxd &
 tint2 &
 thunderbird &
