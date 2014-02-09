@@ -4,14 +4,14 @@
 		<item label="Term">
 			<action name="Execute">
 				<execute>
-					urxvtc
+					xfce4-terminal
 				</execute>
 			</action>
 		</item>
 		<item label="www">
 			<action name="Execute">
 				<execute>
-					firefox
+					firefox-aurora
 				</execute>
 			</action>
 		</item>
