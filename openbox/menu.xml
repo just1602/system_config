@@ -11,7 +11,7 @@
 		<item label="www">
 			<action name="Execute">
 				<execute>
-					firefox-aurora
+					firefox
 				</execute>
 			</action>
 		</item>
