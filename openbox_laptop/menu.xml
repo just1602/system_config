@@ -3,23 +3,29 @@
 	<menu id="root-menu" label="Openbox 3">
 		<item label="Term">
 			<action name="Execute">
-				<execute>urxvtc</execute>
+				<execute>
+					xfce4-terminal
+				</execute>
 			</action>
 		</item>
 		<item label="www">
 			<action name="Execute">
-				<execute>firefox</execute>
-			</action>
-		</item>
-		<item label="Editor">
-			<action name="Execute">
-				<execute>urxvtc -e vim</execute>
+				<execute>
+					firefox
+				</execute>
 			</action>
 		</item>
 		<item label="File Manager">
 			<action name="Execute">
 				<execute>
-					pcmanfm
+					thunar
+				</execute>
+			</action>
+		</item>
+		<item label="Editor">
+			<action name="Execute">
+				<execute>
+					xfce4-terminal -e vim
 				</execute>
 			</action>
 		</item>
@@ -32,10 +38,24 @@
 					</execute>
 				</action>
 			</item>
+			<item label="Skype">
+				<action name="Execute">
+					<execute>
+						skype
+					</execute>
+				</action>
+			</item>
 			<item label="Torrent">
 				<action name="Execute">
 					<execute>
-						urxvt -e rtorrent
+						xfce4-terminal -e rtorrent
+					</execute>
+				</action>
+			</item>
+			<item label="Pidgin">
+				<action name="Execute">
+					<execute>
+						pidgin
 					</execute>
 				</action>
 			</item>
@@ -48,10 +68,17 @@
 			</item>
 		</menu>
 		<menu id="root-menu-3600dev" label="Dev">
-			<item label="Monodevelop">
+			<item label="qtcreator">
 				<action name="Execute">
 					<execute>
-						monodevelop
+						qtcreator
+					</execute>
+				</action>
+			</item>
+			<item label="CodeBlock">
+				<action name="Execute">
+					<execute>
+						codeblocks
 					</execute>
 				</action>
 			</item>
@@ -64,10 +91,10 @@
 			</item>
 		</menu>
 		<menu id="music" label="Music">
-			<item label="ncmpcpp">
+			<item label="sonata">
 				<action name="Execute">
 					<execute>
-						urxvt -e ncmpcpp
+						sonata
 					</execute>
 				</action>
 			</item>
@@ -101,6 +128,13 @@
 			</item>
 		</menu>
 		<menu id="office" label="Office">
+			<item label="texstudio">
+				<action name="Execute">
+					<execute>
+						texstudio
+					</execute>
+				</action>
+			</item>
 			<item label="FbReader">
 				<action name="Execute">
 					<execute>
@@ -112,6 +146,29 @@
 				<action name="Execute">
 					<execute>
 						libreoffice
+					</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="media" label="Media">
+			<item label="Audacity">
+				<action name="Execute">
+					<execute>
+						audacity
+					</execute>
+				</action>
+			</item>
+			<item label="Avidemux">
+				<action name="Execute">
+					<execute>
+						avidemux2_gtk
+					</execute>
+				</action>
+			</item>
+			<item label="Gimp">
+				<action name="Execute">
+					<execute>
+						gimp
 					</execute>
 				</action>
 			</item>
@@ -153,13 +210,6 @@
 				<prompt>
 					yes
 				</prompt>
-			</action>
-		</item>
-		<item label="PowerOFf">
-			<action name="Execute">
-				<execute>
-					sudo /sbin/poweroff
-				</execute>
 			</action>
 		</item>
 	</menu>
