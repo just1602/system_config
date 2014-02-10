@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Murrina-Tangoesque</name>
+    <name>Nova-Blue</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -93,12 +93,12 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="ActiveOnScreenDisplay">
-      <name>sans</name>
-      <size>9</size>
+      <name>Droid Sans Mono</name>
+      <size>10</size>
       <!-- font size in points -->
-      <weight>bold</weight>
+      <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>normal</slant>
+      <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="InactiveOnScreenDisplay">
@@ -316,19 +316,19 @@
       </action>
     </keybind>
     <!-- Keybindings for running applications -->
-    <keybind key="W-l">
-      <action name="Execute">
-        <execute>xscreensaver-command -lock#</execute>
-      </action>
-    </keybind>
     <keybind key="W-r">
       <action name="Execute">
         <execute>gmrun</execute>
       </action>
     </keybind>
-    <keybind key="W-t">
+    <keybind key="W-Return">
       <action name="Execute">
-        <execute>urxvtc</execute>
+        <execute>xfce4-terminal</execute>
+      </action>
+    </keybind>
+    <keybind key="W-e">
+      <action name="Execute">
+        <execute>thunar</execute>
       </action>
     </keybind>
     <keybind key="XF86AudioRaiseVolume">
@@ -343,12 +343,12 @@
     </keybind>
     <keybind key="XF86AudioPlay">
       <action name="Execute">
-        <execute>ncmpcpp play</execute>
+        <execute>ncmpcpp toggle</execute>
       </action>
     </keybind>
     <keybind key="XF86AudioStop">
       <action name="Execute">
-        <execute>ncmpcpp pause</execute>
+        <execute>ncmpcpp stop</execute>
       </action>
     </keybind>
     <keybind key="XF86AudioNext">
