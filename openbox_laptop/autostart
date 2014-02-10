@@ -1,12 +1,12 @@
 #!/bin/bash
 
-urxvtd -q -f -o &
-
-mpd
+#mpd
 
 xscreensaver -no-splash &
 
 feh --bg-fill --no-xinerama /home/justin/images/manif/22mai/haut.jpg &
 tint2 &
-urxvtc -e ncmpcpp &
+firefox&
+thunderbird&
+sonata&
 #conky &
