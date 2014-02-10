@@ -2,6 +2,8 @@
 
 #mpd
 
+dropbox&
+
 xscreensaver -no-splash &
 
 feh --bg-fill --no-xinerama /home/justin/images/manif/22mai/haut.jpg &
@@ -9,4 +11,5 @@ tint2 &
 firefox&
 thunderbird&
 sonata&
+skype&
 #conky &
