@@ -3,11 +3,13 @@
 set nocompatible
 filetype off
 
+set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " Bundle list
 
-filetype plugin indent on
+
+Bundle "gmarik/vundle"
 
 Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 
@@ -38,6 +40,8 @@ Bundle 'vim-scripts/html5.vim'
 Bundle 'vim-scripts/css3-syntax-plus'
 
 Bundle 'vim-scripts/Sass'
+
+filetype plugin indent on
 
 " Personnal config
 set omnifunc=syntaxcomplete#Complete
