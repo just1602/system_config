@@ -326,6 +326,16 @@
         <execute>xfce4-terminal</execute>
       </action>
     </keybind>
+    <keybind key="XF86MonBrightnessUp">
+      <action name="Execute">
+        <execute>xbacklight -inc 10</execute>
+      </action>
+    </keybind>
+    <keybind key="XF86MonBrightnessDown">
+      <action name="Execute">
+        <execute>xbacklight -dec 10</execute>
+      </action>
+    </keybind>
     <keybind key="W-e">
       <action name="Execute">
         <execute>thunar</execute>
