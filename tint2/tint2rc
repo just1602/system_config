@@ -33,7 +33,7 @@ panel_layer = top
 panel_background_id = 1
 
 # Panel Autohide
-autohide = 1
+autohide = 0
 autohide_show_timeout = 0.3
 autohide_hide_timeout = 1
 autohide_height = 2
@@ -105,10 +105,10 @@ mouse_scroll_up = toggle
 mouse_scroll_down = iconify
 
 # Battery
-battery = 0
+battery = 1
 battery_low_status = 10
 battery_low_cmd = notify-send "battery low"
-battery_hide = 98
+battery_hide = 0
 bat1_font = sans 8
 bat2_font = sans 6
 battery_font_color = #FFFFFF 74
