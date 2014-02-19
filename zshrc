@@ -8,11 +8,14 @@ export HISTSIZE=2000
 export HISTFILE="$HOME/.history"
 export SAVEHIST=$HISTSIZE
 
-autoload -U compinit
-compinit
+# The following lines were added by compinstall
 
-zstyle ':completion:*:descriptions' format '%U%B%b%u'
-zstyle ':completion:*:warnings' format '%BSorry, no matches for: %d%b'
+zstyle ':completion:*' completer _complete _ignored _correct _approximate
+zstyle ':completion:*' list-colors ''
+zstyle :compinstall filename '/home/justin/.zshrc'
+
+autoload -Uz compinit
+compinit
 
 setopt correctall
 
@@ -55,4 +58,5 @@ export PATH=/usr/lib/jvm/java-7-openjdk/bin:$PATH
 export PATH=$PATH:/opt/android-sdk
 
 ## Add ruby gem to the path
+export PATH=$PATH:/home/justin/.gem/ruby/2.0.0/bin
 export PATH=$PATH:/home/justin/.gem/ruby/2.1.0/bin
