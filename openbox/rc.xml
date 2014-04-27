@@ -343,22 +343,22 @@
     </keybind>
     <keybind key="XF86AudioPlay">
       <action name="Execute">
-        <execute>ncmpcpp toggle</execute>
+        <execute>banshee --toggle-playing</execute>
       </action>
     </keybind>
     <keybind key="XF86AudioStop">
       <action name="Execute">
-        <execute>ncmpcpp stop</execute>
+        <execute>ncmpcpp --stop</execute>
       </action>
     </keybind>
     <keybind key="XF86AudioNext">
       <action name="Execute">
-        <execute>ncmpcpp next</execute>
+        <execute>ncmpcpp --next</execute>
       </action>
     </keybind>
     <keybind key="XF86AudioPrev">
       <action name="Execute">
-        <execute>ncmpcpp prev</execute>
+        <execute>ncmpcpp --previous</execute>
       </action>
     </keybind>
     <keybind key="XF86Eject">
