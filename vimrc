@@ -3,13 +3,13 @@
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " Bundle list
 
 
-Bundle "gmarik/vundle"
+Bundle "gmarik/Vundle.vim"
 
 Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 
@@ -41,6 +41,9 @@ Bundle 'vim-scripts/css3-syntax-plus'
 
 Bundle 'vim-scripts/Sass'
 
+Bundle 'vim-scripts/jellybeans.vim'
+
+call vundle#end()
 filetype plugin indent on
 
 " Personnal config
