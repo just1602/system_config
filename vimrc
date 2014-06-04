@@ -108,7 +108,11 @@ autocmd BufNewFile,BufRead *.css setlocal tabstop=4 shiftwidth=4
 " markown file configuration
 autocmd BufNewFile,BufRead *.md setlocal filetype=markdown colorcolumn= textwidth=9999
 
+" textile file configuration
+autocmd BufNewFile,BufRead *.text setlocal spell spelllang=fr colorcolumn= textwidth=9999
+
 " Powerline setup
+let g:Powerline_symbols = 'fancy'
 set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9
 set laststatus=2
 
