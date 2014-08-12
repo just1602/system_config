@@ -13,7 +13,7 @@ Bundle "gmarik/Vundle.vim"
 
 Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 
-Bundle 'git://github.com/tpope/vim-fugitive.git'
+Bundle 'tpope/vim-fugitive.git'
 
 Bundle 'scrooloose/nerdtree'
 
@@ -27,19 +27,11 @@ Bundle 'vim-scripts/c.vim'
 
 Bundle 'vim-scripts/Django-Projects'
 
-Bundle 'vim-scripts/pythoncomplete'
-
 Bundle 'vim-scripts/vim-django-support'
 
 Bundle 'vim-scripts/taglist.vim'
 
-Bundle 'vim-scripts/HTML5-Syntax-File'
-
-Bundle 'vim-scripts/html5.vim'
-
-Bundle 'vim-scripts/css3-syntax-plus'
-
-Bundle 'vim-scripts/Sass'
+Bundle 'hail2u/vim-css3-syntax'
 
 Bundle 'vim-scripts/jellybeans.vim'
 
