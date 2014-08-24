@@ -23,7 +23,7 @@ Bundle 'vim-scripts/LaTeX-Suite-aka-Vim-LaTeX'
 
 Bundle 'vim-scripts/AutoClose' 
 
-Bundle 'vim-scripts/c.vim'
+Bundle 'vim-jp/cpp-vim'
 
 Bundle 'vim-scripts/Django-Projects'
 
@@ -34,6 +34,8 @@ Bundle 'vim-scripts/taglist.vim'
 Bundle 'hail2u/vim-css3-syntax'
 
 Bundle 'vim-scripts/jellybeans.vim'
+
+Bundle 'scrooloose/syntastic'
 
 call vundle#end()
 filetype plugin indent on
@@ -207,7 +209,3 @@ let g:pymode_syntax_highlight_self = g:pymode_syntax_all
 
 " For fast machines
 let g:pymode_syntax_slow_sync = 0
-
-" Python syntax support for pyflakes
-let g:syntastic_python_python_exe = 'python3'
-let g:syntastic_python_checker = ['python', 'py3kwarn']
