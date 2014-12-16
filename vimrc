@@ -11,8 +11,6 @@ call vundle#begin()
 
 Bundle "gmarik/Vundle.vim"
 
-Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
-
 Bundle 'tpope/vim-fugitive.git'
 
 Bundle 'scrooloose/nerdtree'
