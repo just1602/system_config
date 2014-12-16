@@ -51,11 +51,10 @@ export EDITOR=/usr/bin/vim
 ## Set the default pager
 export PAGER=/usr/bin/less
 
-## Add the jdk path
-export PATH=/usr/lib/jvm/java-7-openjdk/bin:$PATH
-
-## Add the android sdk to the path
-export PATH=$PATH:/opt/android-sdk
+## Set the default brower
+export BROWSER=/usr/bin/firefox
 
 ## Add ruby gem to the path
 export PATH=$PATH:/home/justin/.gem/ruby/2.1.0/bin
+
+
