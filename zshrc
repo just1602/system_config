@@ -53,8 +53,3 @@ export PAGER=/usr/bin/less
 
 ## Set the default brower
 export BROWSER=/usr/bin/firefox
-
-## Add ruby gem to the path
-export PATH=$PATH:/home/justin/.gem/ruby/2.1.0/bin
-
-
