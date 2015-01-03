@@ -6,34 +6,31 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-" Bundle list
+" Plugin list
 
+Plugin 'gmarik/Vundle.vim'
 
-Bundle "gmarik/Vundle.vim"
+Plugin 'tpope/vim-fugitive.git'
 
-Bundle 'tpope/vim-fugitive.git'
+Plugin 'scrooloose/nerdtree'
 
-Bundle 'scrooloose/nerdtree'
+Plugin 'klen/python-mode'
 
-Bundle 'klen/python-mode'
+Plugin 'lervag/vim-latex'
 
-Bundle 'vim-scripts/LaTeX-Suite-aka-Vim-LaTeX'
+Plugin 'vim-scripts/AutoClose' 
 
-Bundle 'vim-scripts/AutoClose' 
+Plugin 'octol/vim-cpp-enhanced-highlight'
 
-Bundle 'vim-jp/cpp-vim'
+Plugin 'vim-scripts/taglist.vim'
 
-Bundle 'vim-scripts/Django-Projects'
+Plugin 'hail2u/vim-css3-syntax'
 
-Bundle 'vim-scripts/vim-django-support'
+Plugin 'othree/html5.vim'
 
-Bundle 'vim-scripts/taglist.vim'
+Plugin 'ajh17/Spacegray.vim'
 
-Bundle 'hail2u/vim-css3-syntax'
-
-Bundle 'vim-scripts/jellybeans.vim'
-
-Bundle 'scrooloose/syntastic'
+Plugin 'scrooloose/syntastic'
 
 call vundle#end()
 filetype plugin indent on
@@ -47,7 +44,7 @@ set background=dark
 set number
 set autoindent
 set autowrite
-colorscheme jellybeans 
+colorscheme spacegray
 
 " encoding configuration
 set encoding=utf-8
@@ -207,3 +204,7 @@ let g:pymode_syntax_highlight_self = g:pymode_syntax_all
 
 " For fast machines
 let g:pymode_syntax_slow_sync = 0
+
+" cpp settings
+let g:cpp_class_scope_highlight = 1
+let g:cpp_experimental_template_highlight = 1
