@@ -33,14 +33,14 @@ alias grep='grep --color=auto'
 ## l = ls
 alias l='ls --color=auto'
 
-## use mplayer2 instead of mplayer, but install mplayer for mencoder
-#alias mplayer='mplayer2'
-
 ## use eix -v
 alias eix='eix -v'
 
 ## prevent urxvr-unicode256 to breakup ssh
 alias ssh='TERM=xterm ssh'
+
+## tmux antialiasing
+alias tmux='tmux -2'
 
 ## Set zsh to the vi mod
 set -o vi
