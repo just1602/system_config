@@ -100,6 +100,10 @@ autocmd BufNewFile,BufRead *.md setlocal filetype=markdown colorcolumn= textwidt
 " textile file configuration
 autocmd BufNewFile,BufRead *.text setlocal spell spelllang=fr colorcolumn= textwidth=9999
 
+" sass file
+autocmd BufNewFile,BufRead *.scss setlocal filetype=scss tabstop=4 shiftwidth=4
+
+
 " Powerline setup
 let g:Powerline_symbols = 'fancy'
 set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9
