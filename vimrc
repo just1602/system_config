@@ -101,7 +101,7 @@ autocmd BufNewFile,BufRead *.md setlocal filetype=markdown colorcolumn= textwidt
 autocmd BufNewFile,BufRead *.text setlocal spell spelllang=fr colorcolumn= textwidth=9999
 
 " sass file
-autocmd BufNewFile,BufRead *.scss setlocal filetype=scss tabstop=4 shiftwidth=4
+autocmd BufNewFile,BufRead *.scss setlocal filetype=sass tabstop=4 shiftwidth=4
 
 
 " Powerline setup
