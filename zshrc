@@ -53,3 +53,5 @@ export PAGER=/usr/bin/less
 
 ## Set the default brower
 export BROWSER=/usr/bin/firefox
+
+source /usr/share/zsh/site-contrib/powerline.zsh
