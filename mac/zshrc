@@ -28,19 +28,7 @@ autoload -U colors && colors
 PROMPT="%{$fg[green]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$fg[yellow]%}%1~ %{$reset_color%}%# "
 
 # alias
-alias ls='ls --color=auto'
 alias grep='grep --color=auto'
-## l = ls
-alias l='ls --color=auto'
-
-## use eix -v
-alias eix='eix -v'
-
-## prevent urxvr-unicode256 to breakup ssh
-alias ssh='TERM=xterm ssh'
-
-## tmux antialiasing
-alias tmux='tmux -2'
 
 ## Set zsh to the vi mod
 set -o vi
@@ -51,9 +39,5 @@ export EDITOR=/usr/bin/vim
 ## Set the default pager
 export PAGER=/usr/bin/less
 
-## Set the default brower
-export BROWSER=/usr/bin/firefox
-
-export LESSOPEN="|lesspipe %s"
-
-source /usr/share/zsh/site-contrib/powerline.zsh
+## Path for macport package
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
