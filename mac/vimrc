@@ -103,12 +103,6 @@ autocmd BufNewFile,BufRead *.text setlocal spell spelllang=fr colorcolumn= textw
 " sass file
 autocmd BufNewFile,BufRead *.scss setlocal filetype=sass tabstop=4 shiftwidth=4
 
-
-" Powerline setup
-let g:Powerline_symbols = 'fancy'
-set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9
-set laststatus=2
-
 " NerdTree
 map <F2> :NERDTreeToggle<cr>
 
