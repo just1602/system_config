@@ -29,6 +29,7 @@ PROMPT="%{$fg[green]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$fg[yellow]%}%1~ %{$r
 
 # alias
 alias grep='grep --color=auto'
+alias vim='/opt/local/bin/mvim -v'
 
 ## Set zsh to the vi mod
 set -o vi
