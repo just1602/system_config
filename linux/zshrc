@@ -57,3 +57,6 @@ export BROWSER=/usr/bin/firefox
 export LESSOPEN="|lesspipe %s"
 
 source /usr/share/zsh/site-contrib/powerline.zsh
+
+## Add ruby gem to path
+export PATH=$PATH:/home/justin/.gem/ruby/2.2.0/bin
