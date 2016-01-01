@@ -112,5 +112,10 @@ let g:cpp_class_scope_highlight = 1
 let g:cpp_experimental_template_highlight = 1
 
 " clang-format
-map <C-K> :pyf /usr/share/clang/clang-format.py<cr>
-imap <C-K> <c-o>:pyf /usr/share/clang/clang-format.py<cr>
+if has("mac")
+    map <C-K> :pyf /usr/local/share/clang/clang-format.py<cr>
+    imap <C-K> <c-o> :pyf /usrlocal/share/clang/clang-format.py<cr>
+else
+    map <C-K> :pyf /usr/share/clang/clang-format.py<cr>
+    imap <C-K> <c-o> :pyf /usr/share/clang/clang-format.py<cr>
+endif
