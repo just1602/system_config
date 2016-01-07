@@ -38,7 +38,7 @@ end
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
-beautiful.init("/home/justin/.config/awesome/themes/zenburn/theme.lua")
+beautiful.init(awful.util.getdir("config") .. "/themes/zenburn/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
 terminal = "urxvt"
@@ -273,7 +273,12 @@ globalkeys = awful.util.table.join(
                   awful.util.getdir("cache") .. "/history_eval")
               end),
     -- Menubar
-    awful.key({ modkey }, "p", function() menubar.show() end)
+    awful.key({ modkey }, "p", function() menubar.show() end),
+
+    -- Multimedia
+    awful.key({}, "XF86AudioRaiseVolume", function() awful.util.spawn_with_shell("amixer -q sset Master 3%+") end),
+    awful.key({}, "XF86AudioLowerVolume", function() awful.util.spawn_with_shell("amixer -q sset Master 3%-") end),
+    awful.key({}, "XF86AudioMute", function() awful.util.spawn_with_shell("amixer -q sset Master toggle") end)
 )
 
 clientkeys = awful.util.table.join(
