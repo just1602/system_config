@@ -7,7 +7,7 @@ Xft.rgba: rgb
 Xft.hinting: true
 Xft.hintstyle: hintfull
 
-URxvt.letterSpace: -4
+URxvt.letterSpace: -1
 
 URxvt*font: xft:DejaVu Sans Mono:antialias=true:pixelsize=11
 URxvt*boldFont: xft:DejaVu Sans Mono:style=bold:antialias=true:pixelsize=11
