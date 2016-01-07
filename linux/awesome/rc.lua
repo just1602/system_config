@@ -38,7 +38,7 @@ end
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
-beautiful.init("/usr/share/awesome/themes/zenburn/theme.lua")
+beautiful.init("/home/justin/.config/awesome/themes/zenburn/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
 terminal = "urxvt"
@@ -369,7 +369,7 @@ awful.rules.rules = {
       properties = { tag = tags[1][1] } },
     { rule = { class = "Thunderbird" },
       properties = { tag = tags[2][1] } },
-    { rule = { class = "Ranger" },
+    { rule = { class = "ranger" },
       properties = { tag = tags[1][4] } },
 }
 -- }}}
