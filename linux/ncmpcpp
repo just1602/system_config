@@ -2,10 +2,12 @@ mpd_music_dir = "/mnt/data/music"
 
 song_columns_list_format = "(6f)[white]{NE} (40)[green]{t|f} (25)[white]{bE} (25)[white]{a} 
 
+# White and green playlist
 header_window_color = green
-
 main_window_color = white
-
 state_line_color = green
-
 statusbar_color = white
+
+# Selected column green other white
+active_column_color = green
+main_window_highlight_color = white
