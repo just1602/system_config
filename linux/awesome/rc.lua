@@ -10,6 +10,8 @@ local beautiful = require("beautiful")
 -- Notification library
 local naughty = require("naughty")
 local menubar = require("menubar")
+-- Vicious
+local vicious = require("vicious")
 
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
@@ -127,6 +129,7 @@ mytaglist.buttons = awful.util.table.join(
                     awful.button({ }, 4, function(t) awful.tag.viewnext(awful.tag.getscreen(t)) end),
                     awful.button({ }, 5, function(t) awful.tag.viewprev(awful.tag.getscreen(t)) end)
                     )
+
 mytasklist = {}
 mytasklist.buttons = awful.util.table.join(
                      awful.button({ }, 1, function (c)
@@ -164,6 +167,18 @@ mytasklist.buttons = awful.util.table.join(
                                               if client.focus then client.focus:raise() end
                                           end))
 
+-- Initialize mpd widget
+mpdwidget = wibox.widget.textbox()
+-- -- Register mpd widget
+vicious.register(mpdwidget, vicious.widgets.mpd,
+function (mpdwidget, args)
+    if args["{state}"] == "Stop" then 
+        return " - | "
+    else 
+        return args["{Artist}"] .. ' - ' .. args["{Title}"] .. " | "
+    end
+end, 10)
+
 for s = 1, screen.count() do
     -- Create a promptbox for each screen
     mypromptbox[s] = awful.widget.prompt()
@@ -192,7 +207,10 @@ for s = 1, screen.count() do
 
     -- Widgets that are aligned to the right
     local right_layout = wibox.layout.fixed.horizontal()
-    if s == 1 then right_layout:add(wibox.widget.systray()) end
+    if s == 1 then 
+        right_layout:add(mpdwidget)
+        right_layout:add(wibox.widget.systray()) 
+    end
     right_layout:add(mytextclock)
     right_layout:add(mylayoutbox[s])
 
