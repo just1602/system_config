@@ -28,7 +28,7 @@
 	new = green bold
 
 [core]
-	editor = "vim"
+	editor = "nvim"
 	pager = "less"
 [alias]
 	cm = commit
