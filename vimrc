@@ -2,7 +2,7 @@
 
 filetype off
 
-set rtp+=$XDG_CONFIG_HOME/nvim/bundle/Vundle.vim
+set rtp+=~/.config/nvim/bundle/Vundle.vim
 call vundle#begin()
 
 " Plugin list
