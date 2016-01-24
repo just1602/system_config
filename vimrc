@@ -1,6 +1,5 @@
 " Vundle configuration
 
-set nocompatible
 filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -48,7 +47,6 @@ colorscheme spacegray
 set encoding=utf-8
 set fileencoding=utf-8
 set termencoding=utf-8
-set term=xterm
 
 " no backup or swap file
 set nobackup
@@ -61,9 +59,6 @@ set hlsearch
 set incsearch
 set ignorecase
 set smartcase
-
-" enable 256 colors
-set t_Co=256
 
 " tab setting
 set tabstop=4
@@ -85,6 +80,9 @@ autocmd FileType make setlocal noexpandtab
 " latex file configuration
 autocmd BufNewFile,BufRead *.tex setlocal spell spelllang=fr colorcolumn= textwidth=9999
 let g:tex_comment_nospell=1
+
+" markdown file configuration
+autocmd BufNewFile,BufRead *.md setlocal spell spelllang=fr colorcolumn= textwidth=9999
 
 " html file configuration"
 autocmd BufNewFile,BufRead *.html setlocal colorcolumn= textwidth=9999
