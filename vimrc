@@ -15,7 +15,7 @@ Plugin 'scrooloose/nerdtree'
 
 Plugin 'lervag/vim-latex'
 
-Plugin 'vim-scripts/AutoClose' 
+Plugin 'adelarsq/Vim-Autoclose'
 
 Plugin 'octol/vim-cpp-enhanced-highlight'
 
