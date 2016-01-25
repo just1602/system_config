@@ -68,7 +68,7 @@ rubypath=$(ruby -e 'print Gem.user_dir')
 if [[ "$OSTYPE" == linux* ]]; then
     export PATH="/usr/local/bin:/usr/local/sbin:${rubypath}/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
 else
-    export PATH="/opt/local/bin:/opt/local/sbin:/Users/justin/.rvm/bin:/usr/local/bin:/usr/local/sbin:/home/justin/.gem/ruby/2.3.0/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
+    export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 fi
 # export MANPATH="/usr/local/man:$MANPATH"
 
