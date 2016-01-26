@@ -29,6 +29,8 @@ Plugin 'ajh17/Spacegray.vim'
 
 Plugin 'scrooloose/syntastic'
 
+Plugin 'rust-lang/rust.vim'
+
 call vundle#end()
 filetype plugin indent on
 
@@ -117,3 +119,6 @@ else
     map <C-K> :pyf /usr/share/clang/clang-format.py<cr>
     imap <C-K> <c-o> :pyf /usr/share/clang/clang-format.py<cr>
 endif
+
+" rust stuff
+let g:rustfmt_autosave = 1
