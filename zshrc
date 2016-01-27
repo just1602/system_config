@@ -112,3 +112,6 @@ fi
 if [[ "$OSTYPE" == darwin* ]]; then
     export BROWSER='open'
 fi
+
+## markdown-pdf
+alias md2pdf='markdown-pdf --css-path ~/Dropbox/pdf.css --paper-format letter'
