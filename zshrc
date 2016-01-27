@@ -88,6 +88,7 @@ export VISUAL=$EDITOR
 export PAGER='less'
 
 alias vim='nvim'
+alias vimdiff='nvim -d'
 
 ## homebew stuff
 if [[ "$OSTYPE" == darwin* ]]; then
