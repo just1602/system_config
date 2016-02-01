@@ -115,3 +115,6 @@ fi
 
 ## markdown-pdf
 alias md2pdf='markdown-pdf --css-path ~/Dropbox/pdf.css --paper-format letter'
+
+## vim bindings
+bindkey -v
