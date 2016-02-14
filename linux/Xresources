@@ -1,6 +1,13 @@
 URxvt*geometry: 80x30
 URxvt*scrollBar: false
 
+URxvt.perl-ext-common: ...,tabbedex,...
+URxvt.tabbed.autohide: true
+
+URxvt.keysym.Control-t: perl:tabbedex:new_tab
+URxvt.keysym.Control-Tab: perl:tabbedex:next_tab
+URxvt.keysym.Control-Shift-Tab: perl:tabbedex:prev_tab
+
 Xft.dpi: 96
 Xft.antialias: true
 Xft.rgba: rgb
