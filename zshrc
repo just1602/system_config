@@ -118,3 +118,6 @@ alias md2pdf='markdown-pdf --css-path ~/Dropbox/pdf.css --paper-format letter'
 
 ## vim bindings
 bindkey -v
+
+## Meteo
+alias meteo='curl wttr.in/Québec'
