@@ -31,6 +31,10 @@ Plugin 'scrooloose/syntastic'
 
 Plugin 'rust-lang/rust.vim'
 
+Plugin 'vim-airline/vim-airline'
+
+Plugin 'tpope/vim-surround'
+
 call vundle#end()
 filetype plugin indent on
 
@@ -100,6 +104,10 @@ autocmd BufNewFile,BufRead *.text setlocal spell spelllang=fr colorcolumn= textw
 
 " sass file
 autocmd BufNewFile,BufRead *.scss setlocal filetype=sass tabstop=4 shiftwidth=4
+
+" Airline config
+set laststatus=2
+let g:airline_powerline_fonts = 1
 
 " NerdTree
 map <F2> :NERDTreeToggle<cr>
