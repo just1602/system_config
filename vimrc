@@ -33,6 +33,8 @@ Plugin 'rust-lang/rust.vim'
 
 Plugin 'vim-airline/vim-airline'
 
+Plugin 'vim-airline/vim-airline-themes'
+
 Plugin 'tpope/vim-surround'
 
 call vundle#end()
@@ -108,6 +110,7 @@ autocmd BufNewFile,BufRead *.scss setlocal filetype=sass tabstop=4 shiftwidth=4
 " Airline config
 set laststatus=2
 let g:airline_powerline_fonts = 1
+let g:airline_theme = "zenburn"
 
 " NerdTree
 map <F2> :NERDTreeToggle<cr>
