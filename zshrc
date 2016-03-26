@@ -121,3 +121,6 @@ bindkey -v
 
 ## Meteo
 alias meteo='curl wttr.in/Québec'
+
+## http server
+alias serve='python -m http.server'
