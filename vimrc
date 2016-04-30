@@ -47,6 +47,7 @@ syntax on
 set mouse=a
 set background=dark
 set number
+set relativenumber
 set autoindent
 set autowrite
 colorscheme spacegray
