@@ -30,6 +30,7 @@
 [core]
 	editor = "nvim"
 	pager = "less"
+	excludesfile = ~/.gitignore
 [alias]
 	cm = commit
 	cma = commit -a
