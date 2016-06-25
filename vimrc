@@ -37,6 +37,8 @@ Plugin 'vim-airline/vim-airline-themes'
 
 Plugin 'tpope/vim-surround'
 
+Plugin 'ledger/vim-ledger'
+
 call vundle#end()
 filetype plugin indent on
 
@@ -108,6 +110,9 @@ autocmd BufNewFile,BufRead *.text setlocal spell spelllang=fr colorcolumn= textw
 " sass file
 autocmd BufNewFile,BufRead *.scss setlocal filetype=sass tabstop=4 shiftwidth=4
 
+" ledger file
+autocmd BufNewFile,BufRead *.ledger setlocal filetype=ledger tabstop=4 shiftwidth=4
+
 " Airline config
 set laststatus=2
 let g:airline_powerline_fonts = 1
@@ -134,3 +139,8 @@ endif
 
 " rust stuff
 let g:rustfmt_autosave = 1
+
+" ledger-cli
+let g:ledger_maxwidth = 80
+let g:ledger_fillstring = '    -'
+let g:ledger_fold_blanks = 0
