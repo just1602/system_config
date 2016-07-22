@@ -125,5 +125,6 @@ alias meteo='curl wttr.in/Québec'
 ## http server
 alias serve='python -m http.server'
 
-if [["$OSTYPE" == linux ]]; then
+if [[ "$OSTYPE" == linux* ]]; then
     alias xclip='xclip -selection c'
+fi
