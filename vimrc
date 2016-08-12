@@ -142,4 +142,4 @@ let g:ledger_fold_blanks = 0
 let g:clang_format#style_options = {
     \ "IndentWidth" : 4,
     \ "AllowShortFunctionsOnASingleLine" : "false",
-    \ "Standard" : "C++14" }
+    \ "Standard" : "C++11" }
