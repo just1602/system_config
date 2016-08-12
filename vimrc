@@ -39,6 +39,8 @@ Plugin 'tpope/vim-surround'
 
 Plugin 'ledger/vim-ledger'
 
+Plugin 'rhysd/vim-clang-format'
+
 call vundle#end()
 filetype plugin indent on
 
@@ -128,15 +130,6 @@ map <F4> :TlistToggle<cr>
 let g:cpp_class_scope_highlight = 1
 let g:cpp_experimental_template_highlight = 1
 
-" clang-format
-if has("mac")
-    map <C-K> :pyf /usr/local/share/clang/clang-format.py<cr>
-    imap <C-K> <c-o> :pyf /usrlocal/share/clang/clang-format.py<cr>
-else
-    map <C-K> :pyf /usr/share/clang/clang-format.py<cr>
-    imap <C-K> <c-o> :pyf /usr/share/clang/clang-format.py<cr>
-endif
-
 " rust stuff
 let g:rustfmt_autosave = 1
 
@@ -144,3 +137,9 @@ let g:rustfmt_autosave = 1
 let g:ledger_maxwidth = 80
 let g:ledger_fillstring = '    -'
 let g:ledger_fold_blanks = 0
+
+" vim-clang-format
+let g:clang_format#style_options = {
+    \ "IndentWidth" : 4,
+    \ "AllowShortFunctionsOnASingleLine" : "false",
+    \ "Standard" : "C++14" }
