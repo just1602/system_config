@@ -128,3 +128,8 @@ alias serve='python -m http.server'
 if [[ "$OSTYPE" == linux* ]]; then
     alias xclip='xclip -selection c'
 fi
+
+# fzf stuff
+source /usr/share/fzf/completion.zsh
+source /usr/share/fzf/key-bindings.zsh
+source /etc/profile.d/fzf-extras.zsh
