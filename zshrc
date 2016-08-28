@@ -130,8 +130,11 @@ if [[ "$OSTYPE" == linux* ]]; then
 fi
 
 # fzf stuff
-source /usr/share/fzf/completion.zsh
-source /usr/share/fzf/key-bindings.zsh
 if [[ "$OSTYPE" == linux* ]]; then
+    source /usr/share/fzf/completion.zsh
+    source /usr/share/fzf/key-bindings.zsh
     source /etc/profile.d/fzf-extras.zsh
 fi
+
+# fzf on osx
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
