@@ -132,6 +132,6 @@ fi
 # fzf stuff
 source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/key-bindings.zsh
-if [[ "$OSTYPE" == darwin* ]]; then
+if [[ "$OSTYPE" == linux* ]]; then
     source /etc/profile.d/fzf-extras.zsh
 fi
