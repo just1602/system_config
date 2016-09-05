@@ -139,7 +139,7 @@ let g:ledger_fillstring = '    -'
 let g:ledger_fold_blanks = 0
 
 " vim-clang-format
-let g:clang_format#style_options = {
-    \ "IndentWidth" : 4,
-    \ "AllowShortFunctionsOnASingleLine" : "false",
-    \ "Standard" : "C++11" }
+"let g:clang_format#style_options = {
+"    \ "IndentWidth" : 4,
+"    \ "AllowShortFunctionsOnASingleLine" : "false",
+"    \ "Standard" : "C++11" }
