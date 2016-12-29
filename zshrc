@@ -1,6 +1,6 @@
 # Path to your oh-my-zsh installation.
 if [[ "$OSTYPE" == linux* ]]; then
-    export ZSH=/home/justin/.oh-my-zsh
+    export ZSH=~/.oh-my-zsh
 else
     export ZSH=/Users/justin/.oh-my-zsh
 fi
