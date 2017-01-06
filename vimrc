@@ -9,17 +9,11 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 
-Plugin 'tpope/vim-fugitive.git'
-
-Plugin 'scrooloose/nerdtree'
-
 Plugin 'lervag/vim-latex'
 
-Plugin 'adelarsq/Vim-Autoclose'
+Plugin 'anyakichi/Vim-Autoclose'
 
 Plugin 'octol/vim-cpp-enhanced-highlight'
-
-Plugin 'vim-scripts/taglist.vim'
 
 Plugin 'hail2u/vim-css3-syntax'
 
@@ -55,6 +49,9 @@ set relativenumber
 set autoindent
 set autowrite
 colorscheme spacegray
+
+" allow recursive search
+set path+=**
 
 " encoding configuration
 set encoding=utf-8
@@ -120,11 +117,13 @@ set laststatus=2
 let g:airline_powerline_fonts = 1
 let g:airline_theme = "zenburn"
 
-" NerdTree
-map <F2> :NERDTreeToggle<cr>
-
-" TagList
-map <F4> :TlistToggle<cr>
+" netrw config
+let g:netrw_banner = 0
+let g:netrw_browse_split = 4
+let g:netrw_altv = 1
+let g:netrw_liststyle = 3
+let g:netrw_list_hide = netrw_gitignore#Hide()
+let g:netrw_list_hide .= ',\(^\|\s\s\)\zs\.\S\+'
 
 " cpp settings
 let g:cpp_class_scope_highlight = 1
@@ -137,9 +136,3 @@ let g:rustfmt_autosave = 1
 let g:ledger_maxwidth = 80
 let g:ledger_fillstring = '    -'
 let g:ledger_fold_blanks = 0
-
-" vim-clang-format
-"let g:clang_format#style_options = {
-"    \ "IndentWidth" : 4,
-"    \ "AllowShortFunctionsOnASingleLine" : "false",
-"    \ "Standard" : "C++11" }
