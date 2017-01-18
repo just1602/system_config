@@ -113,9 +113,6 @@ if [[ "$OSTYPE" == darwin* ]]; then
     export BROWSER='open'
 fi
 
-## markdown-pdf
-alias md2pdf='markdown-pdf --css-path ~/Dropbox/pdf.css --paper-format letter'
-
 ## vim bindings
 bindkey -v
 
@@ -124,6 +121,9 @@ alias meteo='curl wttr.in/Québec'
 
 ## http server
 alias serve='python -m http.server'
+
+## emacs
+alias emacs='emacs -nw'
 
 if [[ "$OSTYPE" == linux* ]]; then
     alias xclip='xclip -selection c'
