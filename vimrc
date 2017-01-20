@@ -19,8 +19,6 @@ Plugin 'hail2u/vim-css3-syntax'
 
 Plugin 'othree/html5.vim'
 
-Plugin 'ajh17/Spacegray.vim'
-
 Plugin 'scrooloose/syntastic'
 
 Plugin 'rust-lang/rust.vim'
@@ -35,6 +33,8 @@ Plugin 'ledger/vim-ledger'
 
 Plugin 'rhysd/vim-clang-format'
 
+Plugin 'mhinz/vim-janah'
+
 call vundle#end()
 filetype plugin indent on
 
@@ -48,7 +48,7 @@ set number
 set relativenumber
 set autoindent
 set autowrite
-colorscheme spacegray
+colorscheme janah
 
 " allow recursive search
 set path+=**
