@@ -46,3 +46,5 @@
 	user = just1602
 [push]
 	default = current
+[diff "gpg"]
+	textconv = gpg --no-tty --decrypt
