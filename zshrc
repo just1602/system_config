@@ -95,12 +95,9 @@ if [[ "$OSTYPE" == darwin* ]]; then
     source $HOME/.secret_tokens
 fi
 
-## rvm stuff
 if [[ "$OSTYPE" == linux* ]]; then
     export GEM_HOME=${rubypath}
     export GEM_PATH=$GEM_HOME
-else
-    [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 fi
 
 ## Add XDG_HOME_CONFIG for neovim
