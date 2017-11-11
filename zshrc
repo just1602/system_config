@@ -98,6 +98,8 @@ fi
 if [[ "$OSTYPE" == linux* ]]; then
     export GEM_HOME=${rubypath}
     export GEM_PATH=$GEM_HOME
+else
+    eval "$(rbenv init -)"
 fi
 
 ## Add XDG_HOME_CONFIG for neovim
