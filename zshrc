@@ -63,10 +63,8 @@ fi
 
 # User configuration
 
-rubypath=$(ruby -e 'print Gem.user_dir')
-
 if [[ "$OSTYPE" == linux* ]]; then
-    export PATH="/usr/local/bin:/usr/local/sbin:${rubypath}/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
+    export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
 else
     export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 fi
@@ -95,12 +93,7 @@ if [[ "$OSTYPE" == darwin* ]]; then
     source $HOME/.secret_tokens
 fi
 
-if [[ "$OSTYPE" == linux* ]]; then
-    export GEM_HOME=${rubypath}
-    export GEM_PATH=$GEM_HOME
-else
-    eval "$(rbenv init -)"
-fi
+eval "$(rbenv init -)"
 
 ## Add XDG_HOME_CONFIG for neovim
 if [[ "$OSTYPE" == linux* ]]; then
