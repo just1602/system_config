@@ -9,7 +9,7 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 
-Plugin 'lervag/vim-latex'
+Plugin 'lervag/vimtex'
 
 Plugin 'anyakichi/Vim-Autoclose'
 
