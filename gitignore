@@ -6,6 +6,7 @@
 *.pyc
 *.egg-info
 venv/
+.env
 
 # C/C++
 *.o
@@ -20,3 +21,6 @@ build/
 *.pdf
 *.fls
 *.fdb_latexmk
+
+# jetbrains folder
+.idea/
