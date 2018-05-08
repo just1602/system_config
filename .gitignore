@@ -2,5 +2,10 @@
 *~
 *.log
 *.bak
-emacs.d/ac-comphist.dat
 vim/.netrwhist
+
+# emacs stuff
+emacs.d/ac-comphist.dat
+emacs.d/elpa
+emacs.d/snippets
+emacs.d/auto-save-list
