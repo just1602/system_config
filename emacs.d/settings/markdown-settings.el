@@ -4,6 +4,7 @@
   :mode (("README\\.md\\'" . gfm-mode)
          ("\\.md\\'" . markdown-mode)
          ("\\.markdown\\'" . markdown-mode))
-  :init (setq markdown-command "multimarkdown"))
+  ;; gem install kramdown to me it work
+  :init (setq markdown-command "kramdown"))
 
 (provide 'markdown-settings)
