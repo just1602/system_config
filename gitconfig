@@ -32,8 +32,8 @@
 	pager = "less"
 	excludesfile = ~/.gitignore
 [alias]
-	cm = commit
-	cma = commit -a
+	cm = commit -v
+	cma = commit -av
 	st = status -sb
 	co = checkout
 	br = branch -av
