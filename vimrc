@@ -15,6 +15,8 @@ Plugin 'cakebaker/scss-syntax.vim'
 
 Plugin 'tpope/vim-rails'
 
+Plugin 'posva/vim-vue'
+
 Plugin 'ledger/vim-ledger'
 
 Plugin 'rhysd/vim-clang-format'
