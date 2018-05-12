@@ -17,6 +17,8 @@ Plugin 'tpope/vim-rails'
 
 Plugin 'posva/vim-vue'
 
+Plugin 'lervag/vimtex'
+
 Plugin 'ledger/vim-ledger'
 
 Plugin 'rhysd/vim-clang-format'
