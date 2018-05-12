@@ -13,6 +13,8 @@ Plugin 'vim-scripts/Auto-Pairs'
 
 Plugin 'cakebaker/scss-syntax.vim'
 
+Plugin 'tpope/vim-rails'
+
 Plugin 'ledger/vim-ledger'
 
 Plugin 'rhysd/vim-clang-format'
