@@ -88,6 +88,9 @@ export PAGER='less'
 alias vim='nvim'
 alias vimdiff='nvim -d'
 
+# ctags
+alias ctags='ctags -R .'
+
 ## homebew stuff
 if [[ "$OSTYPE" == darwin* ]]; then
     source $HOME/.secret_tokens

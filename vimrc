@@ -9,25 +9,9 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 
-Plugin 'lervag/vimtex'
+Plugin 'vim-scripts/Auto-Pairs'
 
-Plugin 'anyakichi/Vim-Autoclose'
-
-Plugin 'octol/vim-cpp-enhanced-highlight'
-
-Plugin 'hail2u/vim-css3-syntax'
-
-Plugin 'othree/html5.vim'
-
-Plugin 'scrooloose/syntastic'
-
-Plugin 'rust-lang/rust.vim'
-
-Plugin 'vim-airline/vim-airline'
-
-Plugin 'vim-airline/vim-airline-themes'
-
-Plugin 'tpope/vim-surround'
+Plugin 'cakebaker/scss-syntax.vim'
 
 Plugin 'ledger/vim-ledger'
 
@@ -39,7 +23,6 @@ call vundle#end()
 filetype plugin indent on
 
 " Personnal config
-set omnifunc=syntaxcomplete#Complete
 filetype indent on
 syntax on
 set mouse=a
@@ -111,19 +94,6 @@ autocmd BufNewFile,BufRead *.scss setlocal filetype=sass tabstop=4 shiftwidth=4
 
 " ledger file
 autocmd BufNewFile,BufRead *.ledger setlocal filetype=ledger tabstop=4 shiftwidth=4
-
-" Airline config
-set laststatus=2
-let g:airline_powerline_fonts = 1
-let g:airline_theme = "zenburn"
-
-" netrw config
-let g:netrw_banner = 0
-let g:netrw_browse_split = 4
-let g:netrw_altv = 1
-let g:netrw_liststyle = 3
-let g:netrw_list_hide = netrw_gitignore#Hide()
-let g:netrw_list_hide .= ',\(^\|\s\s\)\zs\.\S\+'
 
 " cpp settings
 let g:cpp_class_scope_highlight = 1
