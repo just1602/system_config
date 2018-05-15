@@ -9,6 +9,8 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 
+Plugin 'machakann/vim-highlightedyank'
+
 Plugin 'vim-scripts/Auto-Pairs'
 
 Plugin 'cakebaker/scss-syntax.vim'
@@ -18,6 +20,10 @@ Plugin 'tpope/vim-rails'
 Plugin 'posva/vim-vue'
 
 Plugin 'lervag/vimtex'
+
+Plugin 'vim-airline/vim-airline'
+
+Plugin 'tpope/vim-fugitive'
 
 Plugin 'ledger/vim-ledger'
 
@@ -37,10 +43,22 @@ set number
 set relativenumber
 set autoindent
 set autowrite
+set inccommand=nosplit
+set laststatus=2
 colorscheme janah
 
 " allow recursive search
 set path+=**
+set wildmenu
+
+" Ignore in recursive search
+set wildignore+=**/node_modules/**
+set wildignore+=**/logs/**
+set wildignore+=**/log/**
+set wildignore+=**/cov/**
+set wildignore+=**/coverage/**
+set wildignore+=**/vendor/**
+set wildignore+=**/bower_components/**
 
 " encoding configuration
 set encoding=utf-8
@@ -112,3 +130,9 @@ let g:rustfmt_autosave = 1
 let g:ledger_maxwidth = 80
 let g:ledger_fillstring = '    -'
 let g:ledger_fold_blanks = 0
+
+" vimtex config
+let g:vimtex_compiler_progname = 'nvr'
+
+" airline
+let g:airline_powerline_fonts = 1
