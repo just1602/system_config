@@ -59,6 +59,7 @@ set wildignore+=**/cov/**
 set wildignore+=**/coverage/**
 set wildignore+=**/vendor/**
 set wildignore+=**/bower_components/**
+set wildignore+=**/__pycache__/**
 
 " encoding configuration
 set encoding=utf-8
