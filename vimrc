@@ -83,6 +83,9 @@ set shiftwidth=4
 set smarttab
 set expandtab
 
+" jump into code implementation
+nnoremap <c-s> <c-]>
+
 " make backspace working
 set backspace=indent,eol,start
 
