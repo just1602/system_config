@@ -48,3 +48,5 @@
 	default = current
 [diff "gpg"]
 	textconv = gpg --no-tty --decrypt
+[pager]
+    branch = false
