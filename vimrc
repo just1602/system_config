@@ -43,6 +43,7 @@ set number
 set relativenumber
 set autoindent
 set autowrite
+set autochdir
 set inccommand=nosplit
 set laststatus=2
 colorscheme janah
