@@ -107,10 +107,10 @@ let g:tex_comment_nospell=1
 autocmd BufNewFile,BufRead *.md setlocal spell spelllang=fr colorcolumn= textwidth=9999
 
 " html file configuration"
-autocmd BufNewFile,BufRead *.html setlocal colorcolumn= textwidth=9999
+autocmd BufNewFile,BufRead *.html setlocal colorcolumn= textwidth=9999 tabstop=2 shiftwidth=2
 
 " css file configuration"
-autocmd BufNewFile,BufRead *.css setlocal tabstop=4 shiftwidth=4
+autocmd BufNewFile,BufRead *.css setlocal tabstop=2 shiftwidth=2
 
 " markown file configuration
 autocmd BufNewFile,BufRead *.md setlocal filetype=markdown colorcolumn= textwidth=9999
@@ -119,10 +119,13 @@ autocmd BufNewFile,BufRead *.md setlocal filetype=markdown colorcolumn= textwidt
 autocmd BufNewFile,BufRead *.text setlocal spell spelllang=fr colorcolumn= textwidth=9999
 
 " sass file
-autocmd BufNewFile,BufRead *.scss setlocal filetype=sass tabstop=4 shiftwidth=4
+autocmd BufNewFile,BufRead *.scss setlocal filetype=sass tabstop=2 shiftwidth=2
 
 " ledger file
 autocmd BufNewFile,BufRead *.ledger setlocal filetype=ledger tabstop=4 shiftwidth=4
+
+" ruby file
+autocmd BufNewFile,BufRead *.rb setlocal filetype=ruby tabstop=2 shiftwidth=2
 
 " cpp settings
 let g:cpp_class_scope_highlight = 1
