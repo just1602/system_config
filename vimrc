@@ -100,26 +100,23 @@ let &colorcolumn="80,".join(range(80, 380),",")
 autocmd FileType make setlocal noexpandtab
 
 " latex file configuration
-autocmd BufNewFile,BufRead *.tex setlocal spell spelllang=fr colorcolumn= textwidth=9999
+autocmd BufNewFile,BufRead *.tex setlocal filetype=tex spell spelllang=fr colorcolumn= textwidth=9999
 let g:tex_comment_nospell=1
 
 " markdown file configuration
-autocmd BufNewFile,BufRead *.md setlocal spell spelllang=fr colorcolumn= textwidth=9999
+autocmd FileType markdown setlocal spell spelllang=fr colorcolumn= textwidth=9999
 
 " html file configuration"
-autocmd BufNewFile,BufRead *.html setlocal colorcolumn= textwidth=9999 tabstop=2 shiftwidth=2
+autocmd FileType html,eruby setlocal colorcolumn= textwidth=9999 tabstop=2 shiftwidth=2
 
 " css file configuration"
-autocmd BufNewFile,BufRead *.css setlocal tabstop=2 shiftwidth=2
-
-" markown file configuration
-autocmd BufNewFile,BufRead *.md setlocal filetype=markdown colorcolumn= textwidth=9999
+autocmd FileType css setlocal tabstop=2 shiftwidth=2
 
 " textile file configuration
-autocmd BufNewFile,BufRead *.text setlocal spell spelllang=fr colorcolumn= textwidth=9999
+autocmd FileType text setlocal spell spelllang=fr colorcolumn= textwidth=9999
 
 " sass file
-autocmd BufNewFile,BufRead *.scss setlocal filetype=sass tabstop=2 shiftwidth=2
+autocmd FileType scss setlocal filetype=sass tabstop=2 shiftwidth=2
 
 " ledger file
 autocmd BufNewFile,BufRead *.ledger setlocal filetype=ledger tabstop=4 shiftwidth=4
