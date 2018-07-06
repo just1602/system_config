@@ -88,8 +88,8 @@ export PAGER='less'
 alias vim='nvim'
 alias vimdiff='nvim -d'
 
-# ctags
-alias ctags='ctags -R .'
+alias diff='diff --color=always -u'
+
 
 ## homebew stuff
 if [[ "$OSTYPE" == darwin* ]]; then
