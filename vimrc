@@ -9,6 +9,8 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 
+Plugin 'scrooloose/nerdtree'
+
 Plugin 'machakann/vim-highlightedyank'
 
 Plugin 'vim-scripts/Auto-Pairs'
@@ -141,3 +143,11 @@ let g:vimtex_compiler_progname = 'nvr'
 
 " airline
 let g:airline_powerline_fonts = 1
+
+" nerdtree
+" start vim with nerdtree if no file specified
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
+" use Ctrl+n to toggle NerdTree
+map <C-n> :NERDTreeToggle<CR>
