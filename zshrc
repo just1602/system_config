@@ -87,6 +87,8 @@ export PAGER='less'
 
 alias vim='nvim'
 alias vimdiff='nvim -d'
+alias v='vim -p'
+alias vo='vim -O'
 
 alias diff='diff --color=always -u'
 
@@ -125,3 +127,9 @@ fi
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Devel
 source /usr/bin/virtualenvwrapper.sh
+
+# custom functions
+mkcd ()
+{
+    mkdir -p "$1" && builtin cd "$1"
+}
