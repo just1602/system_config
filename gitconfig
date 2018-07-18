@@ -42,6 +42,8 @@
     lg = log --graph --oneline --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%aN>%Creset' 
 	di = diff
 	re = remote -v
+    unstage = reset HEAD --
+    uncommit = reset --soft HEAD~
 [github]
 	user = just1602
 [push]
