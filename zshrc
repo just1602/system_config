@@ -85,12 +85,21 @@ fi
 export VISUAL=$EDITOR
 export PAGER='less'
 
+# aliases
+
 alias vim='nvim'
 alias vimdiff='nvim -d'
 alias v='vim -p'
 alias vo='vim -O'
+alias g='git'
 
 alias diff='diff --color=always -u'
+alias serve='python -m http.server'
+alias feh='feh -F'
+
+if [[ "$OSTYPE" == linux* ]]; then
+    alias xclip='xclip -selection c'
+fi
 
 
 ## homebew stuff
