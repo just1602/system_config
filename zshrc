@@ -119,21 +119,22 @@ if [[ "$OSTYPE" == darwin* ]]; then
     export BROWSER='open'
 fi
 
-## vim bindings
+## shell vim bindings
 bindkey -v
 
-## Meteo
-alias meteo='curl wttr.in/Québec'
-
-## http server
-alias serve='python -m http.server'
-
-if [[ "$OSTYPE" == linux* ]]; then
-    alias xclip='xclip -selection c'
-fi
-
 # custom functions
+
 mkcd ()
 {
     mkdir -p "$1" && builtin cd "$1"
+}
+
+pytags ()
+{
+    if [ -z ${VIRTUAL_ENV} ]; then
+        echo 'You need to be in a virtualenvwrapper env to use pytags'
+        return
+    fi
+
+    ctags -R --languages=python "$VIRTUAL_ENV/lib/python3.6/site-packages" "$(cat "$VIRTUAL_ENV/$VIRTUALENVWRAPPER_PROJECT_FILENAME")"
 }
