@@ -136,5 +136,5 @@ pytags ()
         return
     fi
 
-    ctags -R --languages=python "$VIRTUAL_ENV/lib/python3.6/site-packages" "$(cat "$VIRTUAL_ENV/$VIRTUALENVWRAPPER_PROJECT_FILENAME")"
+    ctags -R --languages=python "$VIRTUAL_ENV/lib/" "$(cat "$VIRTUAL_ENV/$VIRTUALENVWRAPPER_PROJECT_FILENAME")"
 }
