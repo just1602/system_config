@@ -1,9 +1,5 @@
 # Path to your oh-my-zsh installation.
-if [[ "$OSTYPE" == linux* ]]; then
-    export ZSH=~/.oh-my-zsh
-else
-    export ZSH=/Users/justin/.oh-my-zsh
-fi
+export ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -73,7 +69,7 @@ fi
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
- export LANG=en_CA.UTF-8
+export LANG=en_CA.UTF-8
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
