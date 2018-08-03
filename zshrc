@@ -53,7 +53,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git virtualenv tmux python django virtualenvwrapper)
+plugins=(git virtualenv tmux python django)
 
 if [[ "$OSTYPE" == linux* ]]; then
     plugins+=(archlinux)
@@ -121,6 +121,9 @@ fi
 
 ## shell vim bindings
 bindkey -v
+
+export WORKON_HOME=$HOME/.virtualenvs
+source /usr/bin/virtualenvwrapper_lazy.sh
 
 # custom functions
 
