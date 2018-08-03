@@ -96,7 +96,6 @@ alias g='git'
 alias diff='diff --color=always -u'
 alias serve='python -m http.server'
 alias feh='feh -F'
-alias ssh='TERM=rxvt-256color ssh'
 
 if [[ "$OSTYPE" == linux* ]]; then
     alias xclip='xclip -selection c'
