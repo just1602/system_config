@@ -24,8 +24,8 @@
 [color "diff"]
 	meta = blue bold
 	frag = magenta bold
-	old = red strike
-	new = green italic
+	old = red
+	new = green
 
 [core]
 	editor = "nvim"
