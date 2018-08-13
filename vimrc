@@ -31,7 +31,7 @@ Plugin 'ledger/vim-ledger'
 
 Plugin 'rhysd/vim-clang-format'
 
-Plugin 'mhinz/vim-janah'
+Plugin 'haishanh/night-owl.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -48,7 +48,7 @@ set autowrite
 set autochdir
 set inccommand=nosplit
 set laststatus=2
-colorscheme janah
+colorscheme night-owl
 
 " allow recursive search
 set path+=**
