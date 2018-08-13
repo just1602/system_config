@@ -22,30 +22,38 @@ URxvt*boldFont: xft:DejaVu Sans Mono for Powerline:style=bold:antialias=true:pix
 URxvt*italicFont: xft:DejaVu Sans Mono for Powerline:style=italic:antialias=true:pixelsize=12
 URxvt*boldItalicFont: xft:DejaVu Sans Mono for Powerline:style=bolditalic:antialias=true:pixelsize=12
 
-! tangoesque scheme
- *background: #191E29
- *foreground: #FFFFFF
-! ! Black (not tango) + DarkGrey
- *color0:  #000000
- *color8:  #555753
-! ! DarkRed + Red
- *color1:  #ff6565
- *color9:  #ff8d8d
-! ! DarkGreen + Green
- *color2:  #93d44f
- *color10: #c8e7a8
-! ! DarkYellow + Yellow
- *color3:  #eab93d
- *color11: #ffc123
-! ! DarkBlue + Blue
- *color4:  #204a87
- *color12: #3465a4
-! ! DarkMagenta + Magenta
- *color5:  #ce5c00
- *color13: #f57900
-! !DarkCyan + Cyan (both not tango)
- *color6:  #89b6e2
- *color14: #46a4ff
-! ! LightGrey + White
- *color7:  #cccccc
- *color15: #ffffff
+*background: #181818
+*foreground: #c0c0c0
+*cursorColor: #93a1a1
+
+!! black dark/light
+*color0: #121212
+*color8: #2e3436
+
+!! red dark/light
+*color1: #a35b66
+*color9: #ab6b74
+
+!! green dark/light
+*color2: #99ab6f
+*color10: #acb972
+
+!! yellow dark/light
+*color3: #ca9733
+*color11: #ccaa69
+
+!! blue dark/light
+*color4: #495d6e
+*color12: #687987
+
+!! magenta dark/light
+*color5: #825969
+*color13: #977381
+
+!! cyan dark/light
+*color6: #839191
+*color14: #98a4a4
+
+!! white dark/light
+*color7: #e0e0e0
+*color15: #e5e5e5
