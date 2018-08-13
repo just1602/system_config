@@ -14,8 +14,6 @@ Xft.rgba: rgb
 Xft.hinting: true
 Xft.hintstyle: hintfull
 
-urxvt*depth: 32
-urxvt*background: rgba:0000/0000/0200/c800
 
 URxvt.letterSpace: -1
 
@@ -25,8 +23,8 @@ URxvt*italicFont: xft:DejaVu Sans Mono for Powerline:style=italic:antialias=true
 URxvt*boldItalicFont: xft:DejaVu Sans Mono for Powerline:style=bolditalic:antialias=true:pixelsize=12
 
 ! tangoesque scheme
- *background: #111111
- *foreground: #babdb6
+ *background: #191E29
+ *foreground: #FFFFFF
 ! ! Black (not tango) + DarkGrey
  *color0:  #000000
  *color8:  #555753
