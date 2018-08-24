@@ -88,6 +88,7 @@ alias vimdiff='nvim -d'
 alias v='vim -p'
 alias vo='vim -O'
 alias g='git'
+alias c='bat'
 
 alias diff='diff --color=always -u'
 alias serve='python -m http.server'
