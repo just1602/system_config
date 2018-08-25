@@ -82,8 +82,8 @@ set ignorecase
 set smartcase
 
 " tab setting
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set smarttab
 set expandtab
 
@@ -104,25 +104,19 @@ autocmd BufNewFile,BufRead *.tex setlocal filetype=tex spell spelllang=fr colorc
 let g:tex_comment_nospell=1
 
 " markdown file configuration
-autocmd FileType markdown setlocal spell spelllang=fr colorcolumn= textwidth=9999
+autocmd FileType markdown setlocal spell spelllang=fr textwidth=9999
 
 " html file configuration"
-autocmd FileType html,eruby setlocal colorcolumn= textwidth=9999 tabstop=2 shiftwidth=2
-
-" css file configuration"
-autocmd FileType css setlocal tabstop=2 shiftwidth=2
+autocmd FileType html,eruby setlocal textwidth=9999
 
 " textile file configuration
 autocmd FileType text setlocal spell spelllang=fr colorcolumn= textwidth=9999
 
-" sass file
-autocmd FileType scss setlocal filetype=sass tabstop=2 shiftwidth=2
+" python 4 space tabs
+autocmd FileType python setlocal tabstop=4 shiftwidth=4
 
 " ledger file
-autocmd BufNewFile,BufRead *.ledger setlocal filetype=ledger tabstop=4 shiftwidth=4
-
-" ruby file
-autocmd BufNewFile,BufRead *.rb setlocal filetype=ruby tabstop=2 shiftwidth=2
+autocmd BufNewFile,BufRead *.ledger setlocal filetype=ledger
 
 " cpp settings
 let g:cpp_class_scope_highlight = 1
