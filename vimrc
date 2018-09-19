@@ -17,6 +17,8 @@ Plugin 'vim-scripts/Auto-Pairs'
 
 Plugin 'cakebaker/scss-syntax.vim'
 
+Plugin 'isRuslan/vim-es6'
+
 Plugin 'tpope/vim-rails'
 
 Plugin 'posva/vim-vue'
