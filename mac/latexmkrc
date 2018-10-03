@@ -1,4 +1,0 @@
-$pdf_mode = 1;
-$bibtex_use = 2;
-$pdf_previewer = "open -a Skim";
-$clean_ext = "paux lox pdfsync out";
