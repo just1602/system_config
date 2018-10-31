@@ -21,17 +21,15 @@ Plugin 'isRuslan/vim-es6'
 
 Plugin 'tpope/vim-rails'
 
-Plugin 'posva/vim-vue'
+Plugin 'tpope/vim-fugitive'
+
+Plugin 'tpope/vim-endwise'
+
+Plugin 'tpope/vim-dispatch'
 
 Plugin 'lervag/vimtex'
 
 Plugin 'vim-airline/vim-airline'
-
-Plugin 'tpope/vim-fugitive'
-
-Plugin 'ledger/vim-ledger'
-
-Plugin 'rhysd/vim-clang-format'
 
 Plugin 'dracula/vim'
 
