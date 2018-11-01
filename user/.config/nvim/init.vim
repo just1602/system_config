@@ -2,38 +2,35 @@
 
 filetype off
 
-set rtp+=~/.config/nvim/bundle/Vundle.vim
-call vundle#begin()
+call plug#begin('~/.local/share/nvim/plugged')
 
-" Plugin list
+" Plug list
 
-Plugin 'gmarik/Vundle.vim'
+Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
 
-Plugin 'scrooloose/nerdtree'
+Plug 'machakann/vim-highlightedyank'
 
-Plugin 'machakann/vim-highlightedyank'
+Plug 'vim-scripts/Auto-Pairs'
 
-Plugin 'vim-scripts/Auto-Pairs'
+Plug 'cakebaker/scss-syntax.vim', {'for': 'scss'}
 
-Plugin 'cakebaker/scss-syntax.vim'
+Plug 'isRuslan/vim-es6'
 
-Plugin 'isRuslan/vim-es6'
+Plug 'tpope/vim-rails'
 
-Plugin 'tpope/vim-rails'
+Plug 'tpope/vim-fugitive'
 
-Plugin 'tpope/vim-fugitive'
+Plug 'tpope/vim-endwise'
 
-Plugin 'tpope/vim-endwise'
+Plug 'tpope/vim-dispatch'
 
-Plugin 'tpope/vim-dispatch'
+Plug 'lervag/vimtex', {'for': 'tex'}
 
-Plugin 'lervag/vimtex'
+Plug 'vim-airline/vim-airline'
 
-Plugin 'vim-airline/vim-airline'
+Plug 'dracula/vim'
 
-Plugin 'dracula/vim'
-
-call vundle#end()
+call plug#end()
 filetype plugin indent on
 
 " Personnal config
