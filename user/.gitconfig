@@ -47,8 +47,6 @@
 	re = remote -v
     unstage = reset HEAD --
     uncommit = reset --soft HEAD~
-[github]
-	user = just1602
 [push]
 	default = current
 [diff "gpg"]
