@@ -48,6 +48,7 @@ set autowrite
 set autochdir
 set inccommand=nosplit
 set laststatus=2
+set scrolloff=1
 colorscheme dracula
 
 " allow recursive search
