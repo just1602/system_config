@@ -42,11 +42,12 @@
   bd = branch -d
 	ps = push
 	pu = pull
-    lg = log --graph --oneline --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%aN>%Creset' 
+  lg = log --graph --oneline --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%aN>%Creset' 
 	di = diff
 	re = remote -v
-    unstage = reset HEAD --
-    uncommit = reset --soft HEAD~
+  unstage = reset HEAD --
+  uncommit = reset --soft HEAD~
+  stash = stash -u
 [push]
 	default = current
 [diff "gpg"]
