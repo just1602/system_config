@@ -4,7 +4,7 @@ filetype off
 
 call plug#begin('~/.local/share/nvim/plugged')
 
-Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'machakann/vim-highlightedyank'
 Plug 'vim-scripts/Auto-Pairs'
 Plug 'cakebaker/scss-syntax.vim', {'for': 'scss'}
@@ -13,6 +13,9 @@ Plug 'tpope/vim-rails'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-dispatch'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-commentary'
 Plug 'lervag/vimtex', {'for': 'tex'}
 Plug 'vim-airline/vim-airline'
 Plug 'dracula/vim'
@@ -76,8 +79,6 @@ let mapleader = "\<Space>"
 " quit when I accidently type :Q
 command! Q q
 
-map <C-n> :NERDTreeToggle<CR>
-
 " map j to gj and k to gk to browse wrapped line as normal line
 nmap j gj
 nmap k gk
@@ -137,3 +138,7 @@ let g:vimtex_compiler_progname = 'nvr'
 
 " airline
 let g:airline_powerline_fonts = 1
+
+" tel Ctrl-P to use ag and to don't do caching
+let g:ctrlp_user_command = 'ag %s -l --hidden --nocolor -g ""'
+let g:ctrlp_use_caching = 0
