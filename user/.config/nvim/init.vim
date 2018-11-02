@@ -16,7 +16,6 @@ Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-commentary'
-Plug 'lervag/vimtex', {'for': 'tex'}
 Plug 'vim-airline/vim-airline'
 Plug 'dracula/vim'
 
