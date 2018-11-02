@@ -17,8 +17,7 @@ Plug 'lervag/vimtex', {'for': 'tex'}
 Plug 'vim-airline/vim-airline'
 Plug 'dracula/vim'
 
-call plug#end()
-
+call plug#end() 
 syntax on
 set mouse=a
 set background=dark
@@ -74,23 +73,31 @@ set backspace=indent,eol,start
 " Use the space key as our leader. Put this near the top of your vimrc
 let mapleader = "\<Space>"
 
-" make file don't expendtab
+" quit when I accidently type :Q
+command! Q q
 
 map <C-n> :NERDTreeToggle<CR>
 
+" map j to gj and k to gk to browse wrapped line as normal line
 nmap j gj
 nmap k gk
 
+" Use Ctrl-l to clear the search highlight
+nmap <C-l> :nohl<cr>
+
+" use kl and lk as ESC to avoid reaching for ESC key
 imap kl <esc>
 imap lk <esc>
 
 " jump into code implementation
 nnoremap <c-s> <c-]>
 
+" some mapping to easily edit the init.vim file
 nmap <leader>vi :tabe $MYVIMRC<cr>
 nmap <leader>so :source $MYVIMRC<cr>
 
-nmap <leader>r :Dispatch bin/rspec<cr>
+" an alias for dispath
+nmap <leader>d :Dispatch 
 
 autocmd FileType make setlocal noexpandtab
 
