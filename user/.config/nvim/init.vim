@@ -4,42 +4,25 @@ filetype off
 
 call plug#begin('~/.local/share/nvim/plugged')
 
-" Plug list
-
 Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
-
 Plug 'machakann/vim-highlightedyank'
-
 Plug 'vim-scripts/Auto-Pairs'
-
 Plug 'cakebaker/scss-syntax.vim', {'for': 'scss'}
-
 Plug 'isRuslan/vim-es6'
-
 Plug 'tpope/vim-rails'
-
 Plug 'tpope/vim-fugitive'
-
 Plug 'tpope/vim-endwise'
-
 Plug 'tpope/vim-dispatch'
-
 Plug 'lervag/vimtex', {'for': 'tex'}
-
 Plug 'vim-airline/vim-airline'
-
 Plug 'dracula/vim'
 
 call plug#end()
-filetype plugin indent on
 
-" Personnal config
-filetype indent on
 syntax on
 set mouse=a
 set background=dark
-set number
-set relativenumber
+set number relativenumber
 set autoindent
 set autowrite
 set autochdir
@@ -85,16 +68,30 @@ set shiftwidth=2
 set smarttab
 set expandtab
 
+" make backspace working everywhere
+set backspace=indent,eol,start
+
+" Use the space key as our leader. Put this near the top of your vimrc
+let mapleader = "\<Space>"
+
+" make file don't expendtab
+
+map <C-n> :NERDTreeToggle<CR>
+
+nmap j gj
+nmap k gk
+
+imap kl <esc>
+imap lk <esc>
+
 " jump into code implementation
 nnoremap <c-s> <c-]>
 
-" make backspace working
-set backspace=indent,eol,start
+nmap <leader>vi :tabe $MYVIMRC<cr>
+nmap <leader>so :source $MYVIMRC<cr>
 
-" color more than 80 char line
-set textwidth=79
+nmap <leader>r :Dispatch bin/rspec<cr>
 
-" make file don't expendtab
 autocmd FileType make setlocal noexpandtab
 
 " latex file configuration
@@ -133,6 +130,3 @@ let g:vimtex_compiler_progname = 'nvr'
 
 " airline
 let g:airline_powerline_fonts = 1
-
-" use Ctrl+n to toggle NerdTree
-map <C-n> :NERDTreeToggle<CR>
