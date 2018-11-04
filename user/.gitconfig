@@ -34,20 +34,21 @@
 [alias]
   a = add
   ap = add -p
+  bd = branch -d
+	br = branch -av
+	co = checkout
 	cm = commit -v
 	cma = commit -av
-	st = status -sb
-	co = checkout
-	br = branch -av
-  bd = branch -d
+	di = diff
+  fp = fetch -p
+  lg = log --graph --oneline --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%aN>%Creset' 
 	ps = push
 	pu = pull
-  lg = log --graph --oneline --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%aN>%Creset' 
-	di = diff
 	re = remote -v
-  unstage = reset HEAD --
-  uncommit = reset --soft HEAD~
+	st = status -sb
   stash = stash -u
+  uncommit = reset --soft HEAD~
+  unstage = reset HEAD --
 [push]
 	default = current
 [diff "gpg"]
