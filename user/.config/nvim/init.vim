@@ -26,7 +26,6 @@ set background=dark
 set number relativenumber
 set autoindent
 set autowrite
-set autochdir
 set inccommand=nosplit
 set laststatus=2
 set scrolloff=1
@@ -115,7 +114,7 @@ autocmd FileType html,eruby setlocal textwidth=9999
 autocmd FileType text setlocal spell spelllang=fr colorcolumn= textwidth=9999
 
 " python 4 space tabs
-autocmd FileType python setlocal tabstop=4 shiftwidth=4
+autocmd FileType python setlocal tabstop=4 shiftwidth=4 autochdir
 
 " ledger file
 autocmd BufNewFile,BufRead *.ledger setlocal filetype=ledger
