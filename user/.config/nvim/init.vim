@@ -84,8 +84,8 @@ nmap k gk
 " Use Ctrl-l to clear the search highlight
 nmap <C-l> :nohl<cr>
 
-" use éé as ESC to avoid reaching for ESC key
-imap éé <esc>
+" use lk as ESC to avoid reaching for ESC key
+imap lk <esc>
 
 " jump into code implementation
 nnoremap <c-s> <c-]>
