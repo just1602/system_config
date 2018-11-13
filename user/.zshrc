@@ -49,22 +49,13 @@ ZSH_THEME="dracula"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git virtualenv tmux python django)
-
-if [[ "$OSTYPE" == linux* ]]; then
-    plugins+=(archlinux)
-else
-    plugins+=(osx brew brew-cask)
-fi
+plugins=(tmux rails pip cargo)
 
 # User configuration
 
-if [[ "$OSTYPE" == linux* ]]; then
-    export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
-else
-    export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+if [[ "$OSTYPE" == darwin* ]]; then
+  export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 fi
-# export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -73,9 +64,9 @@ export LANG=en_CA.UTF-8
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
-    export EDITOR='vim'
+  export EDITOR='vim'
 else
-    export EDITOR='nvim'
+  export EDITOR='nvim'
 fi
 
 export VISUAL=$EDITOR
@@ -86,12 +77,15 @@ export PAGER='less'
 alias vim='nvim'
 alias vimdiff='nvim -d'
 alias v='vim -p'
-alias vo='vim -O'
 
 alias g='git'
 
 alias c='bat'
 alias f='fd'
+alias l='exa'
+alias ll='l -l'
+
+alias rb='ruby'
 
 alias tn='tmux new -s'
 
