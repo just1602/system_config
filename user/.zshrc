@@ -80,6 +80,8 @@ alias v='vim -p'
 
 alias g='git'
 
+alias p='python'
+
 alias c='bat'
 alias f='fd'
 alias l='exa'
