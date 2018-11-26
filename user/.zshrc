@@ -78,8 +78,6 @@ alias vim='nvim'
 alias vimdiff='nvim -d'
 alias v='vim -p'
 
-alias g='git'
-
 alias p='python'
 
 alias c='bat'
@@ -128,6 +126,17 @@ source /usr/bin/virtualenvwrapper_lazy.sh
 mkcd ()
 {
     mkdir -p "$1" && builtin cd "$1"
+}
+
+# No arguments: `git status`
+# With arguments: acts like `git`
+g ()
+{
+    if [[ $# -gt 0 ]]; then
+      git "$@"
+    else
+      git st
+    fi
 }
 
 pytags ()
