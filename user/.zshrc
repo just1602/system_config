@@ -138,6 +138,7 @@ g ()
       git st
     fi
 }
+compdef g=git
 
 pytags ()
 {
