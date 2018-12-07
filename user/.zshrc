@@ -79,6 +79,7 @@ alias vimdiff='nvim -d'
 alias v='vim -p'
 
 alias p='python'
+alias b='bundle exec'
 
 alias c='bat'
 alias f='fd'
