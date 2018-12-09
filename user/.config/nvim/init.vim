@@ -17,6 +17,8 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-commentary'
 Plug 'vim-airline/vim-airline'
+Plug 'kana/vim-textobj-user'
+Plug 'whatyouhide/vim-textobj-erb'
 Plug 'dracula/vim'
 
 call plug#end() 
@@ -115,20 +117,12 @@ autocmd FileType text setlocal spell spelllang=fr colorcolumn= textwidth=9999
 " python 4 space tabs
 autocmd FileType python setlocal tabstop=4 shiftwidth=4 autochdir
 
-" ledger file
-autocmd BufNewFile,BufRead *.ledger setlocal filetype=ledger
-
 " cpp settings
 let g:cpp_class_scope_highlight = 1
 let g:cpp_experimental_template_highlight = 1
 
 " rust stuff
 let g:rustfmt_autosave = 1
-
-" ledger-cli
-let g:ledger_maxwidth = 80
-let g:ledger_fillstring = '    -'
-let g:ledger_fold_blanks = 0
 
 " vimtex config
 let g:vimtex_compiler_progname = 'nvr'
