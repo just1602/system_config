@@ -55,3 +55,5 @@
 	textconv = gpg --no-tty --decrypt
 [pager]
     branch = false
+[protocol]
+	version = 2
