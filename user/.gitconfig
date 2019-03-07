@@ -37,6 +37,7 @@
   bd = branch -d
 	br = branch -av
 	co = checkout
+  cb = checkout -b
 	cm = commit -v
 	cma = commit -av
 	di = diff
