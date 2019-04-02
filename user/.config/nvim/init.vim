@@ -34,6 +34,8 @@ set laststatus=2
 set scrolloff=1
 set splitbelow splitright
 set list listchars=tab:»·,trail:·,nbsp:·
+set textwidth=80
+set colorcolumn=+1
 colorscheme dracula
 
 " allow recursive search
