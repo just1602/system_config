@@ -109,7 +109,6 @@ nmap <leader>d :Dispatch
 " some vim-rails aliases
 nmap <leader>c :Econtroller 
 nmap <leader>m :Emodel 
-nmap <leader>v :Eview 
 
 autocmd FileType make setlocal noexpandtab
 
