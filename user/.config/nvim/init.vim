@@ -106,6 +106,11 @@ nmap <leader>so :source $MYVIMRC<cr>
 " an alias for dispath
 nmap <leader>d :Dispatch 
 
+" some vim-rails aliases
+nmap <leader>c :Econtroller 
+nmap <leader>m :Emodel 
+nmap <leader>v :Eview 
+
 autocmd FileType make setlocal noexpandtab
 
 " latex file configuration
