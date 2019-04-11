@@ -12,7 +12,7 @@ theme.wallpaper = theme.dir .. "/wallpaper.jpg"
 -- }}}
 
 -- {{{ Styles
-theme.font      = "sans 8"
+theme.font      = "sans 9"
 
 -- {{{ Colors
 theme.fg_normal  = "#FFFFFF"
