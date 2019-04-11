@@ -166,8 +166,8 @@ end
 screen.connect_signal("property::geometry", set_wallpaper)
 
 -- Each screen has it's own tag
-awful.tag({"email", "chat", "trello", "@", "±", "~"}, screen[1], awful.layout.layouts[1])
-awful.tag({"www", "code", "music", "job", "~"}, screen[2], awful.layout.layouts[1])
+awful.tag({"email", "¬", "¤", "±", "~"}, screen[1], awful.layout.layouts[1])
+awful.tag({"www", "code", "music", "foo", "bar"}, screen[2], awful.layout.layouts[1])
 
 awful.screen.connect_for_each_screen(function(s)
     -- Wallpaper
@@ -472,15 +472,9 @@ awful.rules.rules = {
       }, properties = { floating = true }},
 
      { rule = { class = "Firefox" },
-       properties = { screen = 2, tag = "www" } },
+       properties = { tag = "www" } },
      { rule = { class = "Thunderbird" },
-       properties = { screen = 1, tag = "email" } },
-     { rule = { class = "Slack" },
-       properties = { screen = 1, tag = "chat" } },
-     { rule = { class = "Trello" },
-       properties = { screen = 1, tag = "trello" } },
-     { rule = { class = "Chromium" },
-       properties = { screen = 2, tag = "job" } },
+       properties = { tag = "email" } },
 }
 -- }}}
 
