@@ -37,6 +37,9 @@ set textwidth=80
 set colorcolumn=+1
 colorscheme dracula
 
+set undodir=~/vimdid
+set undofile
+
 " allow recursive search
 set path+=**
 set wildmenu
