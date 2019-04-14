@@ -88,8 +88,6 @@ alias ll='l -l'
 
 alias rb='ruby'
 
-alias tn='tmux new -s'
-
 alias diff='diff --color=always -u'
 alias serve='python -m http.server'
 alias feh='feh -F'
