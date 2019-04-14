@@ -1,13 +1,29 @@
 mpd_music_dir = "/mnt/data/music"
 
-song_columns_list_format = "(6f)[white]{NE} (40)[green]{t|f} (25)[white]{bE} (25)[white]{a} (6f)[green]{l}
+song_list_format = "{%a - }{%t}|{$5%f$9}$R{$7(%l)$9}"
+song_status_format = "$2%a $1• $3%t $1• $4%b {(Disc %d) }$1• $5%y$1"
+song_window_title_format = "{%a - }{%t}|{%f}"
+song_columns_list_format = "(5f)[blue]{l} (33)[cyan]{t} (32)[green]{a} (30)[magenta]{b}"
 
-# White and green playlist
-header_window_color = green
-main_window_color = white
-state_line_color = green
-statusbar_color = white
+header_visibility = "yes"
+statusbar_visibility = "yes"
+user_interface = "alternative"
+playlist_display_mode = "columns" (classic/columns)
+browser_display_mode = "columns" (classic/columns)
+titles_visibility = "yes"
+display_remaining_time = "yes"
+ignore_leading_the = "yes"
+empty_tag_marker = ""
 
-# Selected column green other white
-active_column_color = green
-main_window_highlight_color = white
+colors_enabled = "yes"
+header_window_color = "magenta"
+volume_color = "green"
+state_line_color = "yellow"
+state_flags_color = "blue"
+main_window_color = "cyan"
+color1 = "cyan"
+color2 = "blue"
+main_window_highlight_color = "cyan"
+progressbar_color = "yellow"
+statusbar_color = "cyan" 
+active_column_color = "cyan"
