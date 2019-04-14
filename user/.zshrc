@@ -138,13 +138,3 @@ g ()
     fi
 }
 compdef g=git
-
-pytags ()
-{
-    if [ -z ${VIRTUAL_ENV} ]; then
-        echo 'You need to be in a virtualenvwrapper env to use pytags'
-        return
-    fi
-
-    ctags -R --languages=python "$VIRTUAL_ENV/lib/" "$(cat "$VIRTUAL_ENV/$VIRTUALENVWRAPPER_PROJECT_FILENAME")"
-}
