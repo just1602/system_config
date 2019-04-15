@@ -282,6 +282,9 @@ globalkeys = awful.util.table.join(
     awful.key({modkey}, "l", function () awful.spawn("light-locker-command -l") end,
               {description = "Lock screen", group="user"}),
 
+    -- center current floating window
+    awful.key({modkey}, 'y', awful.placement.centered),
+
     -- Standard program
     awful.key({ modkey,           }, "Return", function () awful.spawn(terminal) end,
               {description = "open a terminal", group = "launcher"}),
@@ -460,7 +463,9 @@ awful.rules.rules = {
           "pinentry",
           "veromix",
           "xtightvncviewer",
-          "gimp"},
+          "gimp",
+          "mpv",
+          "Tor Browser"},
 
         name = {
           "Event Tester",  -- xev.
