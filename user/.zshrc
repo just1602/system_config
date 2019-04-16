@@ -85,6 +85,7 @@ alias c='bat'
 alias f='fd'
 alias l='exa'
 alias ll='l -l'
+alias cr='cargo run'
 
 alias rb='ruby'
 
