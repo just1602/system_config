@@ -9,4 +9,5 @@ set certificate_file = "~/.config/neomutt/accounts/net.riseup/certificates"
 set header_cache = "~/.config/neomutt/accounts/net.riseup/headers"
 set message_cachedir = "~/.config/neomutt/accounts/net.riseup/bodies"
 set record = +Sent
+set postponed = "+Drafts"
 set smtp_url = "smtps://$imap_user:$my_riseup_pass@smtp.riseup.net"
