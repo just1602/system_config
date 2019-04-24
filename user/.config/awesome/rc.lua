@@ -11,6 +11,8 @@ local beautiful = require("beautiful")
 local naughty = require("naughty")
 local menubar = require("menubar")
 local hotkeys_popup = require("awful.hotkeys_popup").widget
+local battery_widget = require("battery-widget")
+local bat = battery_widget { adapter = "BAT0", ac = "AC" }
 
 require("volume")
 
@@ -196,6 +198,19 @@ awful.screen.connect_for_each_screen(function(s)
     -- Create the wibox
     s.mywibox = awful.wibar({ position = "top", screen = s })
 
+    right_widgets = {
+            layout = wibox.layout.fixed.horizontal,
+            mykeyboardlayout,
+            wibox.widget.systray(),
+            volume_widget,
+            mytextclock,
+            s.mylayoutbox,
+        }
+
+    if not screen[2] then
+      table.insert(right_widgets, 1, bat)
+    end 
+
     -- Add widgets to the wibox
     s.mywibox:setup {
         layout = wibox.layout.align.horizontal,
@@ -206,14 +221,7 @@ awful.screen.connect_for_each_screen(function(s)
             s.mypromptbox,
         },
         s.mytasklist, -- Middle widget
-        { -- Right widgets
-            layout = wibox.layout.fixed.horizontal,
-            mykeyboardlayout,
-            wibox.widget.systray(),
-            volume_widget,
-            mytextclock,
-            s.mylayoutbox,
-        },
+        right_widgets,
     }
 end)
 -- }}}
@@ -285,6 +293,10 @@ globalkeys = awful.util.table.join(
               {description = "Toglle mute", group="user"}),
     awful.key({modkey}, "l", function () awful.spawn("light-locker-command -l") end,
               {description = "Lock screen", group="user"}),
+    awful.key({}, "XF86MonBrightnessUp", function () awful.spawn("xbacklight -inc 5") end,
+              {description = "Increase backlight", group="user"}),
+    awful.key({}, "XF86MonBrightnessDown", function () awful.spawn("xbacklight -dec 5") end,
+              {description = "Decrease backlight", group="user"}),
 
     -- center current floating window
     awful.key({modkey}, 'y', awful.placement.centered),
