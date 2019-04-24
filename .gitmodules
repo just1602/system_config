@@ -1,3 +1,6 @@
 [submodule "zsh-dracula"]
 	path = zsh-dracula
 	url = git@github.com:dracula/zsh.git
+[submodule "user/.config/awesome/battery-widget"]
+	path = user/.config/awesome/battery-widget
+	url = git@github.com:deficient/battery-widget.git
