@@ -166,8 +166,12 @@ end
 screen.connect_signal("property::geometry", set_wallpaper)
 
 -- Each screen has it's own tag
-awful.tag({"email", "¬", "¤", "±", "~"}, screen[1], awful.layout.layouts[1])
-awful.tag({"www", "code", "music", "foo", "bar"}, screen[2], awful.layout.layouts[1])
+if screen[2] then
+  awful.tag({"email", "¬", "¤", "±", "~"}, screen[1], awful.layout.layouts[1])
+  awful.tag({"www", "code", "music", "foo", "bar"}, screen[2], awful.layout.layouts[1])
+else
+  awful.tag({"www", "code", "email", "music", "~", "±", "¤"}, screen[1], awful.layout.layouts[1])
+end
 
 awful.screen.connect_for_each_screen(function(s)
     -- Wallpaper
