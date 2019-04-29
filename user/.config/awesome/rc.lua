@@ -12,7 +12,15 @@ local naughty = require("naughty")
 local menubar = require("menubar")
 local hotkeys_popup = require("awful.hotkeys_popup").widget
 local battery_widget = require("battery-widget")
-local bat = battery_widget { adapter = "BAT0", ac = "AC" }
+local bat = battery_widget {
+  adapter = "BAT0",
+  ac = "AC",
+  percent_colors = {
+    {10, "red"},
+    {25, "orange"},
+    {999, "green"},
+  }
+}
 
 require("volume")
 
