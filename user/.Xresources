@@ -1,7 +1,7 @@
 URxvt*geometry: 80x30
 URxvt*scrollBar: false
 
-URxvt.perl-ext-common: ...,tabbedex,...
+URxvt.perl-ext-common: ...,tabbedex,font-size,...
 URxvt.tabbed.autohide: true
 
 URxvt.keysym.Control-T: perl:tabbedex:new_tab
