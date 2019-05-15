@@ -24,6 +24,3 @@ build/
 
 # jetbrains folder
 .idea/
-
-# ctags
-tags
