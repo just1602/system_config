@@ -119,6 +119,9 @@ fi
 ## shell vim bindings
 bindkey -v
 
+## enable reverse search
+bindkey '^R' history-incremental-search-backward
+
 export WORKON_HOME=$HOME/.virtualenvs
 source /usr/bin/virtualenvwrapper_lazy.sh
 
