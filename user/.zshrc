@@ -150,5 +150,5 @@ compdef g=git
     eval $(op signin my)
   fi
 
-  op get item "$1" | jq '.details.fields[] | select(.designation=="password").value'
+  op get item "$1" | jq -c -r '.details.fields[] | select(.designation=="password").value'
 }
