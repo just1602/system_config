@@ -143,3 +143,12 @@ g ()
     fi
 }
 compdef g=git
+
+1pass ()
+{
+  if [[ -z $OP_SESSION ]]; then
+    eval $(op signin my)
+  fi
+
+  op get item "$1" | jq '.details.fields[] | select(.designation=="password").value'
+}
