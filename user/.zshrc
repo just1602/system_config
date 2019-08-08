@@ -146,7 +146,7 @@ compdef g=git
 
 1pass ()
 {
-  if [[ -z $OP_SESSION ]]; then
+  if [[ -z $OP_SESSION_my ]]; then
     eval $(op signin my)
   fi
 
