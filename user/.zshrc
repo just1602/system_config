@@ -122,6 +122,12 @@ bindkey -v
 ## enable reverse search
 bindkey '^R' history-incremental-search-backward
 
+## history config
+setopt HIST_IGNORE_DUPS
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_IGNORE_SPACE
+
+## virtualenvwrapper config
 export WORKON_HOME=$HOME/.virtualenvs
 source /usr/bin/virtualenvwrapper_lazy.sh
 
