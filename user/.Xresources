@@ -17,10 +17,17 @@ Xft.hintstyle: hintfull
 
 URxvt.letterSpace: -1
 
-URxvt*font: xft:DejaVu Sans Mono for Powerline:antialias=true:pixelsize=18
-URxvt*boldFont: xft:DejaVu Sans Mono for Powerline:style=bold:antialias=true:pixelsize=18
-URxvt*italicFont: xft:DejaVu Sans Mono for Powerline:style=italic:antialias=true:pixelsize=18
-URxvt*boldItalicFont: xft:DejaVu Sans Mono for Powerline:style=bolditalic:antialias=true:pixelsize=18
+# Nice tricks found here : https://gitlab.com/dannycolin/dotfiles/blob/master/user/xorg/.Xresources
+#if WIDTH > 1920
+  #define FONT_SIZE 22
+#else
+  #define FONT_SIZE 18
+#endif
+
+URxvt*font: xft:DejaVu Sans Mono for Powerline:antialias=true:pixelsize=FONT_SIZE
+URxvt*boldFont: xft:DejaVu Sans Mono for Powerline:style=bold:antialias=true:pixelsize=FONT_SIZE
+URxvt*italicFont: xft:DejaVu Sans Mono for Powerline:style=italic:antialias=true:pixelsize=FONT_SIZE
+URxvt*boldItalicFont: xft:DejaVu Sans Mono for Powerline:style=bolditalic:antialias=true:pixelsize=FONT_SIZE
 
 ! Dracula Xresources palette
 *.foreground: #F8F8F2
