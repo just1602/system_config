@@ -17,7 +17,7 @@ Xft.hintstyle: hintfull
 
 URxvt.letterSpace: -1
 
-# Nice tricks found here : https://gitlab.com/dannycolin/dotfiles/blob/master/user/xorg/.Xresources
+! Nice tricks found here : https://gitlab.com/dannycolin/dotfiles/blob/master/user/xorg/.Xresources
 #if WIDTH > 1920
   #define FONT_SIZE 22
 #else
