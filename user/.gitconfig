@@ -50,6 +50,7 @@
   stash = stash -u
   uncommit = reset --soft HEAD~
   unstage = reset HEAD --
+  sc = switch -c
 [push]
 	default = current
 [diff "gpg"]
