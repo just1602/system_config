@@ -77,6 +77,7 @@ export PAGER='less'
 alias vim='nvim'
 alias vimdiff='nvim -d'
 alias v='vim -p'
+alias tls='tmux list-sessions'
 
 alias p='python'
 alias b='bundle exec'
@@ -97,7 +98,6 @@ alias feh='feh -F'
 if [[ "$OSTYPE" == linux* ]]; then
     alias xclip='xclip -selection c'
 fi
-
 
 ## homebew stuff
 if [[ "$OSTYPE" == darwin* ]]; then
