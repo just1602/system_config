@@ -74,9 +74,8 @@ export PAGER='less'
 
 # aliases
 
-alias vim='nvim'
+alias v='nvim'
 alias vimdiff='nvim -d'
-alias v='vim -p'
 alias tls='tmux list-sessions'
 
 alias p='python'
