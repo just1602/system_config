@@ -95,8 +95,6 @@ alias diff='diff --color=always -u'
 alias serve='python -m http.server'
 alias feh='feh -F'
 
-alias t='todo.sh'
-
 if [[ "$OSTYPE" == linux* ]]; then
     alias xclip='xclip -selection c'
 fi
@@ -151,6 +149,18 @@ g ()
     fi
 }
 compdef g=git
+
+# No arguments: `t ls`
+# with arguments acts like `t`
+t ()
+{
+  if [[ $# -gt 0 ]]; then
+    todo.sh "$@"
+  else
+    todo.sh ls
+  fi
+}
+compdef t=todo.sh
 
 1pass ()
 {
