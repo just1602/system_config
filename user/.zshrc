@@ -95,6 +95,8 @@ alias diff='diff --color=always -u'
 alias serve='python -m http.server'
 alias feh='feh -F'
 
+alias t='todo.sh'
+
 if [[ "$OSTYPE" == linux* ]]; then
     alias xclip='xclip -selection c'
 fi
