@@ -164,6 +164,6 @@ let g:ctrlp_use_caching = 0
 set hidden " required for modification on multiple buffer
 
 let g:LanguageClient_serverCommands = {
-    \ 'rust': ['~/.cargo/bin/rustup', 'run', 'stable', 'rls'],
+    \ 'rust': ['rustup', 'run', 'stable', 'rls'],
     \ 'ruby': ['~/.rbenv/shims/solargraph', 'stdio'],
     \ }
