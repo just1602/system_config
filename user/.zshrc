@@ -76,7 +76,6 @@ export PAGER='less'
 
 alias v='nvim'
 alias vimdiff='nvim -d'
-alias tls='tmux list-sessions'
 
 alias p='python'
 alias b='bundle exec'
@@ -93,6 +92,8 @@ alias rb='ruby'
 alias diff='diff --color=always -u'
 alias serve='python -m http.server'
 alias feh='feh -F'
+
+alias tls='todo.sh ls'
 
 if [[ "$OSTYPE" == linux* ]]; then
     alias xclip='xclip -selection c'
