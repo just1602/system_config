@@ -93,6 +93,7 @@ alias diff='diff --color=always -u'
 alias serve='python -m http.server'
 alias feh='feh -F'
 
+alias td='todo.sh do'
 alias tls='todo.sh ls'
 
 if [[ "$OSTYPE" == linux* ]]; then
