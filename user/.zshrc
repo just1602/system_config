@@ -171,3 +171,5 @@ compdef t=todo.sh
 
   op get item "$1" | jq -c -r '.details.fields[] | select(.designation=="password").value'
 }
+
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
