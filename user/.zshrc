@@ -119,6 +119,7 @@ fi
 
 ## shell vim bindings
 bindkey -v
+export KEYTIMEOUT=1
 
 ## enable reverse search
 bindkey '^R' history-incremental-search-backward
