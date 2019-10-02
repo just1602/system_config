@@ -86,6 +86,7 @@ alias l='exa'
 alias ll='l -l'
 alias cr='cargo run'
 alias cf='cargo-fmt'
+alias ct='cargo test'
 
 alias rb='ruby'
 
