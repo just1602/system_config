@@ -44,7 +44,7 @@
   fp = fetch -p
   lg = log --graph --oneline --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%aN>%Creset' 
 	ps = push
-	pu = pull
+	pu = pull --rebase
 	re = remote -v
 	st = status -sb
   stash = stash -u
