@@ -287,12 +287,14 @@ globalkeys = awful.util.table.join(
 
 
     -- Multimedia keys
-    awful.key({}, "XF86AudioPlay", function () awful.spawn("mpc toggle") end,
+    awful.key({}, "XF86AudioPlay", function () awful.spawn("playerctl --player spotify,mpd play-pause") end,
               {description = "Toggle mpd playback", group="user"}),
-    awful.key({}, "XF86AudioNext", function () awful.spawn("mpc next") end,
-              {description = "MPD next song", group="user"}),
-    awful.key({}, "XF86AudioPrev", function () awful.spawn("mpc prev") end,
-              {description = "MPD previous song", group="user"}),
+    awful.key({}, "XF86AudioNext", function () awful.spawn("playerctl --player spotify,mpd next") end,
+              {description = "Next song", group="user"}),
+    awful.key({}, "XF86AudioPrev", function () awful.spawn("playerctl --player spotify,mpd previous") end,
+              {description = "Previous song", group="user"}),
+    awful.key({}, "XF86AudioStop", function () awful.spawn("playerctl --all-players stop") end,
+              {description = "Stop media players", group="user"}),
     awful.key({}, "XF86AudioRaiseVolume", function () awful.spawn("amixer -q sset Master 3%+") end,
               {description = "Raise volume", group="user"}),
     awful.key({}, "XF86AudioLowerVolume", function () awful.spawn("amixer -q sset Master 3%-") end,
