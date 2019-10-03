@@ -57,6 +57,9 @@ if [[ "$OSTYPE" == darwin* ]]; then
   export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 fi
 
+# add local scripts to the path
+export PATH="$HOME/bin:$PATH"
+
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
