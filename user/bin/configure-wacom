@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Only work on the main screen
+xsetwacom set 15 MapToOutput HEAD-1
+
+# first top buttom is bind to ctrl
+xsetwacom set 18 Button 3 "key ctrl"
+
+# second button is bind to shift
+xsetwacom set 18 Button 8 "key shift"
+
+# last button bind to f1
+xsetwacom set 18 Button 1 "key f1"
