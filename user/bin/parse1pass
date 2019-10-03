@@ -1,0 +1,21 @@
+#!/usr/bin/env ruby
+
+require 'json'
+
+data = JSON.parse(ARGF.read)
+
+password_field = data['details']['password']
+unless password_field.empty?
+  puts password_field
+  exit 0
+end
+
+data['details']['fields'].each do |field|
+  if field['designation'] == 'password'
+    puts field['value']
+    exit 0
+  end
+end
+
+p 'No password found'
+exit 0
