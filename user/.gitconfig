@@ -51,6 +51,7 @@
   uncommit = reset --soft HEAD~
   unstage = reset HEAD --
   sc = switch -c
+  pp = pu --prune
 [push]
 	default = current
 [diff "gpg"]
