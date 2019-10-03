@@ -135,7 +135,7 @@ setopt HIST_IGNORE_SPACE
 
 ## virtualenvwrapper config
 export WORKON_HOME=$HOME/.virtualenvs
-source /usr/bin/virtualenvwrapper_lazy.sh
+source $(which virtualenvwrapper_lazy.sh)
 
 # custom functions
 
