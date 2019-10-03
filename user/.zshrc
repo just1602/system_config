@@ -58,7 +58,7 @@ if [[ "$OSTYPE" == darwin* ]]; then
 fi
 
 # add local scripts to the path
-export PATH="$HOME/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 
 source $ZSH/oh-my-zsh.sh
 
