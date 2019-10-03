@@ -170,11 +170,23 @@ compdef t=todo.sh
 
 1pass ()
 {
+  if [[ $# -eq 0 ]]; then
+    echo "Usage : $0 <password name> [vault name]"
+    return 1
+  fi
+
   if [[ -z $OP_SESSION_my ]]; then
     eval $(op signin my)
   fi
 
-  op get item "$1" | jq -c -r '.details.fields[] | select(.designation=="password").value'
+  if [[ $# -eq 1 ]]; then
+    op get item "$1" | parse1pass
+  elif [[ $# -eq 2 ]]; then
+    op get item "$1" --vault="$2" | parse1pass
+  else
+    echo "Usage : $0 <password name> [vault name]"
+    return 1
+  fi
 }
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
