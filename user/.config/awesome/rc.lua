@@ -311,6 +311,12 @@ globalkeys = awful.util.table.join(
     -- center current floating window
     awful.key({modkey}, 'y', awful.placement.centered),
 
+    -- screenshot stuff
+    awful.key({modkey}, 'g', function () awful.spawn.with_shell("~/.local/bin/screenshot --to-clipboard") end,
+              {description = "Take a screenshot and copy the image to the clipboard", group="user"}),
+    awful.key({modkey, 'Shift'}, 'g', function () awful.spawn.with_shell("~/.local/bin/screenshot") end,
+              {description = "Take a screenshot", group="user"}),
+
     -- Standard program
     awful.key({ modkey,           }, "Return", function () awful.spawn(terminal) end,
               {description = "open a terminal", group = "launcher"}),
