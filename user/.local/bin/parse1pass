@@ -5,7 +5,7 @@ require 'json'
 data = JSON.parse(ARGF.read)
 
 password_field = data['details']['password']
-unless password_field.empty?
+unless password_field.nil?
   puts password_field
   exit 0
 end
@@ -17,5 +17,5 @@ data['details']['fields'].each do |field|
   end
 end
 
-p 'No password found'
+puts 'No password found'
 exit 0
