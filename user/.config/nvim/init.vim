@@ -113,6 +113,9 @@ nnoremap ; :
 " jump into code implementation
 nnoremap <c-s> <c-]>
 
+" open Copen pane
+nnoremap <leader>c :Copen<cr>
+
 " some mapping to easily edit the init.vim file
 nmap <leader>vi :tabe $MYVIMRC<cr>
 nmap <leader>so :source $MYVIMRC<cr>
