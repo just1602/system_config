@@ -124,8 +124,12 @@ nmap <leader>so :source $MYVIMRC<cr>
 nmap <leader>d :Dispatch 
 
 " some vim-rails aliases
-nmap <leader>c :Econtroller 
-nmap <leader>m :Emodel 
+nmap <leader>ec :Econtroller
+nmap <leader>em :Emodel
+nmap <leader>vc :Vcontroller
+nmap <leader>vm :Vmodel
+nmap <leader>sc :Scontroller
+nmap <leader>sm :Smodel
 nmap <leader>t :vs<cr>:A<cr>
 
 autocmd FileType make setlocal noexpandtab
