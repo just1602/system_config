@@ -1,5 +1,3 @@
-/etc/systemd/system/tmux@.service
-
 [Unit]
 Description=Start the urxvt deamon
 
