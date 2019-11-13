@@ -1,0 +1,11 @@
+/etc/systemd/system/tmux@.service
+
+[Unit]
+Description=Start the urxvt deamon
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/urxvtd -q -f -o
+
+[Install]
+WantedBy=default.target
