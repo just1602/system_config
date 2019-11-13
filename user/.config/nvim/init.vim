@@ -24,16 +24,14 @@ Plug 'vim-airline/vim-airline'
 Plug 'kana/vim-textobj-user'
 Plug 'whatyouhide/vim-textobj-erb'
 Plug 'dracula/vim'
-" LSP support
-Plug 'autozimu/LanguageClient-neovim', {
-    \ 'branch': 'next',
-    \ 'do': 'bash install.sh',
-    \ }
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " (Optional) Multi-entry selection UI.
 Plug 'junegunn/fzf'
 
 call plug#end() 
+
 syntax on
+
 set mouse=a
 set background=dark
 set number relativenumber
@@ -167,10 +165,9 @@ let g:airline_powerline_fonts = 1
 let g:ctrlp_user_command = 'ag %s -l --hidden --nocolor -g ""'
 let g:ctrlp_use_caching = 0
 
-" LSP client configuration
+" coc config
 set hidden " required for modification on multiple buffer
-
-let g:LanguageClient_serverCommands = {
-    \ 'rust': ['rustup', 'run', 'stable', 'rls'],
-    \ 'ruby': ['~/.rbenv/shims/solargraph', 'stdio'],
-    \ }
+set cmdheight=2
+set updatetime=300
+set shortmess+=c
+set signcolumn=yes
