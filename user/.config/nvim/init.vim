@@ -13,9 +13,12 @@ filetype off
 call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'arzg/vim-substrata'
+Plug 'itchyny/lightline.vim'
+
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'machakann/vim-highlightedyank'
 Plug 'vim-scripts/Auto-Pairs'
+
 Plug 'cakebaker/scss-syntax.vim', {'for': 'scss'}
 Plug 'isRuslan/vim-es6'
 Plug 'vim-ruby/vim-ruby'
@@ -29,9 +32,9 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-git'
-Plug 'vim-airline/vim-airline'
 Plug 'kana/vim-textobj-user'
 Plug 'whatyouhide/vim-textobj-erb'
+
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " (Optional) Multi-entry selection UI.
 Plug 'junegunn/fzf'
@@ -165,9 +168,6 @@ let g:rustfmt_autosave = 1
 
 " vimtex config
 let g:vimtex_compiler_progname = 'nvr'
-
-" airline
-let g:airline_powerline_fonts = 1
 
 " tel Ctrl-P to use ag and to don't do caching
 let g:ctrlp_user_command = 'ag %s -l --hidden --nocolor -g ""'
