@@ -12,6 +12,7 @@ filetype off
 
 call plug#begin('~/.local/share/nvim/plugged')
 
+Plug 'arzg/vim-substrata'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'machakann/vim-highlightedyank'
 Plug 'vim-scripts/Auto-Pairs'
@@ -31,7 +32,6 @@ Plug 'tpope/vim-git'
 Plug 'vim-airline/vim-airline'
 Plug 'kana/vim-textobj-user'
 Plug 'whatyouhide/vim-textobj-erb'
-Plug 'dracula/vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " (Optional) Multi-entry selection UI.
 Plug 'junegunn/fzf'
@@ -52,7 +52,7 @@ set splitbelow splitright
 set list listchars=tab:»·,trail:·,nbsp:·
 set textwidth=80
 set colorcolumn=+1
-colorscheme dracula
+colorscheme substrata
 
 set undodir=~/.vimdid
 set undofile
