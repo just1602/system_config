@@ -1,5 +1,3 @@
-" Vundle configuration
-
 " Check if VimPlug is present
 if ! filereadable(expand('~/.local/share/nvim/site/autoload/plug.vim'))
   echo "Downloading junegunn/vim-plug to manage plugins..."
@@ -12,8 +10,8 @@ filetype off
 
 call plug#begin('~/.local/share/nvim/plugged')
 
-Plug 'arzg/vim-substrata'
-Plug 'itchyny/lightline.vim'
+Plug 'just1602/vim-substrata'
+Plug 'vim-airline/vim-airline'
 
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'machakann/vim-highlightedyank'
@@ -180,3 +178,7 @@ set cmdheight=2
 set updatetime=300
 set shortmess+=c
 set signcolumn=yes
+
+" airline config
+let g:airline_theme='substrata'
+let g:airline_powerline_fonts = 1
