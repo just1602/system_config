@@ -17,6 +17,7 @@ Plug 'itchyny/lightline.vim'
 
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'machakann/vim-highlightedyank'
+Plug 'RRethy/vim-illuminate'
 Plug 'vim-scripts/Auto-Pairs'
 
 Plug 'cakebaker/scss-syntax.vim', {'for': 'scss'}
