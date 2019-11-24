@@ -205,13 +205,6 @@ setopt NO_FLOW_CONTROL
 
 # User configuration
 
-if [[ "$OSTYPE" == darwin* ]]; then
-  export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
-fi
-
-## add local scripts to the path
-export PATH="$HOME/.local/bin:$PATH"
-
 ## You may need to manually set your language environment
 export LANG=en_CA.UTF-8
 
@@ -238,6 +231,7 @@ fi
 export HISTFILE="$HOME/.zsh_history"
 
 source $HOME/.zsh/aliases
+source $HOME/.zsh/path
 
 # custom functions
 
