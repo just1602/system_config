@@ -1,125 +1,44 @@
-# Path to your oh-my-zsh installation.
-export ZSH=~/.oh-my-zsh
+# Shell configuration
 
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
-ZSH_THEME="dracula"
+typeset -A __STYLES
 
-# Uncomment the following line to use case-sensitive completion.
-# CASE_SENSITIVE="true"
+__STYLES[ITALIC_ON]=$'\e[3m'
+__STYLES[ITALIC_OFF]=$'\e[23m'
 
-# Uncomment the following line to use hyphen-insensitive completion. Case
-# sensitive completion must be off. _ and - will be interchangeable.
-# HYPHEN_INSENSITIVE="true"
+## completion
+autoload -U compinit
+compinit -u
 
-# Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
+### Make completion:
+### - Try exact (case-sensitive) match first.
+### - Then fall back to case-insensitive.
+### - Accept abbreviations after . or _ or - (ie. f.b -> foo.bar).
+### - Substring complete (ie. bar -> foobar).
+zstyle ':completion:*' matcher-list '' '+m:{[:lower:]}={[:upper:]}' '+m:{[:upper:]}={[:lower:]}' '+m:{_-}={-_}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
-# Uncomment the following line to change how often to auto-update (in days).
-# export UPDATE_ZSH_DAYS=13
+### Colorize completions using default `ls` colors.
+zstyle ':completion:*' list-colors ''
 
-# Uncomment the following line to disable colors in ls.
-# DISABLE_LS_COLORS="true"
+### Allow completion of ..<Tab> to ../ and beyond.
+zstyle -e ':completion:*' special-dirs '[[ $PREFIX = (../)#(..) ]] && reply=(..)'
 
-# Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
 
-# Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+### $CDPATH is overpowered (can allow us to jump to 100s of directories) so tends
+### to dominate completion; exclude path-directories from the tag-order so that
+### they will only be used as a fallback if no completions are found.
+zstyle ':completion:*:complete:(cd|pushd):*' tag-order 'local-directories named-directories'
 
-# Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
+### Categorize completion suggestions with headings:
+zstyle ':completion:*' group-name ''
+zstyle ':completion:*:descriptions' format %F{default}%B%{$__STYLES[ITALIC_ON]%}--- %d ---%{$__STYLES[ITALIC_OFF]%}%b%f
 
-# Uncomment the following line if you want to disable marking untracked files
-# under VCS as dirty. This makes repository status check for large repositories
-# much, much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
+### Enable keyboard navigation of completions in menu
+### (not just tab/shift-tab but cursor keys as well):
+zstyle ':completion:*' menu select
 
-# Uncomment the following line if you want to change the command execution time
-# stamp shown in the history command output.
-# The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-# HIST_STAMPS="mm/dd/yyyy"
-
-# Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
-
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
-plugins=(tmux rails pip cargo)
-
-# User configuration
-
-if [[ "$OSTYPE" == darwin* ]]; then
-  export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
-fi
-
-# add local scripts to the path
-export PATH="$HOME/.local/bin:$PATH"
-
-source $ZSH/oh-my-zsh.sh
-
-# You may need to manually set your language environment
-export LANG=en_CA.UTF-8
-
-# Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
-else
-  export EDITOR='nvim'
-fi
-
-export VISUAL=$EDITOR
-export PAGER='less'
-
-# aliases
-
-alias v='nvim'
-alias vimdiff='nvim -d'
-
-alias p='python'
-alias b='bundle exec'
-
-alias c='bat'
-alias f='fd'
-alias l='exa'
-alias ll='l -l'
-alias cr='cargo run'
-alias cf='cargo-fmt'
-alias ct='cargo test'
-
-alias rb='ruby'
-
-alias diff='diff --color=always -u'
-alias serve='python -m http.server'
-alias feh='feh -F'
-
-alias td='todo.sh do'
-alias tls='todo.sh ls'
-
-if [[ "$OSTYPE" == linux* ]]; then
-    alias xclip='xclip -selection c'
-fi
-
-## homebew stuff
-if [[ "$OSTYPE" == darwin* ]]; then
-    source $HOME/.secret_tokens
-fi
-
-eval "$(rbenv init -)"
-
-## Add XDG_HOME_CONFIG for neovim
-if [[ "$OSTYPE" == linux* ]]; then
-    export XDG_HOME_CONFIG=$HOME/.config
-fi
-
-## on osx use open as browser
-if [[ "$OSTYPE" == darwin* ]]; then
-    export BROWSER='open'
-fi
+## colors
+autoload -U colors
+colors
 
 ## shell vim bindings
 bindkey -v
@@ -133,9 +52,75 @@ setopt HIST_IGNORE_DUPS
 setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_IGNORE_SPACE
 
-## virtualenvwrapper config
-export WORKON_HOME=$HOME/.virtualenvs
-source $(which virtualenvwrapper_lazy.sh)
+
+# User configuration
+
+if [[ "$OSTYPE" == darwin* ]]; then
+  export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+fi
+
+## add local scripts to the path
+export PATH="$HOME/.local/bin:$PATH"
+
+## You may need to manually set your language environment
+export LANG=en_CA.UTF-8
+
+## Preferred editor for local and remote sessions
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='nvim'
+fi
+
+export VISUAL=$EDITOR
+export PAGER='less'
+
+## Add XDG_HOME_CONFIG for neovim
+if [[ "$OSTYPE" == linux* ]]; then
+    export XDG_HOME_CONFIG=$HOME/.config
+fi
+
+## on osx use open as browser
+if [[ "$OSTYPE" == darwin* ]]; then
+    export BROWSER='open'
+fi
+
+# aliases
+
+alias ta='tmux attach -t'
+alias tad='tmux attach -d -t'
+alias ts='tmux new-session -s'
+alias tl='tmux list-sessions'
+
+alias v='nvim'
+alias vimdiff='nvim -d'
+
+alias p='python'
+
+alias c='bat'
+alias f='fd'
+
+alias l='exa'
+alias ll='l -l'
+
+alias cr='cargo run'
+alias cf='cargo-fmt'
+alias ct='cargo test'
+
+alias rb='ruby'
+alias b='bundle exec'
+
+alias diff='diff --color=always -u'
+alias serve='python -m http.server'
+alias feh='feh -F'
+
+alias td='todo.sh do'
+alias tls='todo.sh ls'
+
+if [[ "$OSTYPE" == linux* ]]; then
+    alias xclip='xclip -selection c'
+fi
+
 
 # custom functions
 
@@ -188,5 +173,18 @@ compdef t=todo.sh
     return 1
   fi
 }
+
+# external import
+
+## homebew stuff
+if [[ "$OSTYPE" == darwin* ]]; then
+    source $HOME/.secret_tokens
+fi
+
+## virtualenvwrapper stuff
+export WORKON_HOME=$HOME/.virtualenvs
+source $(which virtualenvwrapper_lazy.sh)
+
+eval "$(rbenv init -)"
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
