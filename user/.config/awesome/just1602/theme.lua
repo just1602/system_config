@@ -15,26 +15,26 @@ theme.wallpaper = theme.dir .. "/wallpaper.jpg"
 theme.font      = "sans 9"
 
 -- {{{ Colors
-theme.fg_normal  = "#FFFFFF"
-theme.fg_focus   = "#87afdf"
-theme.fg_urgent  = "#df005f"
-theme.bg_normal  = "#2a2a2a"
-theme.bg_focus   = "#101010"
-theme.bg_urgent  = "#3F3F3F"
+theme.fg_normal  = "#b5b4c9"
+theme.fg_focus   = "#659ea2"
+theme.fg_urgent  = "#cf8164"
+theme.bg_normal  = "#191c25"
+theme.bg_focus   = "#191c25"
+theme.bg_urgent  = "#191c25"
 theme.bg_systray = theme.bg_normal
 -- }}}
 
 -- {{{ Borders
 theme.useless_gap   = 0
 theme.border_width  = 0
-theme.border_normal = "#3F3F3F"
-theme.border_focus  = "#6F6F6F"
-theme.border_marked = "#CC9393"
+theme.border_normal = "#191c25"
+theme.border_focus  = "#191c25"
+theme.border_marked = "#191cs5"
 -- }}}
 
 -- {{{ Titlebars
-theme.titlebar_bg_focus  = "#3F3F3F"
-theme.titlebar_bg_normal = "#3F3F3F"
+theme.titlebar_bg_focus  = "#191c25"
+theme.titlebar_bg_normal = "#191c25"
 -- }}}
 
 -- {{{
