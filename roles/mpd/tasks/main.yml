@@ -1,0 +1,12 @@
+---
+- name: mpd | create mpd config directories
+  file: path={{ item }} state=directory
+  loop:
+    - ~/.config/mpd
+    - ~/.config/mpd/playlists
+
+- name: mpd | install mpd config
+  file: src={{ ansible_env.PWD }}/roles/mpd/files/mpd.conf
+        path=~/.config/mpd/mpd.conf 
+        state=link
+        force=yes
