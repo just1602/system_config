@@ -1,4 +1,11 @@
 ---
+- name: mpd | install packages
+  pacman:
+    name:
+      - mpd
+      - ncmpcpp
+    state: latest
+
 - name: mpd | create mpd config directories
   file: path={{ item }} state=directory
   loop:
