@@ -4,9 +4,13 @@
   loop:
     - ~/.config/mpd
     - ~/.config/mpd/playlists
+    - ~/.ncmpcpp
 
 - name: mpd | install mpd config
-  file: src={{ ansible_env.PWD }}/roles/mpd/files/mpd.conf
-        path=~/.config/mpd/mpd.conf 
+  file: src={{ ansible_env.PWD }}/roles/mpd/files/{{ item }}
+        path=~/{{ item }}
         state=link
         force=yes
+  loop:
+    - .config/mpd/mpd.conf
+    - .ncmpcpp/config
