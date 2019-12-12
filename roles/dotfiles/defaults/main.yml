@@ -1,0 +1,20 @@
+---
+dotfiles_files:
+  - .agignore
+  - .gemrc
+  - .gitignore
+  - .gitconfig
+  - .latexmkrc
+  - .local/bin/configure-wacom
+  - .local/bin/parse1pass
+  - .local/bin/screenshot
+  - .rtorrent.rc
+  - .tmux.conf
+  - .todo.actions.d/edit
+  - .todo.actions.d/e
+  - .Xresources
+  - .Xmodmap
+  - .zsh/aliases
+  - .zsh/functions
+  - .zsh/path
+  - .zshrc

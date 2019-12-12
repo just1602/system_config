@@ -1,0 +1,26 @@
+# vim
+*.swp
+*.swo
+
+# python
+*.pyc
+*.egg-info
+venv/
+.env
+
+# C/C++
+*.o
+*.so
+*.a
+build/
+
+# LaTeX
+*.aux
+*.log
+*.out
+*.pdf
+*.fls
+*.fdb_latexmk
+
+# jetbrains folder
+.idea/

@@ -1,0 +1,62 @@
+[user]
+	email = just1602@riseup.net
+	name = Justin Lavoie
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+	decorate = auto
+	ui = auto
+	showbranch = auto
+	grep = auto
+
+[color "branch"]
+	current = green bold
+	locate = yellow
+	remote = blue bold
+
+[color "status"]
+	added = green bold
+	changed = blue bold
+	untracked = red bold
+
+[color "diff"]
+	meta = blue bold
+	frag = magenta bold
+	old = red
+	new = green
+
+[core]
+	editor = "nvim"
+	pager = "less"
+	excludesfile = ~/.gitignore
+[alias]
+  a = add
+  ap = add -p
+  bd = branch -d
+	br = branch -av
+	co = checkout
+  cb = checkout -b
+	cm = commit -v
+	cma = commit -av
+	di = diff
+  fp = fetch -p
+  lg = log --graph --oneline --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%aN>%Creset' 
+	ps = push
+	pu = pull --rebase
+	re = remote -v
+	st = status -sb
+  stash = stash -u
+  uncommit = reset --soft HEAD~
+  unstage = reset HEAD --
+  sc = switch -c
+  pp = pu --prune
+[push]
+	default = current
+[diff "gpg"]
+	textconv = gpg --no-tty --decrypt
+[pager]
+    branch = false
+[protocol]
+	version = 2

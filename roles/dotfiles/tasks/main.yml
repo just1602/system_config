@@ -1,0 +1,23 @@
+---
+- name: dotfiles | create config directories
+  file: path={{ item }} state=directory
+  loop:
+    - ~/.config
+    - ~/.config/gnupg
+    - ~/.config/nvim
+    - ~/.config/khal
+    - ~/.config/khard
+    - ~/.config/vdirsyncer
+    - ~/.config/youtube-dl
+    - ~/.local
+    - ~/.local/bin
+    - ~/.todo
+    - ~/.todo.actions.d
+    - ~/.zsh
+
+- name: dotfiles | create symlinks
+  file: src={{ ansible_env.PWD }}/roles/dotfiles/files/{{ item }}
+        path=~/{{ item }}
+        state=link
+        force=yes
+  loop: '{{dotfiles_files}}'

@@ -1,0 +1,30 @@
+source dracula.muttrc
+
+# loand all passwords
+source accounts/passwords
+
+folder-hook 'account.net.riseup' 'source ~/.config/neomutt/accounts/account.net.riseup'
+folder-hook 'account.ca.resist' 'source ~/.config/neomutt/accounts/account.ca.resist'
+
+# default account
+source accounts/account.net.riseup
+
+macro index <F2> '<sync-mailbox><enter-command>source ~/.config/neomutt/accounts/account.net.riseup<enter><change-folder>!<enter>'
+macro index <F3> '<sync-mailbox><enter-command>source ~/.config/neomutt/accounts/account.ca.resist<enter><change-folder>!<enter>'
+
+# imap generic stuff
+unset imap_passive
+set imap_keepalive = 300
+set mail_check = 120
+
+set sort = 'reverse-date'
+
+set editor=`echo \$EDITOR`
+
+set date_format="%Y/%m/%d %I:%M"
+set index_format="%2C %zs %?X?A& ? %D %-15.15F %s (%-4.4c)"
+
+bind index H imap-fetch-mail
+bind index g noop
+bind index G last-entry
+bind index gg first-entry
