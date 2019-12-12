@@ -1,0 +1,7 @@
+---
+awesome_config_files:
+  - .config/awesome/rc.lua
+  - .config/awesome/volume.lua
+  - .config/awesome/autorun.sh
+  - .config/awesome/just1602
+  - .config/awesome/battery-widget

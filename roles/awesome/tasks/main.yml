@@ -1,0 +1,20 @@
+---
+- name: awesome | install packages
+  pacman:
+    name:
+      - awesome
+      - vicious
+    state: latest
+
+- name: mpd | create awesome config directory
+  file: path={{ item }} state=directory
+  loop:
+    - ~/.config
+    - ~/.config/awesome
+
+- name: mpd | install mpd config
+  file: src={{ ansible_env.PWD }}/roles/awesome/files/{{ item }}
+        path=~/{{ item }}
+        state=link
+        force=yes
+  loop: '{{ awesome_config_files }}'
