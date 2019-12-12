@@ -1,6 +1,8 @@
 ---
 dotfiles_files:
   - .agignore
+  - .config/youtube-dl/config
+  - .config/nvim/init.vim
   - .gemrc
   - .gitignore
   - .gitconfig
