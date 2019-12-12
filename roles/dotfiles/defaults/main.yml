@@ -3,6 +3,13 @@ dotfiles_files:
   - .agignore
   - .config/youtube-dl/config
   - .config/nvim/init.vim
+  - .config/khal/config
+  - .config/khard/khard.conf
+  - .config/neomutt/neomuttrc
+  - .config/neomutt/accounts/account.ca.resist
+  - .config/neomutt/accounts/account.net.riseup
+  - .config/neomutt/accounts/passwords
+  - .config/vdirsyncer/config
   - .gemrc
   - .gitignore
   - .gitconfig
