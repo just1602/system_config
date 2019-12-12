@@ -9,6 +9,7 @@
     - ~/.config/khard
     - ~/.config/vdirsyncer
     - ~/.config/youtube-dl
+    - ~/.gnupg
     - ~/.local
     - ~/.local/bin
     - ~/.todo
