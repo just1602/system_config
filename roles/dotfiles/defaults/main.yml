@@ -19,6 +19,7 @@ dotfiles_files:
   - .local/bin/screenshot
   - .rtorrent.rc
   - .tmux.conf
+  - .todo/config
   - .todo.actions.d/edit
   - .todo.actions.d/e
   - .Xresources
