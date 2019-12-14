@@ -229,6 +229,11 @@ fi
 
 export HISTFILE="$HOME/.zsh_history"
 
+## ssh-agent
+if [ -z "$SSH_AUTH_SOCK" ]; then
+  export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
+fi
+
 source $HOME/.zsh/aliases
 source $HOME/.zsh/path
 source $HOME/.zsh/functions

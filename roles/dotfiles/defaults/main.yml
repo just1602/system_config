@@ -8,6 +8,7 @@ dotfiles_files:
   - .config/neomutt/accounts/passwords
   - .config/neomutt/neomuttrc
   - .config/nvim/init.vim
+  - .config/systemd/user/ssh-agent.service
   - .config/vdirsyncer/config
   - .config/youtube-dl/config
   - .gemrc

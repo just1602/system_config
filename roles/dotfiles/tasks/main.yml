@@ -7,6 +7,8 @@
     - ~/.config/nvim
     - ~/.config/khal
     - ~/.config/khard
+    - ~/.config/systemd
+    - ~/.config/systemd/user
     - ~/.config/vdirsyncer
     - ~/.config/youtube-dl
     - ~/.gnupg
