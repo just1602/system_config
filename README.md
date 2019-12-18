@@ -1,7 +1,7 @@
 # System Configurations Files
 
-To install the config files :
+The config is now using ansible :
 
-`stow -d $HOME/system_config -t $HOME user`
+To deploy it, simply run :
 
-`sudo stow -d $HOME/system_config -t /etc system`
+`ansible-playbook -i inventory desktop.yml`
