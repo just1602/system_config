@@ -1,5 +1,7 @@
 # zsh aliases
 
+alias ap='ansible-playbook'
+
 alias ls='ls --color=auto'
 
 alias ta='tmux attach -t'
