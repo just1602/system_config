@@ -1,0 +1,33 @@
+---
+dotfiles_files:
+  - .agignore
+  - .config/khal/config
+  - .config/khard/khard.conf
+  - .config/neomutt/accounts/account.ca.resist
+  - .config/neomutt/accounts/account.net.riseup
+  - .config/neomutt/accounts/passwords
+  - .config/neomutt/neomuttrc
+  - .config/nvim/init.vim
+  - .config/systemd/user/ssh-agent.service
+  - .config/systemd/user/tmux.service
+  - .config/vdirsyncer/config
+  - .config/youtube-dl/config
+  - .gemrc
+  - .gitignore
+  - .gitconfig
+  - .gnupg/gpg-agent.conf
+  - .latexmkrc
+  - .local/bin/configure-wacom
+  - .local/bin/parse1pass
+  - .local/bin/screenshot
+  - .rtorrent.rc
+  - .tmux.conf
+  - .todo/config
+  - .todo.actions.d/edit
+  - .todo.actions.d/e
+  - .Xresources
+  - .Xmodmap
+  - .zsh/aliases
+  - .zsh/functions
+  - .zsh/path
+  - .zshrc
