@@ -1,0 +1,8 @@
+---
+- hosts: localhost
+  connection: local
+  roles:
+    - { role: dotfiles }
+    - { role: mpd }
+    - { role: awesome }
+    - { role: touchpad }
