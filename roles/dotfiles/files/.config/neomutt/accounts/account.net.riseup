@@ -1,13 +1,6 @@
 set from = "just1602@riseup.net"
 set realname = "Justin !"
-set imap_user = "just1602"
-set imap_pass="$my_riseup_pass"
-set folder = imaps://imap.riseup.net
-set spoolfile = +INBOX
-mailboxes =INBOX
-set certificate_file = "~/.config/neomutt/accounts/net.riseup/certificates"
-set header_cache = "~/.config/neomutt/accounts/net.riseup/headers"
-set message_cachedir = "~/.config/neomutt/accounts/net.riseup/bodies"
-set record = +Sent
-set postponed = "+Drafts"
-set smtp_url = "smtps://$imap_user:$my_riseup_pass@smtp.riseup.net"
+set folder = ~/mail/riseup
+set spoolfile = ~/mail/riseup/INBOX
+set record = "+.Sent"
+set postponed = "+.Drafts"

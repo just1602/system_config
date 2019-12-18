@@ -5,7 +5,6 @@ dotfiles_files:
   - .config/khard/khard.conf
   - .config/neomutt/accounts/account.ca.resist
   - .config/neomutt/accounts/account.net.riseup
-  - .config/neomutt/accounts/passwords
   - .config/neomutt/neomuttrc
   - .config/nvim/init.vim
   - .config/systemd/user/ssh-agent.service
@@ -20,6 +19,8 @@ dotfiles_files:
   - .local/bin/configure-wacom
   - .local/bin/parse1pass
   - .local/bin/screenshot
+  - .offlineimaprc
+  - .offlineimap.py
   - .rtorrent.rc
   - .tmux.conf
   - .todo/config
