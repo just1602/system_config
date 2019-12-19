@@ -1,6 +1,6 @@
 # zsh aliases
 
-alias ap='ansible-playbook'
+alias ap='ansible-playbook -i inventory'
 
 alias ls='ls --color=auto'
 
