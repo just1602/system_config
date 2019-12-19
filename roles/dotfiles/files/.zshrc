@@ -229,9 +229,14 @@ fi
 
 export HISTFILE="$HOME/.zsh_history"
 
-## ssh-agent
-if [ -z "$SSH_AUTH_SOCK" ]; then
-  export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
+## configure gpg-agent to use the right tty
+export GPG_TTY=$(tty)
+gpg-connect-agent updatestartuptty /bye >/dev/null
+
+## configure gpg-agent to act as ssh-agent too
+unset SSH_AGENT_PID
+if [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then
+  export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
 fi
 
 source $HOME/.zsh/aliases
@@ -242,7 +247,7 @@ source $HOME/.zsh/functions
 
 ## homebew stuff
 if [[ "$OSTYPE" == darwin* ]]; then
-    source $HOME/.secret_tokens
+  source $HOME/.secret_tokens
 fi
 
 ## virtualenvwrapper stuff
