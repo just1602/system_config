@@ -20,9 +20,11 @@ dotfiles_files:
   - .local/bin/configure-wacom
   - .local/bin/parse1pass
   - .local/bin/screenshot
+  - .msmtprc
   - .offlineimaprc
   - .offlineimap.py
   - .rtorrent.rc
+  - .ssh/config
   - .tmux.conf
   - .todo/config
   - .todo.actions.d/edit
