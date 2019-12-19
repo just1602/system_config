@@ -4,3 +4,6 @@ set folder = ~/mail/riseup
 set spoolfile = ~/mail/riseup/INBOX
 set record = "+.Sent"
 set postponed = "+.Drafts"
+set use_from = yes
+set envelope_from = yes
+set sendmail="/usr/bin/msmtp"
