@@ -4,6 +4,8 @@
   loop:
     - ~/.config
     - ~/.config/gnupg
+    - ~/.config/neomutt
+    - ~/.config/neomutt/accounts
     - ~/.config/nvim
     - ~/.config/khal
     - ~/.config/khard
