@@ -16,6 +16,7 @@
     - ~/.gnupg
     - ~/.local
     - ~/.local/bin
+    - ~/.ssh
     - ~/.todo
     - ~/.todo.actions.d
     - ~/.zsh
