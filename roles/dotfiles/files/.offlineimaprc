@@ -1,6 +1,6 @@
 [general]
 accounts = riseup,resist
-pythonfile = /home/goldman/.offlineimap.py
+pythonfile = ~/.offlineimap.py
 
 [Account riseup]
 localrepository = riseup-local
