@@ -1,1 +1,11 @@
-/home/goldman/system_config/roles/dotfiles/files/.local/bin/screenshot
+#!/bin/bash
+
+set -e
+
+sel=$(slop -f "-g %g")
+
+if [ ! -z "$1" ] && [ "$1" == "--to-clipboard" ]; then
+  shotgun $sel - | xclip -selection clipboard -t image/png
+else
+  shotgun $sel
+fi
