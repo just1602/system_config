@@ -21,6 +21,8 @@ dotfiles_files:
   - .local/bin/parse1pass
   - .local/bin/screenshot
   - .msmtprc
+  - .notmuch-config
+  - .notmuch-hook.sh
   - .offlineimaprc
   - .offlineimap.py
   - .rtorrent.rc

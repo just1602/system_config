@@ -5,6 +5,7 @@ pythonfile = ~/.offlineimap.py
 [Account riseup]
 localrepository = riseup-local
 remoterepository = riseup-remote
+postsynchook = ~/.notmuch-hook.sh
 
 [Repository riseup-local]
 type = Maildir
@@ -23,6 +24,7 @@ folderfilter = lambda foldername: foldername in ["INBOX", "Sent", "Drafts"]
 [Account resist]
 localrepository = resist-local
 remoterepository = resist-remote
+postsynchook = ~/.notmuch-hook.sh
 
 [Repository resist-local]
 type = Maildir

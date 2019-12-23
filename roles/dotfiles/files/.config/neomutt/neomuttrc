@@ -17,3 +17,7 @@ set index_format="%2C %zs %?X?A& ? %D %-15.15F %s (%-4.4c)"
 bind index g noop
 bind index G last-entry
 bind index gg first-entry
+
+set virtual_spoolfile=yes
+set folder=~/mail
+source ~/mail/mailboxes
