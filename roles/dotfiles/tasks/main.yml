@@ -1,4 +1,8 @@
 ---
+- name: dotfiles | include passwords
+  include_vars:
+    file: passwords.yml
+
 - name: dotfiles | create config directories
   file: path={{ item }} state=directory
   loop:
@@ -27,3 +31,9 @@
         state=link
         force=yes
   loop: '{{dotfiles_files}}'
+
+- name: dotfiles | create templates
+  template: dest={{ ansible_env.HOME }}/{{ item }}
+            mode={{ '0755' if item.endswith('.sh') else '0644' }}
+            src={{ item }}
+  loop: '{{templates_files}}'

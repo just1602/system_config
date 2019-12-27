@@ -10,7 +10,6 @@ dotfiles_files:
   - .config/neomutt/neomuttrc
   - .config/nvim/init.vim
   - .config/systemd/user/tmux.service
-  - .config/vdirsyncer/config
   - .config/youtube-dl/config
   - .gemrc
   - .gitignore
@@ -37,3 +36,6 @@ dotfiles_files:
   - .zsh/functions
   - .zsh/path
   - .zshrc
+
+templates_files:
+  - .config/vdirsyncer/config

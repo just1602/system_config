@@ -1,3 +1,5 @@
+# {{ ansible_managed }}
+
 [general]
 status_path = "~/.vdirsyncer/status/"
 
@@ -16,7 +18,7 @@ fileext = ".vcf"
 type = "carddav"
 url = "https://cloud.disroot.org/remote.php/carddav/"
 username = "just1602"
-password.fetch = ["command", "pass", "disroot.org"]
+password = "{{ card_cal_pass }}"
 
 [pair my_calendars]
 a = "my_calendars_local"
@@ -33,4 +35,4 @@ fileext = ".ics"
 type = "caldav"
 url = "https://cloud.disroot.org/remote.php/caldav/"
 username = "just1602"
-password.fetch = ["command", "pass", "disroot.org"]
+password = "{{ card_cal_pass }}"
