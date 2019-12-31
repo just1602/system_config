@@ -19,7 +19,6 @@ dotfiles_files:
   - .local/bin/configure-wacom
   - .local/bin/parse1pass
   - .local/bin/screenshot
-  - .notmuch-config
   - .notmuch-hook.sh
   - .rtorrent.rc
   - .ssh/config
@@ -37,4 +36,5 @@ dotfiles_files:
 templates_files:
   - .config/vdirsyncer/config
   - .msmtprc
+  - .notmuch-config
   - .offlineimaprc
