@@ -22,8 +22,6 @@ dotfiles_files:
   - .msmtprc
   - .notmuch-config
   - .notmuch-hook.sh
-  - .offlineimaprc
-  - .offlineimap.py
   - .rtorrent.rc
   - .ssh/config
   - .tmux.conf
@@ -39,3 +37,4 @@ dotfiles_files:
 
 templates_files:
   - .config/vdirsyncer/config
+  - .offlineimaprc
