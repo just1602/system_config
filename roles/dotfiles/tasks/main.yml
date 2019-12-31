@@ -37,3 +37,12 @@
             mode={{ '0755' if item.endswith('.sh') else '0600' }}
             src={{ item }}
   loop: '{{templates_files}}'
+
+- name: dotfiles | enable user services
+  systemd:
+    name: '{{ item }}'
+    daemon_reload: yes
+    scope: user
+    enabled: yes
+    state: started
+  loop: '{{services}}'

@@ -40,3 +40,8 @@ templates_files:
   - .msmtprc
   - .notmuch-config
   - .offlineimaprc
+
+services:
+  - offlineimap.timer
+  - vdirsyncer.timer
+  - tmux
