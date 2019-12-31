@@ -9,6 +9,8 @@ dotfiles_files:
   - .config/neomutt/accounts/account.net.riseup
   - .config/neomutt/neomuttrc
   - .config/nvim/init.vim
+  - .config/systemd/user/offlineimap.service
+  - .config/systemd/user/offlineimap.timer
   - .config/systemd/user/tmux.service
   - .config/youtube-dl/config
   - .gemrc
