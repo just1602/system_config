@@ -34,6 +34,6 @@
 
 - name: dotfiles | create templates
   template: dest={{ ansible_env.HOME }}/{{ item }}
-            mode={{ '0755' if item.endswith('.sh') else '0644' }}
+            mode={{ '0755' if item.endswith('.sh') else '0600' }}
             src={{ item }}
   loop: '{{templates_files}}'
