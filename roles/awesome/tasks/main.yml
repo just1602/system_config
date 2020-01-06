@@ -6,13 +6,13 @@
       - vicious
     state: latest
 
-- name: mpd | create awesome config directory
+- name: awesome | create awesome config directory
   file: path={{ item }} state=directory
   loop:
     - ~/.config
     - ~/.config/awesome
 
-- name: mpd | install mpd config
+- name: awesome | install mpd config
   file: src={{ ansible_env.PWD }}/roles/awesome/files/{{ item }}
         path=~/{{ item }}
         state=link
