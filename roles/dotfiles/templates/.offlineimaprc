@@ -1,6 +1,7 @@
+# {{ ansible_managed }}
+
 [general]
 accounts = riseup,resist
-pythonfile = ~/.offlineimap.py
 
 [Account riseup]
 localrepository = riseup-local
@@ -18,7 +19,7 @@ sslcacertfile = /etc/ssl/certs/ca-certificates.crt
 ssl_version = tls1_2
 remotehost = imap.riseup.net
 remoteuser = just1602
-remotepasseval = get_pass("just1602@riseup.net")
+remotepass = {{ riseup_pass }}
 folderfilter = lambda foldername: foldername in ["INBOX", "Sent", "Drafts"]
 
 [Account resist]
@@ -37,5 +38,5 @@ sslcacertfile = /etc/ssl/certs/ca-certificates.crt
 ssl_version = tls1_2
 remotehost = mail.resist.ca
 remoteuser = just1602@resist.ca
-remotepasseval = get_pass("just1602@resist.ca")
+remotepass = {{ resist_pass }}
 folderfilter = lambda foldername: foldername in ["INBOX", "Sent", "Drafts"]

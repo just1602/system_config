@@ -9,8 +9,9 @@ dotfiles_files:
   - .config/neomutt/accounts/account.net.riseup
   - .config/neomutt/neomuttrc
   - .config/nvim/init.vim
+  - .config/systemd/user/offlineimap.service
+  - .config/systemd/user/offlineimap.timer
   - .config/systemd/user/tmux.service
-  - .config/vdirsyncer/config
   - .config/youtube-dl/config
   - .gemrc
   - .gitignore
@@ -20,11 +21,7 @@ dotfiles_files:
   - .local/bin/configure-wacom
   - .local/bin/parse1pass
   - .local/bin/screenshot
-  - .msmtprc
-  - .notmuch-config
   - .notmuch-hook.sh
-  - .offlineimaprc
-  - .offlineimap.py
   - .rtorrent.rc
   - .ssh/config
   - .tmux.conf
@@ -37,3 +34,14 @@ dotfiles_files:
   - .zsh/functions
   - .zsh/path
   - .zshrc
+
+templates_files:
+  - .config/vdirsyncer/config
+  - .msmtprc
+  - .notmuch-config
+  - .offlineimaprc
+
+services:
+  - offlineimap.timer
+  - vdirsyncer.timer
+  - tmux

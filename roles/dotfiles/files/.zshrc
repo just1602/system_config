@@ -195,12 +195,16 @@ bindkey '^R' history-incremental-search-backward
 # Options
 setopt AUTO_PARAM_SLASH
 setopt AUTO_CD
-setopt HIST_IGNORE_DUPS
-setopt HIST_IGNORE_ALL_DUPS
-setopt HIST_IGNORE_SPACE
 setopt CORRECT
 setopt NO_FLOW_CONTROL
 
+# history
+HISTFILE="$HOME/.zsh_history"
+HISTSIZE=10000
+SAVEHIST=10000
+setopt HIST_IGNORE_DUPS
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_IGNORE_SPACE
 
 # User configuration
 
@@ -227,7 +231,6 @@ if [[ "$OSTYPE" == darwin* ]]; then
     export BROWSER='open'
 fi
 
-export HISTFILE="$HOME/.zsh_history"
 
 ## configure gpg-agent to use the right tty
 export GPG_TTY=$(tty)
