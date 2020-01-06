@@ -3,5 +3,5 @@
   connection: local
   roles:
     - { role: dotfiles }
-    - { role: mpd }
+    - { role: mpd, tags: mpd}
     - { role: awesome }
