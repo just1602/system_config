@@ -20,4 +20,8 @@ bind index gg first-entry
 
 set virtual_spoolfile=yes
 set folder=~/mail
-source ~/mail/mailboxes
+
+# notmuch virtual mailboxes
+virtual-mailboxes "inbox" "notmuch://?query=tag:inbox"
+virtual-mailboxes "archive" "notmuch://?query=tag:archive"
+virtual-mailboxes "sent" "notmuch://?query=tag:sent"
