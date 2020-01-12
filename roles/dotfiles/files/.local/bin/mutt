@@ -1,0 +1,12 @@
+#!/bin/sh
+
+set -e
+
+if tmux has-session mail 2> /dev/null; then
+  tmux attach -t mail
+  exit
+fi
+
+tmux new-session -d -s mail -n neomutt
+tmux send-keys -t mail:neomutt 'neomutt' Enter
+tmux attach -t mail
