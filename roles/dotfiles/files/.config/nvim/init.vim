@@ -142,6 +142,9 @@ nmap <leader>t :vs<cr>:A<cr>
 
 autocmd FileType make setlocal noexpandtab
 
+" diary files
+autocmd BufNewFile,BufRead *.diary setlocal filetype=markdown nobackup noswapfile nowritebackup noundofile spell spelllang=fr colorcolumn= textwidth=9999
+
 " latex file configuration
 autocmd BufNewFile,BufRead *.tex setlocal filetype=tex spell spelllang=fr colorcolumn= textwidth=9999
 let g:tex_comment_nospell=1
