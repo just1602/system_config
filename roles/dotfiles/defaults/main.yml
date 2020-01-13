@@ -21,7 +21,6 @@ dotfiles_files:
   - .local/bin/configure-wacom
   - .local/bin/parse1pass
   - .local/bin/screenshot
-  - .local/bin/mkcd
   - .local/bin/mutt
   - .notmuch-hook.sh
   - .rtorrent.rc

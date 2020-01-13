@@ -46,3 +46,7 @@ compdef t=todo.sh
     return 1
   fi
 }
+
+mkcd() {
+  mkdir -p "$1" && builtin cd "$1"
+}
