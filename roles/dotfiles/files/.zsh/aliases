@@ -36,6 +36,8 @@ alias feh='feh -F'
 alias td='todo.sh do'
 alias tls='todo.sh ls'
 
+alias yl='youtube-dl'
+
 if [[ "$OSTYPE" == linux* ]]; then
     alias xclip='xclip -selection c'
 fi
