@@ -17,6 +17,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'machakann/vim-highlightedyank'
 Plug 'RRethy/vim-illuminate'
 Plug 'vim-scripts/Auto-Pairs'
+Plug 'rhysd/clever-f.vim'
 
 Plug 'cakebaker/scss-syntax.vim', {'for': 'scss'}
 Plug 'isRuslan/vim-es6'
