@@ -35,6 +35,7 @@
   a = add
   ap = add -p
   bd = branch -d
+  bD = branch -D
 	br = branch -av
 	co = checkout
   cb = checkout -b
