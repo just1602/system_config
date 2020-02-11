@@ -14,6 +14,8 @@ set editor=`echo \$EDITOR`
 set date_format="%Y/%m/%d %I:%M"
 set index_format="%2C %zs %?X?A& ? %D %-15.15F %s (%-4.4c)"
 
+set query_command="khard email -p %s"
+
 bind index g noop
 bind index G last-entry
 bind index gg first-entry
