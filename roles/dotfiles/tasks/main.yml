@@ -15,6 +15,7 @@
     - ~/.config/khard
     - ~/.config/systemd
     - ~/.config/systemd/user
+    - ~/.config/todoman
     - ~/.config/vdirsyncer
     - ~/.config/youtube-dl
     - ~/.gnupg

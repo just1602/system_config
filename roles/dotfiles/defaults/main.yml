@@ -12,6 +12,7 @@ dotfiles_files:
   - .config/systemd/user/offlineimap.service
   - .config/systemd/user/offlineimap.timer
   - .config/systemd/user/tmux.service
+  - .config/todoman/todoman.conf
   - .config/youtube-dl/config
   - .gemrc
   - .gitignore
