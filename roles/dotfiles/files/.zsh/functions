@@ -12,19 +12,6 @@ g ()
 }
 compdef g=git
 
-# No arguments: `t ls`
-# with arguments acts like `t`
-t ()
-{
-  if [[ $# -gt 0 ]]; then
-    todo.sh "$@"
-  else
-    clear
-    todo.sh ls
-  fi
-}
-compdef t=todo.sh
-
 # Deprecated : will be remove when transition back to pass will be done
 1pass ()
 {
