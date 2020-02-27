@@ -27,9 +27,6 @@ dotfiles_files:
   - .rtorrent.rc
   - .ssh/config
   - .tmux.conf
-  - .todo/config
-  - .todo.actions.d/edit
-  - .todo.actions.d/e
   - .Xresources
   - .Xmodmap
   - .zsh/aliases
