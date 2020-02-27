@@ -35,7 +35,7 @@ alias feh='feh -F'
 
 alias t='todo'
 alias tn='todo new'
-alais te='todo edit'
+alias te='todo edit'
 
 alias yl='youtube-dl'
 
