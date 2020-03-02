@@ -46,6 +46,6 @@ URxvt*boldItalicFont: xft:DejaVu Sans Mono for Powerline:style=bolditalic:antial
 *.color5: #a18daf
 *.color13: #c6aed7
 *.color6: #659ea2
-*.color14: 7dc2c7
+*.color14: #7dc2c7
 *.color7: #b5b4c9
 *.color15: #f0ecfe
