@@ -5,6 +5,7 @@
       - mpd
       - ncmpcpp
     state: latest
+  become: yes
 
 - name: mpd | create mpd config directories
   file: path={{ item }} state=directory
