@@ -22,5 +22,6 @@ build/
 *.fls
 *.fdb_latexmk
 
-# jetbrains folder
+# jetbrains
 .idea/
+*.iml
