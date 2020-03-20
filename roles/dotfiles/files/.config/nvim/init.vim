@@ -34,6 +34,7 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-git'
 Plug 'kana/vim-textobj-user'
 Plug 'whatyouhide/vim-textobj-erb'
+Plug 'martinda/Jenkinsfile-vim-syntax'
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " (Optional) Multi-entry selection UI.
@@ -153,14 +154,17 @@ let g:tex_comment_nospell=1
 " markdown file configuration
 autocmd FileType markdown setlocal spell spelllang=fr textwidth=9999
 
-" html file configuration"
+" html file configuration
 autocmd FileType html,eruby setlocal textwidth=9999
 
 " textile file configuration
 autocmd FileType text setlocal spell spelllang=fr colorcolumn= textwidth=9999
 
-" python 4 space tabs
+" python file configuration
 autocmd FileType python setlocal tabstop=4 shiftwidth=4 autochdir
+
+" Jenkinsfile file configuration
+autocmd FileType Jenkinsfile setlocal tabstop=4 shiftwidth=4
 
 " cpp settings
 let g:cpp_class_scope_highlight = 1
