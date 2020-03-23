@@ -301,7 +301,7 @@ globalkeys = awful.util.table.join(
               {description = "Lower volume", group="user"}),
     awful.key({}, "XF86AudioMute", function () awful.spawn("amixer -q sset Master toggle") end,
               {description = "Toglle mute", group="user"}),
-    awful.key({modkey}, "l", function () awful.spawn("light-locker-command -l") end,
+    awful.key({modkey, "Control"}, "l", function () awful.spawn("light-locker-command -l") end,
               {description = "Lock screen", group="user"}),
     awful.key({}, "XF86MonBrightnessUp", function () awful.spawn("xbacklight -inc 5") end,
               {description = "Increase backlight", group="user"}),
