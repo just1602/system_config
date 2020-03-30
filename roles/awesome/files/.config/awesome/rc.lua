@@ -510,6 +510,8 @@ awful.rules.rules = {
 
      { rule = { class = "Firefox" },
        properties = { tag = "www" } },
+     { rule = { class = "urxvt" },
+       properties = { placement = awful.placement.centered } },
      { rule = { class = "Thunderbird" },
        properties = { tag = "email" } },
 }
