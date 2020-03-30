@@ -7,7 +7,6 @@ function run {
   fi
 }
 
-run urxvtd -q -o -f
 run light-locker
 run keybase
 run nextcloud
