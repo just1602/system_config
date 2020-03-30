@@ -8,5 +8,4 @@ function run {
 }
 
 run light-locker
-run keybase
 run nextcloud
