@@ -5,6 +5,7 @@ dotfiles_files:
   - .gnupg/gpg-agent.conf
   - .config/khal/config
   - .config/khard/khard.conf
+  - .config/mimeapps.list
   - .config/neomutt/accounts/account.ca.resist
   - .config/neomutt/accounts/account.net.riseup
   - .config/neomutt/neomuttrc
