@@ -1,4 +1,5 @@
 URxvt*geometry: 80x30
+URxvt*internalBorder: 3
 URxvt*scrollBar: false
 
 URxvt.perl-ext-common: tabbedex,font-size,default,matcher
@@ -14,7 +15,6 @@ Xft.antialias: true
 Xft.rgba: rgb
 Xft.hinting: true
 Xft.hintstyle: hintfull
-
 
 URxvt.letterSpace: -1
 
