@@ -1,4 +1,5 @@
 [Default Applications]
+x-www-browser=firefox-developer-edition.desktop
 x-scheme-handler/http=firefox-developer-edition.desktop
 x-scheme-handler/https=firefox-developer-edition.desktop
 x-scheme-handler/ftp=firefox-developer-edition.desktop
@@ -15,19 +16,8 @@ message/rfc822=userapp-Thunderbird-YD1JQZ.desktop
 x-scheme-handler/sgnl=signal-desktop.desktop
 x-scheme-handler/msteams=teams.desktop
 application/pdf=org.pwmt.zathura.desktop
-
-[Added Associations]
-x-scheme-handler/http=firefox-developer-edition.desktop;
-x-scheme-handler/https=firefox-developer-edition.desktop;
-x-scheme-handler/ftp=firefox-developer-edition.desktop;
-x-scheme-handler/chrome=firefox-developer-edition.desktop;
-text/html=firefox-developer-edition.desktop;
-application/x-extension-htm=firefox-developer-edition.desktop;
-application/x-extension-html=firefox-developer-edition.desktop;
-application/x-extension-shtml=firefox-developer-edition.desktop;
-application/xhtml+xml=firefox-developer-edition.desktop;
-application/x-extension-xhtml=firefox-developer-edition.desktop;
-application/x-extension-xht=firefox-developer-edition.desktop;
-x-scheme-handler/mailto=userapp-Thunderbird-YD1JQZ.desktop;
-message/rfc822=userapp-Thunderbird-YD1JQZ.desktop;
-application/pdf=org.pwmt.zathura-pdf-mupdf.desktop;org.pwmt.zathura-pdf-poppler.desktop;
+image/jpeg=feh.desktop
+image/png=feh.desktop
+video/x-matroska=mpv.desktop
+audio/mpeg=mpv.desktop
+audio/x-aiff=mpv.desktop
