@@ -178,7 +178,8 @@ let g:rustfmt_autosave = 1
 let g:vimtex_compiler_progname = 'nvr'
 
 " tel Ctrl-P to use ag and to don't do caching
-let g:ctrlp_user_command = 'ag %s -l --hidden --nocolor -g ""'
+" We can also add set grepprg=rg\ --color=never to grep inside vim
+let g:ctrlp_user_command = 'rg %s --files --color=never --glob ""'
 let g:ctrlp_use_caching = 0
 
 " coc config
