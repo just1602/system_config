@@ -13,6 +13,7 @@
   pacman:
     name:
       - dialog
+      - mosh
       - netctl
       - openssh
       - openvpn
