@@ -4,6 +4,9 @@
     name:
       - awesome
       - fontconfig
+      - lightdm
+      - lightdm-gtk-greeter
+      - light-locker
       - rxvt-unicode
       - rxvt-unicode-terminfo
       - shotgun
