@@ -18,6 +18,8 @@
       - xorg-xrdb
     state: latest
   become: yes
+  tags:
+    - packages
 
 - name: awesome | create awesome config directory
   file: path={{ item }} state=directory

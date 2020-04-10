@@ -25,6 +25,8 @@
       - pass
     state: latest
   become: yes
+  tags:
+    - packages
 
 - name: dotfiles | create config directories
   file: path={{ item }} state=directory

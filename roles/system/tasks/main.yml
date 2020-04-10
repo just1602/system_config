@@ -18,7 +18,11 @@
       - wpa_supplicant
     state: latest
   become: yes
+  tags:
+    - packages
 
 - name: system | install yay
   aur:
     name: yay
+  tags:
+    - packages

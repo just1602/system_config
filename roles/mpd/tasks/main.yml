@@ -7,10 +7,14 @@
       - playerctl
     state: latest
   become: yes
+  tags:
+    - packages
 
 - name: mpd | install mpd-mpris
   aur:
     name: mpd-mpris
+  tags:
+    - packages
 
 - name: mpd | create mpd config directories
   file: path={{ item }} state=directory
