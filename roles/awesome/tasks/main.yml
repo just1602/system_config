@@ -3,8 +3,21 @@
   pacman:
     name:
       - awesome
+      - fontconfig
+      - rxvt-unicode
+      - rxvt-unicode-terminfo
+      - shotgun
+      - slop
       - vicious
+      - xclip
+      - xorg-server
+      - xorg-xkbcomp
+      - xorg-xmodmap
+      - xorg-xprop
+      - xorg-xrandr
+      - xorg-xrdb
     state: latest
+  become: yes
 
 - name: awesome | create awesome config directory
   file: path={{ item }} state=directory
