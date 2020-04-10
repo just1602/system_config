@@ -25,6 +25,14 @@
   tags:
     - packages
 
+- name: wm | install patched fonts
+  aur:
+    name:
+      - ttf-dejavu-sans-mono-powerline
+      - urxvt-tabbedex
+  tags:
+    - packages
+
 - name: wm | create wm related config directory
   file: path={{ item }} state=directory
   loop:
