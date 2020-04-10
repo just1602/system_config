@@ -1,5 +1,5 @@
 ---
-- name: awesome | install packages
+- name: wm | install packages
   pacman:
     name:
       - awesome
@@ -21,15 +21,17 @@
   tags:
     - packages
 
-- name: awesome | create awesome config directory
+- name: wm | create wm related config directory
   file: path={{ item }} state=directory
   loop:
     - ~/.config
     - ~/.config/awesome
+    - ~/.local
+    - ~/.local/bin
 
-- name: awesome | install mpd config
-  file: src={{ ansible_env.PWD }}/roles/awesome/files/{{ item }}
+- name: wm | install wm related config
+  file: src={{ ansible_env.PWD }}/roles/wm/files/{{ item }}
         path=~/{{ item }}
         state=link
         force=yes
-  loop: '{{ awesome_config_files }}'
+  loop: '{{ wm_config_files }}'

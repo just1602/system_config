@@ -53,7 +53,7 @@
         path=~/{{ item }}
         state=link
         force=yes
-  loop: '{{dotfiles_files}}'
+  loop: '{{ dotfiles_files }}'
 
 - name: dotfiles | create templates
   template: dest={{ ansible_env.HOME }}/{{ item }}
