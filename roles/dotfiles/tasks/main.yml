@@ -23,6 +23,8 @@
       - msmtp
       - pass
       - python-virtualenvwrapper
+      - bat
+      - fd
     state: latest
   become: yes
   tags:
