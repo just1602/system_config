@@ -28,7 +28,7 @@
 - name: wm | install patched fonts
   aur:
     name:
-      - ttf-dejavu-sans-mono-powerline
+      - ttf-dejavu-sans-mono-powerline-git
       - urxvt-tabbedex
   tags:
     - packages
