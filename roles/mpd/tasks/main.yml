@@ -4,8 +4,13 @@
     name:
       - mpd
       - ncmpcpp
+      - playerctl
     state: latest
   become: yes
+
+- name: mpd | install mpd-mpris
+  aur:
+    name: mpd-mpris
 
 - name: mpd | create mpd config directories
   file: path={{ item }} state=directory
