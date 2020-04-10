@@ -1,0 +1,23 @@
+---
+- name: apps | install browsers
+  pacman:
+    name:
+      - firefox-developer-edition
+      - chromium
+    state: latest
+  become: yes
+  tags:
+    - packages
+
+- name: apps | install zathura
+  pacman:
+    name:
+      - zathura
+      - zathura-djvu
+      - zathura-pdf-poppler
+      - zathura-ps
+    state: latest
+  become: yes
+  tags:
+    - packages
+    - chat
