@@ -6,6 +6,7 @@
 - name: dotfiles | install packages
   pacman:
     name:
+      - exa
       - neovim
       - git
       - tmux
