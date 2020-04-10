@@ -6,3 +6,4 @@
     - { role: dotfiles }
     - { role: awesome }
     - { role: touchpad }
+    - { role: apps }
