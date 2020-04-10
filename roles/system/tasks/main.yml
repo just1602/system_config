@@ -1,19 +1,4 @@
 ---
-- name: system | install network package
-  pacman:
-    name:
-      - dialog
-      - netcl
-      - openvpn
-      - wpa_supplicant
-    state: latest
-  become: yes
-
-- name: system | install yay
-  aur:
-    name: yay
-  become: yes
-
 - name: system | install config
   file: src={{ ansible_env.PWD }}/roles/system/files/{{ item }}
         path=/etc/{{ item }}
@@ -23,3 +8,17 @@
     - pacman.conf
     - makepkg.conf
   become: yes
+
+- name: system | install network package
+  pacman:
+    name:
+      - dialog
+      - netctl
+      - openvpn
+      - wpa_supplicant
+    state: latest
+  become: yes
+
+- name: system | install yay
+  aur:
+    name: yay
