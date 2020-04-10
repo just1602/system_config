@@ -3,6 +3,29 @@
   include_vars:
     file: passwords.yml
 
+- name: dotfiles | install packages
+  pacman:
+    name:
+      - neovim
+      - git
+      - tmux
+      - neomutt
+      - notmuch
+      - offlineimap
+      - vdirsyncer
+      - zsh
+      - zsh-completions
+      - youtube-dl
+      - khard
+      - khal
+      - todoman
+      - ripgrep
+      - msmtp
+      - openssh
+      - pass
+    state: latest
+  become: yes
+
 - name: dotfiles | create config directories
   file: path={{ item }} state=directory
   loop:
