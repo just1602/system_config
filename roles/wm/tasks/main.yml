@@ -2,6 +2,7 @@
 - name: wm | install packages
   pacman:
     name:
+      - alsa-utils
       - awesome
       - fontconfig
       - lightdm
