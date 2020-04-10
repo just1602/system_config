@@ -5,5 +5,5 @@
     - { role: system }
     - { role: dotfiles }
     - { role: mpd, tags: mpd}
-    - { role: awesome }
+    - { role: wm }
     - { role: apps }

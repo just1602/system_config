@@ -4,6 +4,6 @@
   roles:
     - { role: system }
     - { role: dotfiles }
-    - { role: awesome }
+    - { role: wm }
     - { role: touchpad }
     - { role: apps }
