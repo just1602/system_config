@@ -21,7 +21,6 @@
       - todoman
       - ripgrep
       - msmtp
-      - openssh
       - pass
     state: latest
   become: yes
