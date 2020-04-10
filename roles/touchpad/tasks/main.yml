@@ -3,6 +3,7 @@
   pacman:
     name: xorg-xinput
     state: latest
+  become: yes
 
 - name: touchpad | install touchpad config
   file: src={{ ansible_env.PWD }}/roles/touchpad/files/.Xsession
