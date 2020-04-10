@@ -21,3 +21,12 @@
   tags:
     - packages
     - chat
+
+- name: apps | install nextcloud client
+  pacman:
+    name:
+      - nextcloud-client
+    state: latest
+  become: yes
+  tags:
+    - packages
