@@ -30,3 +30,21 @@
   become: yes
   tags:
     - packages
+
+- name: apps | install signal-desktop
+  pacman:
+    name:
+      - signal-desktop
+    state: latest
+  become: yes
+  tags:
+    - packages
+    - chat
+
+- name: apps | install mattermost client
+  aur:
+    name:
+      - mattermost-desktop
+  tags:
+    - packages
+    - chat
