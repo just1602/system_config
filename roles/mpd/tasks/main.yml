@@ -31,3 +31,14 @@
   loop:
     - .config/mpd/mpd.conf
     - .ncmpcpp/config
+
+- name: mpd | enable services
+  systemd:
+    name: '{{ item }}'
+    daemon_reload: yes
+    scope: user
+    enabled: yes
+    state: started
+  loop:
+    - mpd
+    - mpd-mpris
