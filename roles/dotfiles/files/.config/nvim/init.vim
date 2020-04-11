@@ -2,7 +2,7 @@
 if ! filereadable(expand('~/.local/share/nvim/site/autoload/plug.vim'))
   echo "Downloading junegunn/vim-plug to manage plugins..."
   silent !mkdir -p ~/.config/nvim/autoload/
-  silent !curl "https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim" > ~/.local/share/nvim/site/autoload/plug.vim
+  silent !curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
   autocmd VimEnter * PlugInstall
 endif
 
