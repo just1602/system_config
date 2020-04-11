@@ -16,7 +16,7 @@
     - makepkg.conf
   become: yes
 
-- name: system | install network package
+- name: system | install general package
   pacman:
     name:
       - dialog
@@ -24,6 +24,7 @@
       - netctl
       - openssh
       - openvpn
+      - unzip
       - wpa_supplicant
     state: latest
   become: yes
