@@ -36,3 +36,9 @@
     name: yay
   tags:
     - packages
+
+- name: system | install openvpn update resolv script
+  aur:
+    name: openvpn-update-resolv-conf-git
+  tags:
+    - packages
