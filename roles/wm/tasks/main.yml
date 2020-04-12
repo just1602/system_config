@@ -9,6 +9,7 @@
       - lightdm
       - lightdm-gtk-greeter
       - light-locker
+      - mpv
       - rxvt-unicode
       - rxvt-unicode-terminfo
       - shotgun
