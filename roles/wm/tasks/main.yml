@@ -4,6 +4,7 @@
     name:
       - alsa-utils
       - awesome
+      - feh
       - fontconfig
       - lightdm
       - lightdm-gtk-greeter
