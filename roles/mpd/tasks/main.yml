@@ -3,6 +3,7 @@
   pacman:
     name:
       - mpd
+      - mpc
       - ncmpcpp
       - playerctl
     state: latest
