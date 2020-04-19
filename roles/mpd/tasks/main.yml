@@ -17,12 +17,15 @@
   tags:
     - packages
 
+- name: mpd | delete old ncmpcpp config directory
+  file: path=~/.ncmpcpp state=absent
+
 - name: mpd | create mpd config directories
   file: path={{ item }} state=directory
   loop:
     - ~/.config/mpd
     - ~/.config/mpd/playlists
-    - ~/.ncmpcpp
+    - ~/.config/ncmpcpp
 
 - name: mpd | install mpd config
   file: src={{ ansible_env.PWD }}/roles/mpd/files/{{ item }}
@@ -31,7 +34,8 @@
         force=yes
   loop:
     - .config/mpd/mpd.conf
-    - .ncmpcpp/config
+    - .config/ncmpcpp/config
+    - .config/ncmpcpp/bindings
 
 - name: mpd | enable services
   systemd:
