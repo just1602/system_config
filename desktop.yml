@@ -6,4 +6,5 @@
     - { role: dotfiles }
     - { role: mpd, tags: mpd}
     - { role: wm }
+    - { role: firefox }
     - { role: apps }

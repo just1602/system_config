@@ -2,7 +2,6 @@
 - name: apps | install browsers
   pacman:
     name:
-      - firefox-developer-edition
       - chromium
     state: latest
   become: yes

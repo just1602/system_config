@@ -1,0 +1,22 @@
+---
+- name: firefox | install the firefox-developer-edition
+  pacman:
+    name: firefox-developer-edition
+    state: latest
+  become: yes
+  tags:
+    - packages
+
+- name: firefox | install local settings definition
+  file: src={{ ansible_env.PWD }}/roles/firefox/files/local-settings.js
+        path=/usr/lib/firefox-developer-edition/defaults/pref/local-settings.js
+        state=link
+        force=yes
+  become: yes
+
+- name: firefox | install pref file
+  file: src={{ ansible_env.PWD }}/roles/firefox/files/mozilla.cfg
+        path=/usr/lib/firefox-developer-edition/mozilla.cfg
+        state=link
+        force=yes
+  become: yes
