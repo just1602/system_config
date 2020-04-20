@@ -3,6 +3,7 @@
 alias ap='ansible-playbook -i inventory'
 
 alias ls='ls --color=auto'
+alias grep='grep --color=auto'
 
 alias tm='tmux'
 alias ta='tmux a -t'
