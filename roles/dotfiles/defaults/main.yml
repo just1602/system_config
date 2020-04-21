@@ -40,4 +40,3 @@ templates_files:
 services:
   - offlineimap.timer
   - vdirsyncer.timer
-  - tmux
