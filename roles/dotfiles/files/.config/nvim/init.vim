@@ -48,6 +48,7 @@ syntax on
 set mouse=a
 set background=dark
 set number relativenumber
+set cursorline
 set autoindent
 set autowrite
 set inccommand=nosplit
