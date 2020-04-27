@@ -11,7 +11,6 @@ filetype off
 call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'just1602/vim-substrata'
-Plug 'vim-airline/vim-airline'
 
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'machakann/vim-highlightedyank'
@@ -187,6 +186,13 @@ set updatetime=300
 set shortmess+=c
 set signcolumn=yes
 
-" airline config
-let g:airline_theme='substrata'
-let g:airline_powerline_fonts = 1
+" statusline
+set statusline=
+set statusline+=\ %M
+set statusline+=\ %y
+set statusline+=\ %r
+set statusline+=\ %F
+set statusline+=%=
+set statusline+=\ %c:%l/%L
+set statusline+=\ %p%%
+set statusline+=\ [%n]
