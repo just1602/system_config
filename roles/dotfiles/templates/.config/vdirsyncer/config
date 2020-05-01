@@ -16,7 +16,7 @@ fileext = ".vcf"
 
 [storage my_friends_remote]
 type = "carddav"
-url = "https://cloud.disroot.org/remote.php/carddav/"
+url = "https://lib3.net/nextcloud/remote.php/carddav/"
 username = "just1602"
 password = "{{ card_cal_pass }}"
 
@@ -33,6 +33,6 @@ fileext = ".ics"
 
 [storage my_calendars_remote]
 type = "caldav"
-url = "https://cloud.disroot.org/remote.php/caldav/"
+url = "https://lib3.net/nextcloud/remote.php/caldav/"
 username = "just1602"
 password = "{{ card_cal_pass }}"
