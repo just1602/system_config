@@ -150,7 +150,10 @@ autocmd BufNewFile,BufRead *.tex setlocal filetype=tex spell spelllang=fr colorc
 let g:tex_comment_nospell=1
 
 " markdown file configuration
-autocmd FileType markdown setlocal spell spelllang=fr textwidth=9999
+autocmd FileType markdown setlocal spell spelllang=fr colorcolumn= textwidth=9999
+
+" mail config
+autocmd FileType mail setlocal spell spelllang=fr
 
 " html file configuration
 autocmd FileType html,eruby setlocal textwidth=9999
