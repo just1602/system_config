@@ -12,7 +12,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'just1602/vim-substrata'
 
-Plug 'ctrlpvim/ctrlp.vim'
+Plug 'junegunn/fzf.vim'
 Plug 'machakann/vim-highlightedyank'
 Plug 'RRethy/vim-illuminate'
 Plug 'vim-scripts/Auto-Pairs'
@@ -121,8 +121,8 @@ imap lk <esc>
 " map ; to : in normal mode
 nnoremap ; :
 
-" jump into code implementation
-nnoremap <c-s> <c-]>
+" bind :Files to ctrl-p
+nnoremap <c-p> :Files<cr>
 
 " open Copen pane
 nnoremap <leader>c :Copen<cr>
@@ -171,16 +171,8 @@ autocmd FileType Jenkinsfile setlocal tabstop=4 shiftwidth=4
 let g:cpp_class_scope_highlight = 1
 let g:cpp_experimental_template_highlight = 1
 
-" rust stuff
-let g:rustfmt_autosave = 1
-
 " vimtex config
 let g:vimtex_compiler_progname = 'nvr'
-
-" tel Ctrl-P to use ag and to don't do caching
-" We can also add set grepprg=rg\ --color=never to grep inside vim
-let g:ctrlp_user_command = 'rg %s --files --color=never --glob ""'
-let g:ctrlp_use_caching = 0
 
 " coc config
 set hidden " required for modification on multiple buffer
