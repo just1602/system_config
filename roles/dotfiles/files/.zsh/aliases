@@ -41,6 +41,8 @@ alias td='todo done'
 
 alias yl='youtube-dl'
 
+alias bm='cat ~/nextcloud/bookmarks | fzf | xclip'
+
 if [[ "$OSTYPE" == linux* ]]; then
     alias xclip='xclip -selection c'
 fi
