@@ -6,5 +6,4 @@
     - { role: dotfiles }
     - { role: wm }
     - { role: firefox }
-    - { role: apps }
     - { role: touchpad }
