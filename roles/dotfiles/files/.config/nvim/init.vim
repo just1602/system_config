@@ -180,6 +180,11 @@ set cmdheight=2
 set updatetime=300
 set shortmess+=c
 set signcolumn=yes
+let g:coc_global_extensions = [
+  \ 'coc-solargraph',
+  \ 'coc-rust-analyzer',
+  \ 'coc-java'
+  \]
 
 " statusline
 set statusline=
