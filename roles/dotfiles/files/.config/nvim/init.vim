@@ -121,8 +121,8 @@ imap lk <esc>
 " map ; to : in normal mode
 nnoremap ; :
 
-" bind :Files to ctrl-p
-nnoremap <c-p> :Files<cr>
+" bind :GFiles to ctrl-p
+nnoremap <c-p> :GFiles<cr>
 
 " open Copen pane
 nnoremap <leader>c :Copen<cr>
