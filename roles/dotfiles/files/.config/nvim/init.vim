@@ -37,9 +37,6 @@ Plug 'martinda/Jenkinsfile-vim-syntax'
 Plug 'cespare/vim-toml'
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-" (Optional) Multi-entry selection UI.
-Plug 'junegunn/fzf'
-
 call plug#end() 
 
 syntax on
