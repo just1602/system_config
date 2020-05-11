@@ -231,6 +231,9 @@ if [[ "$OSTYPE" == darwin* ]]; then
     export BROWSER='open'
 fi
 
+# fzf
+export FZF_DEFAULT_COMMAND='rg --files --hidden --follow --no-ignore-vcs'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
 ## configure gpg-agent to use the right tty
 export GPG_TTY=$(tty)
