@@ -126,7 +126,7 @@ nnoremap ; :
 nnoremap <c-p> :GFiles<cr>
 
 " open Copen pane
-nnoremap <leader>c :Copen<cr>
+nnoremap <leader>c :copen<cr>
 
 " some mapping to easily edit the init.vim file
 nmap <leader>vi :tabe $MYVIMRC<cr>
