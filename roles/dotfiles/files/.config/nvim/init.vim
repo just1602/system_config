@@ -53,7 +53,7 @@ set autoindent
 set autowrite
 set inccommand=nosplit
 set laststatus=2
-set scrolloff=1
+set scrolloff=3
 set splitbelow splitright
 set list listchars=tab:»·,trail:·,nbsp:·
 set textwidth=80
