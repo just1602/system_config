@@ -168,6 +168,10 @@ autocmd FileType python setlocal tabstop=4 shiftwidth=4 autochdir
 " Jenkinsfile file configuration
 autocmd FileType Jenkinsfile setlocal tabstop=4 shiftwidth=4
 
+if exists('##TextYankPost')
+  autocmd TextYankPost * silent! lua require'vim.highlight'.on_yank('Substitute', 200)
+endif
+
 " cpp settings
 let g:cpp_class_scope_highlight = 1
 let g:cpp_experimental_template_highlight = 1
