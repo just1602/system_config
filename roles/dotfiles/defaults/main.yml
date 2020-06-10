@@ -21,7 +21,7 @@ dotfiles_files:
   - .latexmkrc
   - .local/bin/configure-wacom
   - .local/bin/parse1pass
-  - .local/bin/mutt
+  - .local/bin/mail
   - .notmuch-hook.sh
   - .rtorrent.rc
   - .ssh/config
