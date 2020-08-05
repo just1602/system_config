@@ -119,9 +119,6 @@ nmap <C-l> :nohl<cr>
 " use lk as ESC to avoid reaching for ESC key
 imap lk <esc>
 
-" map ; to : in normal mode
-nnoremap ; :
-
 " bind :GFiles to ctrl-p
 nnoremap <c-p> :GFiles<cr>
 
