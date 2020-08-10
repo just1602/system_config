@@ -235,15 +235,17 @@ fi
 export FZF_DEFAULT_COMMAND='rg --files --hidden --follow --no-ignore-vcs'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
-## configure gpg-agent to use the right tty
-export GPG_TTY=$(tty)
-gpg-connect-agent updatestartuptty /bye >/dev/null
-
 ## configure gpg-agent to act as ssh-agent too
 unset SSH_AGENT_PID
 if [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then
-  export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
+  SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
+  export SSH_AUTH_SOCK
 fi
+
+## configure gpg-agent to use the right tty
+GPG_TTY=$(tty)
+export GPG_TTY
+gpg-connect-agent updatestartuptty /bye >/dev/null
 
 source $HOME/.zsh/aliases
 source $HOME/.zsh/path
