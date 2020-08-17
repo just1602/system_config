@@ -22,6 +22,7 @@ dotfiles_files:
   - .local/bin/configure-wacom
   - .local/bin/parse1pass
   - .local/bin/mail
+  - .local/bin/layout-switcher
   - .notmuch-hook.sh
   - .rtorrent.rc
   - .ssh/config
