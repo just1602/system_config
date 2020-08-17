@@ -1,0 +1,9 @@
+#!/bin/bash
+
+layout=`setxkbmap -print | awk -F"+" '/xkb_symbols/ {print $2}'`
+
+if [ $layout == "us" ]; then
+  setxkbmap -variant fr -layout ca
+else
+  setxkbmap us
+fi
