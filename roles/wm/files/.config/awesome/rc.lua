@@ -309,6 +309,10 @@ globalkeys = awful.util.table.join(
     -- center current floating window
     awful.key({modkey}, 'y', awful.placement.centered),
 
+    -- layout switching stuff
+    awful.key({modkey, "Control"}, "space", function () awful.spawn.with_shell("~/.local/bin/layout-switcher") end,
+              {description = "Switch keyboard layout", group="user"}),
+
     -- screenshot stuff
     awful.key({modkey}, 'g', function () awful.spawn.with_shell("~/.local/bin/screenshot --to-clipboard") end,
               {description = "Take a screenshot and copy the image to the clipboard", group="user"}),
@@ -542,7 +546,6 @@ client.connect_signal("focus", function(c) c.border_color = beautiful.border_foc
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 
 -- set the keyboard layout
-awful.spawn("setxkbmap -variant fr -layout ca")
 awful.spawn("setxkbmap -option caps:escape")
 
 -- applications autorun
