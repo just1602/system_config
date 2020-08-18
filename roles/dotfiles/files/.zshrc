@@ -253,11 +253,6 @@ source $HOME/.zsh/functions
 
 # external import
 
-## homebew stuff
-if [[ "$OSTYPE" == darwin* ]]; then
-  source $HOME/.secret_tokens
-fi
-
 ## virtualenvwrapper stuff
 export WORKON_HOME=$HOME/.virtualenvs
 source $(which virtualenvwrapper_lazy.sh)
