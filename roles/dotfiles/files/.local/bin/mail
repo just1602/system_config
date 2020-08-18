@@ -7,6 +7,6 @@ if tmux has-session -t mail 2> /dev/null; then
   exit
 fi
 
-tmux new-session -d -s mail -n neomutt
-tmux send-keys -t mail:neomutt 'neomutt' Enter
+(TMUX='' tmux new-session -Ad -s mail -n office)
+tmux send-keys -t mail:office 'neomutt' Enter
 tmux attach -t mail
