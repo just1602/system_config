@@ -251,6 +251,8 @@ source $HOME/.zsh/aliases
 source $HOME/.zsh/path
 source $HOME/.zsh/functions
 
+ensure_tmux_is_running
+
 # external import
 
 ## virtualenvwrapper stuff
