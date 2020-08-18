@@ -37,7 +37,3 @@ compdef g=git
 mkcd() {
   mkdir -p "$1" && builtin cd "$1"
 }
-
-ba() {
-  echo "$1" >> ~/nextcloud/bookmarks
-}
