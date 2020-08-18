@@ -22,15 +22,15 @@ Plug 'wincent/ferret'
 Plug 'cakebaker/scss-syntax.vim', {'for': 'scss'}
 Plug 'isRuslan/vim-es6'
 Plug 'vim-ruby/vim-ruby'
+Plug 'tpope/vim-endwise'
 Plug 'kana/vim-textobj-user'
 Plug 'tek/vim-textobj-ruby'
 Plug 'whatyouhide/vim-textobj-erb'
 Plug 'tpope/vim-rake'
 Plug 'tpope/vim-bundler'
 Plug 'tpope/vim-rails'
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-dispatch'
+Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-commentary'
@@ -142,6 +142,8 @@ nmap <leader>sm :Smodel<space>
 nmap <leader>t :vs<cr>:A<cr>
 
 autocmd FileType make setlocal noexpandtab
+
+autocmd VimResized * :wincmd =
 
 " latex file configuration
 autocmd BufNewFile,BufRead *.tex setlocal filetype=tex spell spelllang=fr colorcolumn= textwidth=9999
