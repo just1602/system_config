@@ -23,6 +23,7 @@ dotfiles_files:
   - .local/bin/parse1pass
   - .local/bin/mail
   - .local/bin/layout-switcher
+  - .local/bin/tat
   - .notmuch-hook.sh
   - .rtorrent.rc
   - .ssh/config
