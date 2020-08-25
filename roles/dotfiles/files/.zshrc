@@ -261,6 +261,4 @@ source $(which virtualenvwrapper_lazy.sh)
 
 eval "$(rbenv init -)"
 
-source /usr/share/nvm/init-nvm.sh
-
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
