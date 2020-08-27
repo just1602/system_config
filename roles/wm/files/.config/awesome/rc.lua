@@ -307,7 +307,8 @@ globalkeys = awful.util.table.join(
               {description = "Decrease backlight", group="user"}),
 
     -- center current floating window
-    awful.key({modkey}, 'y', awful.placement.centered),
+    awful.key({modkey}, 'y', awful.placement.centered,
+              {description = "Center the current floating window", group = "client"}),
 
     -- layout switching stuff
     awful.key({modkey, "Control"}, "space", function () awful.spawn.with_shell("~/.local/bin/layout-switcher") end,
