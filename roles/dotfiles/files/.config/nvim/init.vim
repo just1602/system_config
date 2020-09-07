@@ -13,7 +13,6 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'just1602/vim-substrata'
 
 Plug 'junegunn/fzf.vim'
-Plug 'machakann/vim-highlightedyank'
 Plug 'RRethy/vim-illuminate'
 Plug 'vim-scripts/Auto-Pairs'
 Plug 'rhysd/clever-f.vim'
@@ -168,7 +167,7 @@ autocmd FileType python setlocal tabstop=4 shiftwidth=4 autochdir
 autocmd FileType Jenkinsfile setlocal tabstop=4 shiftwidth=4
 
 if exists('##TextYankPost')
-  autocmd TextYankPost * silent! lua require'vim.highlight'.on_yank('Substitute', 200)
+  autocmd TextYankPost * silent! lua vim.highlight.on_yank {higroup="Search", timeout=250}
 endif
 
 " cpp settings
