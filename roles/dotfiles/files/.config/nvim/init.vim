@@ -39,7 +39,8 @@ Plug 'whatyouhide/vim-textobj-erb'
 Plug 'martinda/Jenkinsfile-vim-syntax'
 Plug 'cespare/vim-toml'
 
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neovim/nvim-lspconfig'
+Plug 'nvim-lua/completion-nvim'
 call plug#end() 
 
 syntax on
@@ -174,20 +175,11 @@ endif
 let g:cpp_class_scope_highlight = 1
 let g:cpp_experimental_template_highlight = 1
 
-" vimtex config
-let g:vimtex_compiler_progname = 'nvr'
+" nvim-lsp config stuff
+set completeopt=menuone,noinsert,noselect
+let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']
 
-" coc config
-set hidden " required for modification on multiple buffer
-set cmdheight=2
-set updatetime=300
-set shortmess+=c
-set signcolumn=yes
-let g:coc_global_extensions = [
-  \ 'coc-solargraph',
-  \ 'coc-rust-analyzer',
-  \ 'coc-java'
-  \]
+lua require'nvim_lsp'.solargraph.setup{on_attach=require'completion'.on_attach}
 
 " statusline
 set statusline=
