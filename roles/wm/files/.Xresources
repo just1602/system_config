@@ -26,21 +26,51 @@ URxvt*italicFont: xft:DejaVu Sans Mono for Powerline:style=italic:antialias=true
 URxvt*boldItalicFont: xft:DejaVu Sans Mono for Powerline:style=bolditalic:antialias=true:pixelsize=FONT_SIZE
 
 ! Substrata theme
-*.foreground: #b5b4c9
-*.background: #191c25
-*.color0: #2e313d
-*.color8: #5b5f71
-*.color1: #cf8164
-*.color9: #fe9f7c
-*.color2: #76a065
-*.color10: #92c47e
-*.color3: #ab924c
-*.color11: #d2b45f
-*.color4: #8296b0
-*.color12: #a0b9d8
-*.color5: #a18daf
-*.color13: #c6aed7
-*.color6: #659ea2
-*.color14: #7dc2c7
-*.color7: #b5b4c9
-*.color15: #f0ecfe
+! *.foreground: #b5b4c9
+! *.background: #191c25
+! *.color0: #2e313d
+! *.color8: #5b5f71
+! *.color1: #cf8164
+! *.color9: #fe9f7c
+! *.color2: #76a065
+! *.color10: #92c47e
+! *.color3: #ab924c
+! *.color11: #d2b45f
+! *.color4: #8296b0
+! *.color12: #a0b9d8
+! *.color5: #a18daf
+! *.color13: #c6aed7
+! *.color6: #659ea2
+! *.color14: #7dc2c7
+! *.color7: #b5b4c9
+! *.color15: #f0ecfe
+
+! Gruvbox theme
+*background: #1d2021
+! normal constrast: *background: #282828
+! soft contrast: *background: #32302f
+*foreground: #ebdbb2
+! Black + DarkGrey
+*color0:  #282828
+*color8:  #928374
+! DarkRed + Red
+*color1:  #cc241d
+*color9:  #fb4934
+! DarkGreen + Green
+*color2:  #98971a
+*color10: #b8bb26
+! DarkYellow + Yellow
+*color3:  #d79921
+*color11: #fabd2f
+! DarkBlue + Blue
+*color4:  #458588
+*color12: #83a598
+! DarkMagenta + Magenta
+*color5:  #b16286
+*color13: #d3869b
+! DarkCyan + Cyan
+*color6:  #689d6a
+*color14: #8ec07c
+! LightGrey + White
+*color7:  #a89984
+*color15: #ebdbb2
