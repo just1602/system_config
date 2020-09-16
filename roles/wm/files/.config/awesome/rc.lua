@@ -2,15 +2,20 @@
 local gears = require("gears")
 local awful = require("awful")
 require("awful.autofocus")
+
 -- Widget and layout library
 local wibox = require("wibox")
 local vicious = require("vicious")
+
 -- Theme handling library
 local beautiful = require("beautiful")
+
 -- Notification library
 local naughty = require("naughty")
 local menubar = require("menubar")
 local hotkeys_popup = require("awful.hotkeys_popup").widget
+
+-- battery widget
 local battery_widget = require("battery-widget")
 local bat = battery_widget {
   adapter = "BAT0",
@@ -22,6 +27,7 @@ local bat = battery_widget {
   }
 }
 
+-- volume widget
 require("volume")
 
 -- {{{ Error handling
@@ -73,19 +79,7 @@ awful.layout.layouts = {
     awful.layout.suit.tile.left,
     awful.layout.suit.tile.bottom,
     awful.layout.suit.tile.top,
-    awful.layout.suit.fair,
-    awful.layout.suit.fair.horizontal,
-    awful.layout.suit.spiral,
-    awful.layout.suit.spiral.dwindle,
-    awful.layout.suit.max,
-    awful.layout.suit.max.fullscreen,
-    awful.layout.suit.magnifier,
-    awful.layout.suit.corner.nw,
-    -- awful.layout.suit.corner.ne,
-    -- awful.layout.suit.corner.sw,
-    -- awful.layout.suit.corner.se,
 }
--- }}}
 
 -- {{{ Helper functions
 local function client_menu_toggle_fn()
@@ -176,6 +170,7 @@ end
 screen.connect_signal("property::geometry", set_wallpaper)
 
 -- Each screen has it's own tag
+-- TODO: find a better to handle laptop and dynamic screen
 if screen[2] then
   awful.tag({"email", "¬", "¤", "±", "~"}, screen[1], awful.layout.layouts[1])
   awful.tag({"www", "code", "music", "tor", "foo", "bar"}, screen[2], awful.layout.layouts[1])
@@ -215,6 +210,7 @@ awful.screen.connect_for_each_screen(function(s)
             s.mylayoutbox,
         }
 
+    -- TODO: find a better way to check is it's a laptop
     if not screen[2] then
       table.insert(right_widgets, 1, bat)
     end 
@@ -236,7 +232,6 @@ end)
 
 -- {{{ Mouse bindings
 root.buttons(awful.util.table.join(
-    awful.button({ }, 3, function () mymainmenu:toggle() end),
     awful.button({ }, 4, awful.tag.viewnext),
     awful.button({ }, 5, awful.tag.viewprev)
 ))
@@ -515,10 +510,6 @@ awful.rules.rules = {
 
      { rule = { class = "Firefox" },
        properties = { tag = "www" } },
-     { rule = { class = "urxvt" },
-       properties = { placement = awful.placement.centered } },
-     { rule = { class = "Thunderbird" },
-       properties = { tag = "email" } },
 }
 -- }}}
 
