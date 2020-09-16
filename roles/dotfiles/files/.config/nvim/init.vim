@@ -10,8 +10,7 @@ filetype off
 
 call plug#begin('~/.local/share/nvim/plugged')
 
-Plug 'tjdevries/colorbuddy.vim'
-Plug 'tjdevries/gruvbuddy.nvim'
+Plug 'morhetz/gruvbox'
 
 Plug 'junegunn/fzf.vim'
 Plug 'RRethy/vim-illuminate'
@@ -47,7 +46,6 @@ call plug#end()
 syntax on
 
 set mouse=a
-set background=dark
 set number relativenumber
 set cursorline
 set autoindent
@@ -60,8 +58,9 @@ set list listchars=tab:»·,trail:·,nbsp:·
 set textwidth=80
 set colorcolumn=+1
 
-" colorscheme
-lua require('colorbuddy').colorscheme('gruvbuddy')
+set background=dark
+colorscheme gruvbox
+
 
 set undodir=~/.vimdid
 set undofile
