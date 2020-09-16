@@ -10,7 +10,8 @@ filetype off
 
 call plug#begin('~/.local/share/nvim/plugged')
 
-Plug 'just1602/vim-substrata'
+Plug 'tjdevries/colorbuddy.vim'
+Plug 'tjdevries/gruvbuddy.nvim'
 
 Plug 'junegunn/fzf.vim'
 Plug 'RRethy/vim-illuminate'
@@ -58,7 +59,9 @@ set splitbelow splitright
 set list listchars=tab:»·,trail:·,nbsp:·
 set textwidth=80
 set colorcolumn=+1
-colorscheme substrata
+
+" colorscheme
+lua require('colorbuddy').colorscheme('gruvbuddy')
 
 set undodir=~/.vimdid
 set undofile
