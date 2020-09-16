@@ -15,12 +15,12 @@ theme.wallpaper = theme.dir .. "/wallpaper.jpg"
 theme.font      = "sans 10"
 
 -- {{{ Colors
-theme.fg_normal  = "#b5b4c9"
-theme.fg_focus   = "#659ea2"
-theme.fg_urgent  = "#cf8164"
-theme.bg_normal  = "#191c25"
-theme.bg_focus   = "#191c25"
-theme.bg_urgent  = "#191c25"
+theme.fg_normal  = "#a89984"
+theme.fg_focus   = "#aebdbb2"
+theme.fg_urgent  = "#cc241d"
+theme.bg_normal  = "#282828"
+theme.bg_focus   = "#282828"
+theme.bg_urgent  = "#282828"
 theme.bg_systray = theme.bg_normal
 -- }}}
 
