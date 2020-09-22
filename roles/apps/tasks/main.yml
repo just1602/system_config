@@ -39,11 +39,3 @@
   tags:
     - packages
     - chat
-
-- name: apps | install mattermost client
-  aur:
-    name:
-      - mattermost-desktop
-  tags:
-    - packages
-    - chat
