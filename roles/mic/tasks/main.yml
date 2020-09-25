@@ -1,0 +1,6 @@
+---
+- name: mic | install alsa config file
+  file: src={{ ansible_env.PWD }}/roles/mic/files/.asoundrc
+        path=~/.asoundrc
+        state=link
+        force=yes
