@@ -8,3 +8,4 @@
     - { role: wm }
     - { role: firefox }
     - { role: apps }
+    - { role: mic }
