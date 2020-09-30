@@ -7,3 +7,5 @@ if [ $layout == "us" ]; then
 else
   setxkbmap us
 fi
+
+setxkbmap -option caps:escape
