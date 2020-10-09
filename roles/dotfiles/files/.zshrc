@@ -235,9 +235,6 @@ fi
 export FZF_DEFAULT_COMMAND='rg --files --hidden --follow --no-ignore-vcs'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
-## configure ssh-agent
-eval $(ssh-agent)
-
 ## configure gpg-agent to use the right tty
 GPG_TTY=$(tty)
 export GPG_TTY
