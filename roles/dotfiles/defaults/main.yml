@@ -12,7 +12,6 @@ dotfiles_files:
   - .config/systemd/user/offlineimap.service
   - .config/systemd/user/offlineimap.timer
   - .config/systemd/user/tmux.service
-  - .config/todoman/todoman.conf
   - .config/youtube-dl/config
   - .gemrc
   - .gitignore
@@ -28,6 +27,10 @@ dotfiles_files:
   - .rtorrent.rc
   - .ssh/config
   - .tmux.conf
+  - .todo/config
+  - .todo.actions.d/add
+  - .todo.actions.d/e
+  - .todo.actions.d/edit
   - .zsh/aliases
   - .zsh/functions
   - .zsh/path

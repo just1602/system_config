@@ -6,7 +6,6 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 
 alias tm='tmux'
-alias ta='tmux a -t'
 alias ts='tmux new -s'
 alias tl='tmux ls'
 
@@ -34,14 +33,12 @@ alias diff='diff --color=always -u'
 alias serve='python -m http.server'
 alias feh='feh -F'
 
-alias t='todo'
-alias tn='todo new'
-alias te='todo edit'
-alias td='todo done'
+alias ta='todo.sh add'
+alias tap='todo.sh add pri'
+alias te='todo.sh edit'
+alias td='todo.sh do'
 
 alias yl='youtube-dl'
-
-alias bm="cat ~/nextcloud/bookmarks | fzf | cut -d '|' -f 2 | xclip"
 
 if [[ "$OSTYPE" == linux* ]]; then
     alias xclip='xclip -selection c'

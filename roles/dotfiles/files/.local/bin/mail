@@ -13,5 +13,5 @@ tmux select-window -t mail:office
 tmux split-window -h
 tmux send-keys 'ikhal' Enter
 tmux split-window -v
-tmux send-keys 'todo' Enter
+tmux send-keys 'todo.sh list' Enter
 tmux attach -t mail

@@ -19,7 +19,6 @@
       - youtube-dl
       - khard
       - khal
-      - todoman
       - ripgrep
       - msmtp
       - pass
@@ -38,6 +37,7 @@
       - neovim-git
       - rbenv
       - ruby-build
+      - todotxt
       - zsh-syntax-highlighting
   tags:
     - packages
@@ -54,13 +54,14 @@
     - ~/.config/khard
     - ~/.config/systemd
     - ~/.config/systemd/user
-    - ~/.config/todoman
     - ~/.config/vdirsyncer
     - ~/.config/youtube-dl
     - ~/.gnupg
     - ~/.local
     - ~/.local/bin
     - ~/.ssh
+    - ~/.todo
+    - ~/.todo.actions.d
     - ~/.zsh
 
 - name: dotfiles | create symlinks
