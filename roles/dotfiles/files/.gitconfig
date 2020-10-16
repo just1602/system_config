@@ -1,6 +1,7 @@
 [user]
   email = just1602@riseup.net
   name = Justin !
+
 [color]
   branch = auto
   diff = auto
@@ -31,6 +32,7 @@
   editor = "nvim"
   pager = "less"
   excludesfile = ~/.gitignore
+
 [alias]
   a = add
   ap = add -p
@@ -53,11 +55,18 @@
   unstage = reset HEAD --
   sc = switch -c
   pp = pu --prune
+
 [push]
   default = current
+
 [diff "gpg"]
   textconv = gpg --no-tty --decrypt
+
 [pager]
   branch = false
+
 [protocol]
   version = 2
+
+[init]
+  defaultBranch = main
