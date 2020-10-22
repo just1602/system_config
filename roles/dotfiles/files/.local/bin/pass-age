@@ -1,0 +1,13 @@
+#!/bin/sh
+#
+# Show password age - should be useful for rotation - we first of all
+# format the timestamp of every *.gpg file, as both unix+relative time,
+# then we sort, and finally we output that sorted data - but we skip
+# the first field which is the unix-epoch time.
+#
+cd ~/.password-store
+git ls-files '*.gpg' | while read filename; do
+  changed_at=$(git log -1 --format="%at %ar" -- "$filename")
+  printf "%s %s\n" "$changed_at" "$filename"
+done | sort -n | cut -f 2- -d ' '
+# cargo-culted from https://blog.steve.fi/rotating_passwords.html
