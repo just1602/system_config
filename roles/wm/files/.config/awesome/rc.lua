@@ -305,10 +305,6 @@ globalkeys = awful.util.table.join(
     awful.key({modkey}, 'y', awful.placement.centered,
               {description = "Center the current floating window", group = "client"}),
 
-    -- layout switching stuff
-    awful.key({modkey, "Control"}, "space", function () awful.spawn.with_shell("~/.local/bin/layout-switcher") end,
-              {description = "Switch keyboard layout", group="user"}),
-
     -- screenshot stuff
     awful.key({modkey}, 'g', function () awful.spawn.with_shell("~/.local/bin/screenshot --to-clipboard") end,
               {description = "Take a screenshot and copy the image to the clipboard", group="user"}),
