@@ -1,0 +1,3 @@
+#!/bin/sh
+
+setxkbmap -layout ca,us -variant fr -option 'grp:sclk_toggle,caps:escape'

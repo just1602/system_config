@@ -7,5 +7,8 @@ function run {
   fi
 }
 
+# execute dimple script first
+keyboard-layout-conf
+
 run light-locker
 run nextcloud

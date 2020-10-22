@@ -20,9 +20,9 @@ dotfiles_files:
   - .gnupg/gpg-agent.conf
   - .latexmkrc
   - .local/bin/configure-wacom
+  - .local/bin/keyboard-layout-conf
   - .local/bin/parse1pass
   - .local/bin/mail
-  - .local/bin/layout-switcher
   - .local/bin/tat
   - .notmuch-hook.sh
   - .rtorrent.rc
