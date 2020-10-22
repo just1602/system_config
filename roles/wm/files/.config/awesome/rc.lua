@@ -28,7 +28,7 @@ local bat = battery_widget {
 }
 
 -- volume widget
-require("volume")
+-- require("volume")
 
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
@@ -205,7 +205,7 @@ awful.screen.connect_for_each_screen(function(s)
             layout = wibox.layout.fixed.horizontal,
             mykeyboardlayout,
             wibox.widget.systray(),
-            volume_widget,
+            -- volume_widget,
             mytextclock,
             s.mylayoutbox,
         }
