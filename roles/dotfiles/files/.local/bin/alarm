@@ -1,0 +1,11 @@
+#! /bin/sh -x
+
+time="$1"
+shift
+subject="$2"
+shift
+
+at $time <<EOF
+notify-send -u critical $subject '$@'
+echo You wanted to be reminded of: '$@'
+EOF
