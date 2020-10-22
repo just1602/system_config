@@ -2,6 +2,7 @@
 dotfiles_files:
   - .gnupg/gpg.conf
   - .gnupg/gpg-agent.conf
+  - .config/alacritty/alacritty.yml
   - .config/khal/config
   - .config/khard/khard.conf
   - .config/mimeapps.list

@@ -6,6 +6,7 @@
 - name: dotfiles | install packages
   pacman:
     name:
+      - alacritty
       - pwgen
       - exa
       - git
@@ -46,6 +47,7 @@
   file: path={{ item }} state=directory
   loop:
     - ~/.config
+    - ~/.config/alacritty
     - ~/.config/gnupg
     - ~/.config/neomutt
     - ~/.config/neomutt/accounts
