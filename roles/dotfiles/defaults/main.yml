@@ -21,7 +21,6 @@ dotfiles_files:
   - .latexmkrc
   - .local/bin/configure-wacom
   - .local/bin/keyboard-layout-conf
-  - .local/bin/parse1pass
   - .local/bin/pass-age
   - .local/bin/mail
   - .local/bin/tat
