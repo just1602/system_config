@@ -14,8 +14,6 @@ alias tl='tmux ls'
 alias v='nvim'
 alias vimdiff='nvim -d'
 
-alias p='python'
-
 alias c='bat'
 alias f='fd'
 
