@@ -39,8 +39,7 @@ Plug 'whatyouhide/vim-textobj-erb'
 Plug 'martinda/Jenkinsfile-vim-syntax'
 Plug 'cespare/vim-toml'
 
-Plug 'neovim/nvim-lspconfig'
-Plug 'nvim-lua/completion-nvim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end() 
 
 syntax on
@@ -173,16 +172,7 @@ if exists('##TextYankPost')
   autocmd TextYankPost * silent! lua vim.highlight.on_yank {higroup="Search", timeout=250}
 endif
 
-" cpp settings
-let g:cpp_class_scope_highlight = 1
-let g:cpp_experimental_template_highlight = 1
-
-" nvim-lsp config stuff
-set completeopt=menuone,noinsert,noselect
-let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']
-
-lua require'nvim_lsp'.solargraph.setup{on_attach=require'completion'.on_attach}
-lua require'nvim_lsp'.tsserver.setup{on_attach=require'completion'.on_attach}
+let g:coc_global_extensions=['coc-solargraph']
 
 " statusline
 set statusline=
