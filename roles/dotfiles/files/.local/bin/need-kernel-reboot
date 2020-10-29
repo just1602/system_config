@@ -1,0 +1,15 @@
+#!/bin/sh
+
+RUNNING_VERSION=`uname -r | cut -d '-' -f 1`
+LATEST_VERSION=`pacman -Q | grep '^linux\ ' | cut -d ' ' -f 2 | cut -d '.' -f 1-3`
+
+
+if [ "$RUNNING_VERSION" == "$LATEST_VERSION" ]; then
+  echo "Everything's fine !"
+  exit 0
+else
+  echo "You need to reboot !"
+  echo "Running version: $RUNNING_VERSION"
+  echo "Latest version: $LATEST_VERSION"
+  exit 1
+fi
