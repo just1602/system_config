@@ -7,25 +7,26 @@
   pacman:
     name:
       - alacritty
-      - pwgen
+      - bat
       - exa
+      - fd
       - git
-      - tmux
+      - khal
+      - khard
+      - msmtp
       - neomutt
       - notmuch
       - offlineimap
+      - pass
+      - pwgen
+      - python-virtualenvwrapper
+      - ripgrep
+      - tmux
       - vdirsyncer
+      - youtube-dl
       - zsh
       - zsh-completions
-      - youtube-dl
-      - khard
-      - khal
-      - ripgrep
-      - msmtp
-      - pass
-      - python-virtualenvwrapper
-      - bat
-      - fd
+      - zsh-syntax-highlighting
     state: latest
   become: yes
   tags:
@@ -39,7 +40,6 @@
       - rbenv
       - ruby-build
       - todotxt
-      - zsh-syntax-highlighting
   tags:
     - packages
 
