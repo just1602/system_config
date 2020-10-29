@@ -37,6 +37,7 @@
     name:
       - git-extras
       - neovim-git
+      - pass-clip
       - rbenv
       - ruby-build
       - todotxt
