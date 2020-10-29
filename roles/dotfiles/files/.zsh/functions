@@ -24,36 +24,6 @@ t ()
 }
 compdef t=todo.sh
 
-# Deprecated : will be remove when transition back to pass will be done
-1pass ()
-{
-  if [[ $# -eq 0 ]]; then
-    echo "Usage : $0 <password name> [vault name]"
-    return 1
-  fi
-
-  if [[ -z $OP_SESSION_my ]]; then
-    eval $(op signin my)
-  fi
-
-  if [[ $# -eq 1 ]]; then
-    op get item "$1" | parse1pass
-  elif [[ $# -eq 2 ]]; then
-    op get item "$1" --vault="$2" | parse1pass
-  else
-    echo "Usage : $0 <password name> [vault name]"
-    return 1
-  fi
-}
-
 mkcd() {
   mkdir -p "$1" && builtin cd "$1"
-}
-
-_not_inside_tmux() { [[ -z "$TMUX" ]] }
-
-ensure_tmux_is_running() {
-  if _not_inside_tmux; then
-    tat
-  fi
 }
