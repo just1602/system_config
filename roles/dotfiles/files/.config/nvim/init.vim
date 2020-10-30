@@ -15,7 +15,6 @@ Plug 'morhetz/gruvbox'
 Plug 'junegunn/fzf.vim'
 Plug 'RRethy/vim-illuminate'
 Plug 'vim-scripts/Auto-Pairs'
-Plug 'rhysd/clever-f.vim'
 Plug 'wincent/ferret'
 
 Plug 'cakebaker/scss-syntax.vim', {'for': 'scss'}
