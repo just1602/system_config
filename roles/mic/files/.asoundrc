@@ -1,7 +1,7 @@
 pcm.usb
 {
     type hw
-    card 3
+    card Device
 }
 
 pcm.!default
@@ -9,12 +9,17 @@ pcm.!default
     type asym
     playback.pcm
     {
-        type plug
-        slave.pcm "dmix"
+        type hw
+        card PCH
     }
     capture.pcm
     {
         type plug
         slave.pcm "usb"
     }
+}
+ctl.!default
+{
+    type hw
+    card PCH
 }
