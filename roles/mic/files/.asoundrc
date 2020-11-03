@@ -1,9 +1,3 @@
-pcm.usb
-{
-    type hw
-    card Device
-}
-
 pcm.!default
 {
     type asym
@@ -14,8 +8,8 @@ pcm.!default
     }
     capture.pcm
     {
-        type plug
-        slave.pcm "usb"
+        type hw
+        card Device
     }
 }
 ctl.!default
