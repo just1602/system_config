@@ -6,6 +6,8 @@ alias di='docker images'
 
 alias pc='pass clip -f'
 
+alias paru='paru --bottomup'
+
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 
