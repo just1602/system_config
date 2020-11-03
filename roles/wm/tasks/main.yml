@@ -10,6 +10,9 @@
       - lightdm-gtk-greeter
       - light-locker
       - mpv
+      - pulseaudio
+      - pulseaudio-alsa
+      - pulsemixer
       - rxvt-unicode
       - rxvt-unicode-terminfo
       - shotgun
@@ -49,3 +52,11 @@
         state=link
         force=yes
   loop: '{{ wm_config_files }}'
+
+- name: wm | enable pulseaudio service
+  systemd:
+    name: pulseaudio.service
+    daemon_reload: yes
+    scope: user
+    enabled: yes
+    state: started
