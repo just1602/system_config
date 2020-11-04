@@ -3,5 +3,5 @@
 if [ $# -eq 0 ]; then
   /usr/bin/paru
 else
-  /usr/bin/paru paru --bottomup "$@"
+  /usr/bin/paru --bottomup "$@"
 fi
