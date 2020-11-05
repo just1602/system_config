@@ -40,7 +40,7 @@ alias tap='todo.sh add pri'
 alias te='todo.sh edit'
 alias td='todo.sh do'
 
-alias yl='youtube-dl'
+alias yl='youtube-dlc --audio-format flac'
 
 if [[ "$OSTYPE" == linux* ]]; then
     alias xclip='xclip -selection c'
