@@ -7,3 +7,7 @@ set postponed = "+Drafts"
 set use_from = yes
 set use_envelope_from = yes
 set sendmail="/usr/bin/msmtp"
+unmailboxes *
+mailboxes `find ~/mail/resist/ -type d -name cur -printf '%h '`
+
+# vim: ft=neomuttrc

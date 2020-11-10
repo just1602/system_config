@@ -20,11 +20,6 @@ bind index g noop
 bind index G last-entry
 bind index gg first-entry
 
-set virtual_spoolfile=yes
-set folder=~/mail
-
-macro index c "<change-vfolder>?" "Change to vfolder overview"
-
 # Common Crypto Options
 set crypt_autoencrypt = no     # Automatically encrypt all mail
 set crypt_autopgp = yes    # Allow automatic pgp functions
