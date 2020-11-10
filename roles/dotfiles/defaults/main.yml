@@ -28,7 +28,6 @@ dotfiles_files:
   - .local/bin/need-kernel-reboot
   - .local/bin/paru
   - .local/bin/tat
-  - .notmuch-hook.sh
   - .rtorrent.rc
   - .ssh/config
   - .tmux.conf
@@ -45,7 +44,6 @@ dotfiles_files:
 templates_files:
   - .config/vdirsyncer/config
   - .msmtprc
-  - .notmuch-config
   - .offlineimaprc
 
 services:

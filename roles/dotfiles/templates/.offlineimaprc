@@ -6,7 +6,6 @@ accounts = riseup,resist
 [Account riseup]
 localrepository = riseup-local
 remoterepository = riseup-remote
-postsynchook = ~/.notmuch-hook.sh
 
 [Repository riseup-local]
 type = Maildir
@@ -20,12 +19,11 @@ ssl_version = tls1_2
 remotehost = imap.riseup.net
 remoteuser = just1602
 remotepass = {{ riseup_pass }}
-folderfilter = lambda foldername: foldername in ["INBOX", "Sent", "Drafts"]
+folderfilter = lambda foldername: foldername in ["INBOX", "Sent", "Drafts", "Archives"]
 
 [Account resist]
 localrepository = resist-local
 remoterepository = resist-remote
-postsynchook = ~/.notmuch-hook.sh
 
 [Repository resist-local]
 type = Maildir
@@ -39,4 +37,4 @@ ssl_version = tls1_2
 remotehost = mail.resist.ca
 remoteuser = just1602@resist.ca
 remotepass = {{ resist_pass }}
-folderfilter = lambda foldername: foldername in ["INBOX", "Sent", "Drafts"]
+folderfilter = lambda foldername: foldername in ["INBOX", "Sent", "Drafts", "Archives"]

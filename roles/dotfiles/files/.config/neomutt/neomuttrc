@@ -23,10 +23,7 @@ bind index gg first-entry
 set virtual_spoolfile=yes
 set folder=~/mail
 
-# notmuch virtual mailboxes
-virtual-mailboxes "inbox" "notmuch://?query=tag:inbox"
-virtual-mailboxes "archive" "notmuch://?query=tag:archive"
-virtual-mailboxes "sent" "notmuch://?query=tag:sent"
+macro index c "<change-vfolder>?" "Change to vfolder overview"
 
 # Common Crypto Options
 set crypt_autoencrypt = no     # Automatically encrypt all mail

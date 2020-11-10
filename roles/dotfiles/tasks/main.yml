@@ -15,7 +15,6 @@
       - khard
       - msmtp
       - neomutt
-      - notmuch
       - offlineimap
       - pass
       - pwgen
