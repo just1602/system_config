@@ -7,8 +7,6 @@ source accounts/account.net.riseup
 macro index <F2> '<sync-mailbox><enter-command>source ~/.config/neomutt/accounts/account.net.riseup<enter><change-folder>!<enter>'
 macro index <F3> '<sync-mailbox><enter-command>source ~/.config/neomutt/accounts/account.ca.resist<enter><change-folder>!<enter>'
 
-set sort = 'reverse-date'
-
 set editor=`echo \$EDITOR`
 
 set date_format="%Y/%m/%d %I:%M"
@@ -16,11 +14,27 @@ set index_format="%2C %zs %?X?A& ? %D %-15.15F %s (%-4.4c)"
 
 set query_command="khard email -p %s"
 
+# Index
+set sort = 'reverse-date'
+unset mark_old
+unset confirmappend
+
 bind index g noop
 bind index G last-entry
 bind index gg first-entry
 
-unset mark_old
+macro index M "<save-message>?<toggle-mailboxes>" "move a message to a mailbox"
+macro index c "<change-folder>?" "Change to folder overview"
+
+# Pager
+set pager_stop
+set pager_context = 3
+
+bind pager k  previous-line
+bind pager j  next-line
+bind pager g noop
+bind pager gg top
+bind pager G  bottom
 
 # Common Crypto Options
 set crypt_autoencrypt = no     # Automatically encrypt all mail
