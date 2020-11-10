@@ -20,6 +20,8 @@ bind index g noop
 bind index G last-entry
 bind index gg first-entry
 
+unset mark_old
+
 # Common Crypto Options
 set crypt_autoencrypt = no     # Automatically encrypt all mail
 set crypt_autopgp = yes    # Allow automatic pgp functions
