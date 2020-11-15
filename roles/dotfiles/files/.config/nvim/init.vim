@@ -119,8 +119,10 @@ nmap <C-l> :nohl<cr>
 " use lk as ESC to avoid reaching for ESC key
 imap lk <esc>
 
-" bind :GFiles to ctrl-p
+" bind :GFiles
 nnoremap <c-p> :GFiles<cr>
+nnoremap <leader>p :GFiles<cr>
+nnoremap <leader>P :Files<cr>
 
 " open Copen pane
 nnoremap <leader>c :copen<cr>
