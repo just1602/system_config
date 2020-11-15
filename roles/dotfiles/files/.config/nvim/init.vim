@@ -142,31 +142,7 @@ nmap <leader>sc :Scontroller<space>
 nmap <leader>sm :Smodel<space>
 nmap <leader>t :vs<cr>:A<cr>
 
-autocmd FileType make setlocal noexpandtab
-
 autocmd VimResized * :wincmd =
-
-" latex file configuration
-autocmd BufNewFile,BufRead *.tex setlocal filetype=tex spell spelllang=fr colorcolumn= textwidth=9999
-let g:tex_comment_nospell=1
-
-" markdown file configuration
-autocmd FileType markdown setlocal spell spelllang=fr colorcolumn= textwidth=9999
-
-" mail config
-autocmd FileType mail setlocal spell spelllang=fr
-
-" html file configuration
-autocmd FileType html,eruby setlocal textwidth=9999
-
-" textile file configuration
-autocmd FileType text setlocal spell spelllang=fr colorcolumn= textwidth=9999
-
-" python file configuration
-autocmd FileType python setlocal tabstop=4 shiftwidth=4 autochdir
-
-" Jenkinsfile file configuration
-autocmd FileType Jenkinsfile setlocal tabstop=4 shiftwidth=4
 
 if exists('##TextYankPost')
   autocmd TextYankPost * silent! lua vim.highlight.on_yank {higroup="Search", timeout=250}
