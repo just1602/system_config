@@ -6,8 +6,6 @@ if ! filereadable(expand('~/.local/share/nvim/site/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall
 endif
 
-filetype off
-
 call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'morhetz/gruvbox'
