@@ -132,7 +132,8 @@ nmap <leader>vi :tabe $MYVIMRC<cr>
 nmap <leader>so :source $MYVIMRC<cr>
 
 " an alias for dispath
-nmap <leader>d :Dispatch 
+nmap <leader>D :Dispatch 
+nmap <leader>d :Dispatch<cr>
 
 " some vim-rails aliases
 nmap <leader>ec :Econtroller<space>
