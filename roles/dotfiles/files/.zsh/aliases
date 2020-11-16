@@ -39,6 +39,7 @@ alias ta='todo.sh add'
 alias tap='todo.sh add pri'
 alias te='todo.sh edit'
 alias td='todo.sh do'
+alias tls='t ls'
 
 alias yl='youtube-dlc --audio-format flac'
 
