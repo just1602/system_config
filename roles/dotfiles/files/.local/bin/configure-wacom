@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # Only work on the main screen
 xsetwacom set 15 MapToOutput HEAD-1
