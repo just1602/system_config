@@ -34,7 +34,6 @@
   aur:
     name:
       - git-extras
-      - neovim-git
       - pass-clip
       - rbenv
       - ruby-build
@@ -51,7 +50,6 @@
     - ~/.config/gnupg
     - ~/.config/neomutt
     - ~/.config/neomutt/accounts
-    - ~/.config/nvim
     - ~/.config/khal
     - ~/.config/khard
     - ~/.config/systemd

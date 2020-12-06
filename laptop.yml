@@ -4,6 +4,7 @@
   roles:
     - { role: system }
     - { role: dotfiles }
+    - { role: nvim }
     - { role: wm }
     - { role: firefox }
     - { role: touchpad }

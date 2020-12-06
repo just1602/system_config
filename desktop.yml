@@ -4,6 +4,7 @@
   roles:
     - { role: system }
     - { role: dotfiles }
+    - { role: nvim }
     - { role: mpd, tags: mpd}
     - { role: wm }
     - { role: firefox }

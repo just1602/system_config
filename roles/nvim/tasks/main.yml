@@ -1,0 +1,12 @@
+- name: nvim | install neovim-git
+  aur:
+    name:
+      - neovim-git
+  tags:
+    - packages
+
+- name: nvim | symlink config
+  file: src={{ ansible_env.PWD }}/roles/nvim/files/nvim
+        path=~/.config/nvim
+        state=link
+        force=yes
