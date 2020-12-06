@@ -31,8 +31,6 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-git'
-Plug 'kana/vim-textobj-user'
-Plug 'whatyouhide/vim-textobj-erb'
 Plug 'martinda/Jenkinsfile-vim-syntax'
 Plug 'cespare/vim-toml'
 
