@@ -1,9 +1,6 @@
 [submodule "user/.config/awesome/battery-widget"]
 	path = user/.config/awesome/battery-widget
 	url = git@github.com:deficient/battery-widget.git
-[submodule "roles/nvim/files/nvim/pack/bundle/opt/gruvbox"]
-	path = roles/nvim/files/nvim/pack/bundle/opt/gruvbox
-	url = https://github.com/morhetz/gruvbox
 [submodule "roles/nvim/files/nvim/pack/bundle/opt/fzf.vim"]
 	path = roles/nvim/files/nvim/pack/bundle/opt/fzf.vim
 	url = https://github.com/junegunn/fzf.vim
@@ -73,3 +70,9 @@
 [submodule "roles/nvim/files/nvim/pack/bundle/opt/scss-syntax.vim"]
 	path = roles/nvim/files/nvim/pack/bundle/opt/scss-syntax.vim
 	url = https://github.com/cakebaker/scss-syntax.vim
+[submodule "roles/nvim/files/nvim/pack/bundle/opt/colorbuddy.vim"]
+	path = roles/nvim/files/nvim/pack/bundle/opt/colorbuddy.vim
+	url = https://github.com/tjdevries/colorbuddy.vim
+[submodule "roles/nvim/files/nvim/pack/bundle/opt/gruvbox.nvim"]
+	path = roles/nvim/files/nvim/pack/bundle/opt/gruvbox.nvim
+	url = https://github.com/npxbr/gruvbox.nvim
