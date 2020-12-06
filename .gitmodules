@@ -64,3 +64,12 @@
 [submodule "roles/nvim/files/nvim/pack/bundle/opt/coc.nvim"]
 	path = roles/nvim/files/nvim/pack/bundle/opt/coc.nvim
 	url = https://github.com/neoclide/coc.nvim
+[submodule "roles/nvim/files/nvim/pack/bundle/opt/Auto-Pairs"]
+	path = roles/nvim/files/nvim/pack/bundle/opt/Auto-Pairs
+	url = https://github.com/vim-scripts/Auto-Pairs
+[submodule "roles/nvim/files/nvim/pack/bundle/opt/ferret"]
+	path = roles/nvim/files/nvim/pack/bundle/opt/ferret
+	url = https://github.com/wincent/ferret
+[submodule "roles/nvim/files/nvim/pack/bundle/opt/scss-syntax.vim"]
+	path = roles/nvim/files/nvim/pack/bundle/opt/scss-syntax.vim
+	url = https://github.com/cakebaker/scss-syntax.vim
