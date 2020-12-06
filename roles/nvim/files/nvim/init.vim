@@ -1,32 +1,32 @@
 " colorscheme
-packadd! gruvbox
+packadd gruvbox
 
 " general utilities
-packadd! fzf.vim
-packadd! vim-illuminate
-packadd! Auto-Pairs
-packadd! ferret
-packadd! coc.nvim
+packadd fzf.vim
+packadd vim-illuminate
+packadd Auto-Pairs
+packadd ferret
+packadd coc.nvim
 
 " languages specific plugin
-packadd! scss-syntax.vim
-packadd! vim-es6
-packadd! vim-ruby
-packadd! vim-endwise
-packadd! vim-textobj-user
-packadd! vim-textobj-ruby
-packadd! vim-textobj-erb
-packadd! vim-rake
-packadd! vim-bundler
-packadd! vim-rails
-packadd! vim-dispatch
-packadd! vim-fugitive
-packadd! vim-surround
-packadd! vim-repeat
-packadd! vim-commentary
-packadd! vim-git
-packadd! Jenkinsfile-vim-syntax
-packadd! vim-toml
+packadd scss-syntax.vim
+packadd vim-es6
+packadd vim-ruby
+packadd vim-endwise
+packadd vim-textobj-user
+packadd vim-textobj-ruby
+packadd vim-textobj-erb
+packadd vim-rake
+packadd vim-bundler
+packadd vim-rails
+packadd vim-dispatch
+packadd vim-fugitive
+packadd vim-surround
+packadd vim-repeat
+packadd vim-commentary
+packadd vim-git
+packadd Jenkinsfile-vim-syntax
+packadd vim-toml
 
 
 " Use the space key as our leader. Put this near the top of your vimrc
