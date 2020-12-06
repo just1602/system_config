@@ -75,5 +75,6 @@ vim.o.smartcase = true
 vim.o.smartindent = true
 vim.o.expandtab = true
 vim.o.smarttab = true
+-- TODO: set formation options with -o
 
 vim.g.coc_global_extensions = {'coc-solargraph'}
