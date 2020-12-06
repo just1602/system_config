@@ -41,6 +41,9 @@ call plug#end()
 
 syntax on
 
+" Use the space key as our leader. Put this near the top of your vimrc
+let mapleader = "\<Space>"
+
 set mouse=a
 set number relativenumber
 set cursorline
@@ -100,10 +103,6 @@ set expandtab
 
 " make backspace working everywhere
 set backspace=indent,eol,start
-
-" Use the space key as our leader. Put this near the top of your vimrc
-let mapleader = "\<Space>"
-
 
 autocmd VimResized * :wincmd =
 
