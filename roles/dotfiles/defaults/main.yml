@@ -25,6 +25,7 @@ dotfiles_files:
   - .local/bin/pass-age
   - .local/bin/mail
   - .local/bin/need-kernel-reboot
+  - .local/bin/nitterize
   - .local/bin/paru
   - .local/bin/tat
   - .rtorrent.rc

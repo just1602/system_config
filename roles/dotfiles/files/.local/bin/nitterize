@@ -1,0 +1,8 @@
+#!/bin/sh
+
+URL=`echo "$1" | sed 's/twitter.com/nitter.net/'`
+
+echo "$URL" | xclip
+
+echo "$URL copied to clipboard"
+
