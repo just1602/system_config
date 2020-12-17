@@ -1,7 +1,5 @@
 -- colorscheme
--- vim.cmd [[packadd gruvbox]]
-vim.cmd [[packadd colorbuddy.vim]]
-vim.cmd [[packadd gruvbox.nvim]]
+vim.cmd [[packadd gruvbox]]
 
 -- general utilities
 vim.cmd [[packadd fzf.vim]]
@@ -30,7 +28,7 @@ vim.cmd [[packadd vim-git]]
 vim.cmd [[packadd Jenkinsfile-vim-syntax]]
 vim.cmd [[packadd vim-toml]]
 
-require("colorbuddy").colorscheme("gruvbox")
+vim.api.nvim_command('colorscheme gruvbox')
 
 vim.g.mapleader = ' '
 
