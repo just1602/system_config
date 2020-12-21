@@ -1,11 +1,4 @@
 ---
-- name: system | update system package list
-  pacman:
-    update_cache: yes
-  become: yes
-  tags:
-    - packages
-
 - name: system | install config
   file: src={{ ansible_env.PWD }}/roles/system/files/{{ item }}
         path=/etc/{{ item }}
@@ -15,6 +8,13 @@
     - pacman.conf
     - makepkg.conf
   become: yes
+
+- name: system | update system package list
+  pacman:
+    update_cache: yes
+  become: yes
+  tags:
+    - packages
 
 - name: system | install general package
   pacman:
