@@ -65,7 +65,7 @@
     - ~/.zsh
 
 - name: dotfiles | create symlinks
-  file: src={{ ansible_env.PWD }}/roles/dotfiles/files/{{ item }}
+  file: src={{ role_path }}/files/{{ item }}
         path=~/{{ item }}
         state=link
         force=yes

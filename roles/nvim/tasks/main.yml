@@ -6,7 +6,7 @@
     - packages
 
 - name: nvim | symlink config
-  file: src={{ ansible_env.PWD }}/roles/nvim/files/nvim
+  file: src={{ role_path }}/files/nvim
         path=~/.config/nvim
         state=link
         force=yes

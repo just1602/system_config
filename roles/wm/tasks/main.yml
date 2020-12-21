@@ -47,7 +47,7 @@
     - ~/.local/bin
 
 - name: wm | install wm related config
-  file: src={{ ansible_env.PWD }}/roles/wm/files/{{ item }}
+  file: src={{ role_path }}/files/{{ item }}
         path=~/{{ item }}
         state=link
         force=yes

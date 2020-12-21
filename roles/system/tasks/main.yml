@@ -1,6 +1,6 @@
 ---
 - name: system | install config
-  file: src={{ ansible_env.PWD }}/roles/system/files/{{ item }}
+  file: src={{ role_path }}/files/{{ item }}
         path=/etc/{{ item }}
         state=link
         force=yes

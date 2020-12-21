@@ -28,7 +28,7 @@
     - ~/.config/ncmpcpp
 
 - name: mpd | install mpd config
-  file: src={{ ansible_env.PWD }}/roles/mpd/files/{{ item }}
+  file: src={{ role_path }}/files/{{ item }}
         path=~/{{ item }}
         state=link
         force=yes

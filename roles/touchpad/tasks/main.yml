@@ -1,5 +1,5 @@
 ---
-- name: touchpad | install necessary package
+- name: touchpad | install xorg-xinput
   pacman:
     name: xorg-xinput
     state: latest
@@ -8,7 +8,7 @@
     - packages
 
 - name: touchpad | install touchpad config
-  file: src={{ ansible_env.PWD }}/roles/touchpad/files/.Xsession
+  file: src={{ role_path }}/files/.Xsession
         path=~/.Xsession
         state=link
         force=yes
