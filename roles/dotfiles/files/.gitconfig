@@ -55,6 +55,7 @@
   unstage = reset HEAD --
   sc = switch -c
   pp = pu --prune
+	su = submodule update --recursive --remote
 
 [push]
   default = current
