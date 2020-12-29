@@ -45,6 +45,7 @@
 - name: dotfiles | create config directories
   file: path={{ item }} state=directory
   loop:
+    - ~/.bundle
     - ~/.config
     - ~/.config/alacritty
     - ~/.config/gnupg

@@ -1,7 +1,6 @@
 ---
 dotfiles_files:
-  - .gnupg/gpg.conf
-  - .gnupg/gpg-agent.conf
+  - .bundle/config
   - .config/alacritty/alacritty.yml
   - .config/khal/config
   - .config/khard/khard.conf
@@ -16,6 +15,7 @@ dotfiles_files:
   - .gemrc
   - .gitignore
   - .gitconfig
+  - .gnupg/gpg.conf
   - .gnupg/gpg-agent.conf
   - .latexmkrc
   - .local/bin/alarm
