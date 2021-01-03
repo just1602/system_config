@@ -1,0 +1,5 @@
+#!/bin/sh
+
+DOI=$1
+
+curl --silent "https://api.crossref.org/works/$DOI/transform/application/x-bibtex" -w "\\n\\n"
