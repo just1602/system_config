@@ -42,6 +42,7 @@ vim.wo.colorcolumn = '+1'
 vim.bo.tabstop = 2
 vim.bo.shiftwidth = 2
 vim.bo.softtabstop = 2
+vim.o.shiftround = true
 
 -- general options
 vim.o.mouse = vim.o.mouse .. 'a'
