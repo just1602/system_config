@@ -19,7 +19,6 @@
   become: yes
   tags:
     - packages
-    - chat
 
 - name: apps | install nextcloud client
   pacman:
@@ -30,10 +29,11 @@
   tags:
     - packages
 
-- name: apps | install signal-desktop
+- name: apps | install chat applications
   pacman:
     name:
       - signal-desktop
+      - element-desktop
     state: latest
   become: yes
   tags:
