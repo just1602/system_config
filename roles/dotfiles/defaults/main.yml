@@ -20,6 +20,7 @@ dotfiles_files:
   - .latexmkrc
   - .local/bin/alarm
   - .local/bin/bm
+  - .local/bin/bma
   - .local/bin/configure-wacom
   - .local/bin/doi2bib
   - .local/bin/keyboard-layout-conf
