@@ -1,3 +1,8 @@
 #!/bin/sh
 
+if [[ $# -ne 2 ]]; then
+	echo -e "Usage:\n\t$(basename $0) <title> <url>"
+	exit 1
+fi
+
 echo "\"$1\";$2" >> ~/nextcloud/bookmarks
