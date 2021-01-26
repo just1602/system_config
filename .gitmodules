@@ -76,3 +76,9 @@
 [submodule "roles/nvim/files/nvim/pack/bundle/opt/nvim-treesitter"]
 	path = roles/nvim/files/nvim/pack/bundle/opt/nvim-treesitter
 	url = https://github.com/nvim-treesitter/nvim-treesitter
+[submodule "roles/nvim/files/nvim/pack/bundle/opt/nvim-lspconfig"]
+	path = roles/nvim/files/nvim/pack/bundle/opt/nvim-lspconfig
+	url = https://github.com/neovim/nvim-lspconfig
+[submodule "roles/nvim/files/nvim/pack/bundle/opt/completion-nvim"]
+	path = roles/nvim/files/nvim/pack/bundle/opt/completion-nvim
+	url = https://github.com/nvim-lua/completion-nvim
