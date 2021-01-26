@@ -73,3 +73,6 @@
 [submodule "roles/nvim/files/nvim/pack/bundle/opt/gruvbox"]
 	path = roles/nvim/files/nvim/pack/bundle/opt/gruvbox
 	url = git@github.com:morhetz/gruvbox.git
+[submodule "roles/nvim/files/nvim/pack/bundle/opt/nvim-treesitter"]
+	path = roles/nvim/files/nvim/pack/bundle/opt/nvim-treesitter
+	url = https://github.com/nvim-treesitter/nvim-treesitter
