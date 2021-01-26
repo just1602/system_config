@@ -6,6 +6,7 @@ vim.cmd [[packadd fzf.vim]]
 vim.cmd [[packadd vim-illuminate]]
 vim.cmd [[packadd Auto-Pairs]]
 vim.cmd [[packadd ferret]]
+vim.cmd [[packadd nvim-treesitter]]
 vim.cmd [[packadd coc.nvim]]
 
 -- languages specific plugin
@@ -77,3 +78,13 @@ vim.o.smarttab = true
 -- TODO: set format options with -o
 
 vim.g.coc_global_extensions = {'coc-solargraph'}
+
+require'nvim-treesitter.configs'.setup {
+  ensure_installed = "maintained", -- one of "all", "maintained" (parsers with maintainers), or a list of languages
+  highlight = {
+    enable = { "bash", "c", "cpp", "css", "java", "json", "lua", "python", "ruby", "rust", "toml" },
+  },
+  indent = {
+    enable = true,
+  },
+}
