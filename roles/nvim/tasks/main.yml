@@ -1,7 +1,9 @@
-- name: nvim | install neovim-git
+- name: nvim | install neovim related packages
   aur:
     name:
       - neovim-git
+      - jdtls
+      - vscode-css-languageserver-bin
   tags:
     - packages
 
