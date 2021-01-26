@@ -7,7 +7,6 @@ vim.cmd [[packadd vim-illuminate]]
 vim.cmd [[packadd Auto-Pairs]]
 vim.cmd [[packadd ferret]]
 vim.cmd [[packadd nvim-treesitter]]
--- vim.cmd [[packadd coc.nvim]]
 vim.cmd [[packadd nvim-lspconfig]]
 vim.cmd [[packadd completion-nvim]]
 
