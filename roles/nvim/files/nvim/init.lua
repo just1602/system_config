@@ -7,7 +7,9 @@ vim.cmd [[packadd vim-illuminate]]
 vim.cmd [[packadd Auto-Pairs]]
 vim.cmd [[packadd ferret]]
 vim.cmd [[packadd nvim-treesitter]]
-vim.cmd [[packadd coc.nvim]]
+-- vim.cmd [[packadd coc.nvim]]
+vim.cmd [[packadd nvim-lspconfig]]
+vim.cmd [[packadd completion-nvim]]
 
 -- languages specific plugin
 vim.cmd [[packadd scss-syntax.vim]]
@@ -43,7 +45,8 @@ vim.wo.colorcolumn = '+1'
 vim.bo.tabstop = 2
 vim.bo.shiftwidth = 2
 vim.bo.softtabstop = 2
-vim.o.shiftround = true
+vim.bo.formatoptions = "qrnc1j"
+vim.bo.omnifunc = 'v:lua.vim.lsp.omnifunc'
 
 -- general options
 vim.o.mouse = vim.o.mouse .. 'a'
@@ -75,16 +78,22 @@ vim.o.smartcase = true
 vim.o.smartindent = true
 vim.o.expandtab = true
 vim.o.smarttab = true
--- TODO: set format options with -o
-
-vim.g.coc_global_extensions = {'coc-solargraph'}
+vim.o.completeopt = "menu,menuone,noselect"
+vim.o.shiftround = true
 
 require'nvim-treesitter.configs'.setup {
   ensure_installed = "maintained", -- one of "all", "maintained" (parsers with maintainers), or a list of languages
   highlight = {
-    enable = { "bash", "c", "cpp", "css", "java", "json", "lua", "python", "ruby", "rust", "toml" },
+    enable = { "bash", "c", "cpp", "css", "html", "java", "json", "lua", "python", "ruby", "rust", "toml" },
   },
   indent = {
     enable = true,
   },
+}
+
+require'lspconfig'.solargraph.setup{on_attach=require'completion'.on_attach}
+require'lspconfig'.cssls.setup{on_attach=require'completion'.on_attach}
+require'lspconfig'.jdtls.setup{
+	cmd = { "/usr/bin/jdtls" },
+	on_attach=require'completion'.on_attach,
 }
