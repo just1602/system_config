@@ -1,9 +1,6 @@
 [submodule "user/.config/awesome/battery-widget"]
 	path = user/.config/awesome/battery-widget
 	url = git@github.com:deficient/battery-widget.git
-[submodule "roles/nvim/files/nvim/pack/bundle/opt/fzf.vim"]
-	path = roles/nvim/files/nvim/pack/bundle/opt/fzf.vim
-	url = https://github.com/junegunn/fzf.vim
 [submodule "roles/nvim/files/nvim/pack/bundle/opt/vim-illuminate"]
 	path = roles/nvim/files/nvim/pack/bundle/opt/vim-illuminate
 	url = https://github.com/RRethy/vim-illuminate
@@ -61,9 +58,6 @@
 [submodule "roles/nvim/files/nvim/pack/bundle/opt/Auto-Pairs"]
 	path = roles/nvim/files/nvim/pack/bundle/opt/Auto-Pairs
 	url = https://github.com/vim-scripts/Auto-Pairs
-[submodule "roles/nvim/files/nvim/pack/bundle/opt/ferret"]
-	path = roles/nvim/files/nvim/pack/bundle/opt/ferret
-	url = https://github.com/wincent/ferret
 [submodule "roles/nvim/files/nvim/pack/bundle/opt/scss-syntax.vim"]
 	path = roles/nvim/files/nvim/pack/bundle/opt/scss-syntax.vim
 	url = https://github.com/cakebaker/scss-syntax.vim

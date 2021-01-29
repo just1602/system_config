@@ -11,10 +11,10 @@ nmap <C-l> :nohl<cr>
 " use lk as ESC to avoid reaching for ESC key
 imap lk <esc>
 
-" bind :GFiles
-nnoremap <c-p> :GFiles<cr>
-nnoremap <leader>p :GFiles<cr>
-nnoremap <leader>P :Files<cr>
+" Telescope stuff
+nnoremap <leader>p <cmd>Telescope find_files<cr>
+nnoremap <leader>a <cmd>Telescope live_grep<cr>
+nnoremap <leader>h <cmd>Telescope help_tags<cr>
 
 " open Copen pane
 nnoremap <leader>c :copen<cr>
