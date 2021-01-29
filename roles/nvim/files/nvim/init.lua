@@ -10,6 +10,9 @@ vim.cmd [[packadd nvim-treesitter]]
 vim.cmd [[packadd nvim-lspconfig]]
 vim.cmd [[packadd completion-nvim]]
 vim.cmd [[packadd nvim-jdtls]]
+vim.cmd [[packadd popup.nvim]]
+vim.cmd [[packadd plenary.nvim]]
+vim.cmd [[packadd telescope.nvim]]
 
 -- languages specific plugin
 vim.cmd [[packadd scss-syntax.vim]]

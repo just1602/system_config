@@ -82,3 +82,12 @@
 [submodule "roles/nvim/files/nvim/pack/bundle/opt/nvim-jdtls"]
 	path = roles/nvim/files/nvim/pack/bundle/opt/nvim-jdtls
 	url = https://github.com/mfussenegger/nvim-jdtls
+[submodule "roles/nvim/files/nvim/pack/bundle/opt/popup.nvim"]
+	path = roles/nvim/files/nvim/pack/bundle/opt/popup.nvim
+	url = https://github.com/nvim-lua/popup.nvim
+[submodule "roles/nvim/files/nvim/pack/bundle/opt/plenary.nvim"]
+	path = roles/nvim/files/nvim/pack/bundle/opt/plenary.nvim
+	url = https://github.com/nvim-lua/plenary.nvim
+[submodule "roles/nvim/files/nvim/pack/bundle/opt/telescope.nvim"]
+	path = roles/nvim/files/nvim/pack/bundle/opt/telescope.nvim
+	url = https://github.com/nvim-telescope/telescope.nvim
