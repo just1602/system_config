@@ -79,3 +79,6 @@
 [submodule "roles/nvim/files/nvim/pack/bundle/opt/completion-nvim"]
 	path = roles/nvim/files/nvim/pack/bundle/opt/completion-nvim
 	url = https://github.com/nvim-lua/completion-nvim
+[submodule "roles/nvim/files/nvim/pack/bundle/opt/nvim-jdtls"]
+	path = roles/nvim/files/nvim/pack/bundle/opt/nvim-jdtls
+	url = https://github.com/mfussenegger/nvim-jdtls
