@@ -24,10 +24,11 @@ dotfiles_files:
   - .local/bin/configure-wacom
   - .local/bin/doi2bib
   - .local/bin/keyboard-layout-conf
-  - .local/bin/pass-age
   - .local/bin/mail
   - .local/bin/need-kernel-reboot
   - .local/bin/nitterize
+  - .local/bin/nvim-java-lsp.sh
+  - .local/bin/pass-age
   - .local/bin/paru
   - .local/bin/tat
   - .rtorrent.rc
