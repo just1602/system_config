@@ -9,6 +9,7 @@ vim.cmd [[packadd ferret]]
 vim.cmd [[packadd nvim-treesitter]]
 vim.cmd [[packadd nvim-lspconfig]]
 vim.cmd [[packadd completion-nvim]]
+vim.cmd [[packadd nvim-jdtls]]
 
 -- languages specific plugin
 vim.cmd [[packadd scss-syntax.vim]]
@@ -92,7 +93,4 @@ require'nvim-treesitter.configs'.setup {
 
 require'lspconfig'.solargraph.setup{on_attach=require'completion'.on_attach}
 require'lspconfig'.cssls.setup{on_attach=require'completion'.on_attach}
-require'lspconfig'.jdtls.setup{
-	cmd = { "/usr/bin/jdtls" },
-	on_attach=require'completion'.on_attach,
-}
+require('jdtls').start_or_attach({cmd = {'nvim-java-lsp.sh'}, root_dir = require('jdtls.setup').find_root({'.git'})})
