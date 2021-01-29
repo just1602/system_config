@@ -56,7 +56,7 @@
     - ~/.config/systemd
     - ~/.config/systemd/user
     - ~/.config/vdirsyncer
-    - ~/.config/youtube-dlc
+    - ~/.config/youtube-dl
     - ~/.gnupg
     - ~/.local
     - ~/.local/bin
