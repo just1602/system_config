@@ -12,7 +12,8 @@ nmap <C-l> :nohl<cr>
 imap lk <esc>
 
 " Telescope stuff
-nnoremap <leader>p <cmd>Telescope find_files<cr>
+nnoremap <leader>P <cmd>Telescope find_files<cr>
+nnoremap <leader>p <cmd>Telescope git_files<cr>
 nnoremap <leader>a <cmd>Telescope live_grep<cr>
 nnoremap <leader>h <cmd>Telescope help_tags<cr>
 
