@@ -1,8 +1,4 @@
--- colorscheme
-vim.cmd [[packadd gruvbox]]
-
 -- general utilities
-vim.cmd [[packadd vim-illuminate]]
 vim.cmd [[packadd Auto-Pairs]]
 vim.cmd [[packadd nvim-treesitter]]
 vim.cmd [[packadd nvim-lspconfig]]
@@ -31,14 +27,14 @@ vim.cmd [[packadd vim-git]]
 vim.cmd [[packadd Jenkinsfile-vim-syntax]]
 vim.cmd [[packadd vim-toml]]
 
-vim.api.nvim_command('colorscheme gruvbox')
+-- vim.api.nvim_command('colorscheme gruvbox')
 
 vim.g.mapleader = ' '
 
 -- window related config
 vim.wo.number = true
 vim.wo.relativenumber = true
-vim.wo.cursorline = true
+vim.wo.cursorline = false -- set to true with a modern colorscheme
 vim.wo.colorcolumn = '+1'
 
 -- buffer options
@@ -80,7 +76,7 @@ vim.o.expandtab = true
 vim.o.smarttab = true
 vim.o.completeopt = "menu,menuone,noselect"
 vim.o.shiftround = true
-vim.o.termguicolors = true
+vim.o.termguicolors = false -- set to true with a modern colorscheme
 
 require'nvim-treesitter.configs'.setup {
   ensure_installed = "maintained", -- one of "all", "maintained" (parsers with maintainers), or a list of languages
