@@ -27,7 +27,6 @@ dotfiles_files:
   - .local/bin/mail
   - .local/bin/need-kernel-reboot
   - .local/bin/nitterize
-  - .local/bin/nvim-java-lsp.sh
   - .local/bin/pass-age
   - .local/bin/paru
   - .local/bin/tat

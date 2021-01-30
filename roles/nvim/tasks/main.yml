@@ -2,7 +2,6 @@
   aur:
     name:
       - neovim-git
-      - jdtls
       - vscode-css-languageserver-bin
   tags:
     - packages
