@@ -20,12 +20,6 @@ lua << END
   end
 
 _G.packer_plugins = {
-  ["auto-pairs"] = {
-    loaded = true,
-    only_sequence = true,
-    only_setup = false,
-    path = "/home/goldman/.local/share/nvim/site/pack/packer/start/auto-pairs"
-  },
   ["colorbuddy.nvim"] = {
     loaded = true,
     only_sequence = true,
@@ -37,6 +31,12 @@ _G.packer_plugins = {
     only_sequence = true,
     only_setup = false,
     path = "/home/goldman/.local/share/nvim/site/pack/packer/start/completion-nvim"
+  },
+  ["lexima.vim"] = {
+    loaded = true,
+    only_sequence = true,
+    only_setup = false,
+    path = "/home/goldman/.local/share/nvim/site/pack/packer/start/lexima.vim"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
@@ -98,12 +98,6 @@ _G.packer_plugins = {
     only_sequence = false,
     only_setup = false,
     path = "/home/goldman/.local/share/nvim/site/pack/packer/opt/vim-dispatch"
-  },
-  ["vim-endwise"] = {
-    loaded = true,
-    only_sequence = true,
-    only_setup = false,
-    path = "/home/goldman/.local/share/nvim/site/pack/packer/start/vim-endwise"
   },
   ["vim-git"] = {
     loaded = true,

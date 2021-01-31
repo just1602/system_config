@@ -6,7 +6,7 @@ return require('packer').startup(function()
 
   use {'Th3Whit3Wolf/onebuddy', requires = {'tjdevries/colorbuddy.nvim'}}
 
-	use {'jiangmiao/auto-pairs'}
+  use {'cohama/lexima.vim'}
 	use {
 		'nvim-telescope/telescope.nvim',
 		requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}}
@@ -24,7 +24,6 @@ return require('packer').startup(function()
 	use {'tpope/vim-rails'}
 	use {'tpope/vim-bundler'}
 	use {'tpope/vim-rake'}
-	use {'tpope/vim-endwise'}
 	use {'vim-ruby/vim-ruby', ft = 'ruby'}
 	use {'whatyouhide/vim-textobj-erb', requires = {'kana/vim-textobj-user'}}
 	use {'rhysd/vim-textobj-ruby', requires = {'kana/vim-textobj-user'}}
