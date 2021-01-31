@@ -26,6 +26,12 @@ _G.packer_plugins = {
     only_setup = false,
     path = "/home/goldman/.local/share/nvim/site/pack/packer/start/auto-pairs"
   },
+  ["colorbuddy.nvim"] = {
+    loaded = true,
+    only_sequence = true,
+    only_setup = false,
+    path = "/home/goldman/.local/share/nvim/site/pack/packer/start/colorbuddy.nvim"
+  },
   ["completion-nvim"] = {
     loaded = true,
     only_sequence = true,
@@ -43,6 +49,12 @@ _G.packer_plugins = {
     only_sequence = true,
     only_setup = false,
     path = "/home/goldman/.local/share/nvim/site/pack/packer/start/nvim-treesitter"
+  },
+  onebuddy = {
+    loaded = true,
+    only_sequence = true,
+    only_setup = false,
+    path = "/home/goldman/.local/share/nvim/site/pack/packer/start/onebuddy"
   },
   ["packer.nvim"] = {
     loaded = false,

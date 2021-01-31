@@ -2,14 +2,14 @@ require('plugins')
 require('treesitter')
 require('lsp')
 
--- vim.api.nvim_command('colorscheme gruvbox')
+require('colorbuddy').colorscheme('onebuddy')
 
 vim.g.mapleader = ' '
 
 -- window related config
 vim.wo.number = true
 vim.wo.relativenumber = true
-vim.wo.cursorline = false -- set to true with a modern colorscheme
+vim.wo.cursorline = true
 vim.wo.colorcolumn = '+1'
 
 -- buffer options
@@ -51,4 +51,4 @@ vim.o.expandtab = true
 vim.o.smarttab = true
 vim.o.completeopt = "menu,menuone,noselect"
 vim.o.shiftround = true
-vim.o.termguicolors = false -- set to true with a modern colorscheme
+vim.o.termguicolors = true

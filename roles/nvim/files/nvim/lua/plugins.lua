@@ -4,6 +4,8 @@ return require('packer').startup(function()
 
 	use {'wbthomason/packer.nvim', opt = true}
 
+  use {'Th3Whit3Wolf/onebuddy', requires = {'tjdevries/colorbuddy.nvim'}}
+
 	use {'jiangmiao/auto-pairs'}
 	use {
 		'nvim-telescope/telescope.nvim',
