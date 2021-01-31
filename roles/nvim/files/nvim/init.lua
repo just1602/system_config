@@ -1,32 +1,4 @@
--- general utilities
-vim.cmd [[packadd Auto-Pairs]]
-vim.cmd [[packadd nvim-treesitter]]
-vim.cmd [[packadd nvim-lspconfig]]
-vim.cmd [[packadd completion-nvim]]
-vim.cmd [[packadd popup.nvim]]
-vim.cmd [[packadd plenary.nvim]]
-vim.cmd [[packadd telescope.nvim]]
-
--- languages specific plugin
-vim.cmd [[packadd scss-syntax.vim]]
-vim.cmd [[packadd vim-es6]]
-vim.cmd [[packadd vim-ruby]]
-vim.cmd [[packadd vim-endwise]]
-vim.cmd [[packadd vim-textobj-user]]
-vim.cmd [[packadd vim-textobj-ruby]]
-vim.cmd [[packadd vim-textobj-erb]]
-vim.cmd [[packadd vim-rake]]
-vim.cmd [[packadd vim-bundler]]
-vim.cmd [[packadd vim-rails]]
-vim.cmd [[packadd vim-dispatch]]
-vim.cmd [[packadd vim-fugitive]]
-vim.cmd [[packadd vim-surround]]
-vim.cmd [[packadd vim-repeat]]
-vim.cmd [[packadd vim-commentary]]
-vim.cmd [[packadd vim-git]]
-vim.cmd [[packadd Jenkinsfile-vim-syntax]]
-vim.cmd [[packadd vim-toml]]
-
+require('plugins')
 -- vim.api.nvim_command('colorscheme gruvbox')
 
 vim.g.mapleader = ' '
