@@ -1,4 +1,7 @@
 require('plugins')
+require('treesitter')
+require('lsp')
+
 -- vim.api.nvim_command('colorscheme gruvbox')
 
 vim.g.mapleader = ' '
@@ -49,16 +52,3 @@ vim.o.smarttab = true
 vim.o.completeopt = "menu,menuone,noselect"
 vim.o.shiftround = true
 vim.o.termguicolors = false -- set to true with a modern colorscheme
-
-require'nvim-treesitter.configs'.setup {
-  ensure_installed = "maintained", -- one of "all", "maintained" (parsers with maintainers), or a list of languages
-  highlight = {
-    enable = { "bash", "c", "cpp", "css", "html", "java", "json", "lua", "python", "ruby", "rust", "toml" },
-  },
-  indent = {
-    enable = true,
-  },
-}
-
-require'lspconfig'.solargraph.setup{on_attach=require'completion'.on_attach}
-require'lspconfig'.cssls.setup{on_attach=require'completion'.on_attach}
