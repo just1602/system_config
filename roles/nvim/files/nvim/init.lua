@@ -11,6 +11,7 @@ vim.wo.number = true
 vim.wo.relativenumber = true
 vim.wo.cursorline = true
 vim.wo.colorcolumn = '+1'
+vim.wo.signcolumn = 'yes'
 
 -- buffer options
 vim.bo.tabstop = 2
