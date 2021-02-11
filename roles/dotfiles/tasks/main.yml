@@ -22,6 +22,7 @@
       - ripgrep
       - tmux
       - vdirsyncer
+      - youtube-dl
       - zsh
       - zsh-completions
       - zsh-syntax-highlighting
@@ -38,7 +39,6 @@
       - rbenv
       - ruby-build
       - todotxt
-      - youtube-dlc
   tags:
     - packages
 
