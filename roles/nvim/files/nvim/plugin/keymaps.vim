@@ -11,6 +11,10 @@ nmap <C-l> :nohl<cr>
 " use lk as ESC to avoid reaching for ESC key
 imap lk <esc>
 
+" keep the selection after indenting
+vnoremap < <gv
+vnoremap > >gv
+
 " Telescope stuff
 nnoremap <leader>P <cmd>Telescope find_files<cr>
 nnoremap <leader>p <cmd>Telescope git_files<cr>
