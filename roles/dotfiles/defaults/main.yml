@@ -1,5 +1,6 @@
 ---
 dotfiles_files:
+  - .bashrc
   - .bundle/config
   - .config/alacritty/alacritty.yml
   - .config/khal/config
