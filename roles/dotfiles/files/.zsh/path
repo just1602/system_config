@@ -5,10 +5,6 @@ unset PATH
 
 PATH=$HOME/.local/bin
 
-if [[ "$OSTYPE" == darwin* ]]; then
-  PATH=$PATH:"/opt/local/bin:/opt/local/sbin"
-fi
-
 PATH=$PATH:$SYSTEM_PATH
 
 export PATH
