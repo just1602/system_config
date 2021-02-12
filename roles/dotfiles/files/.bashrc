@@ -23,6 +23,7 @@ shopt -s histappend  # append to history instead of overwriting it
 shopt -s histverify  # don't execute history, show line before
 shopt -s nocaseglob  # no case on pathname expansion
 shopt -s nocasematch # no case on matching
+shopt -s checkwinsize
 export HISTIGNORE="&:bg:fg:ls:l:history:exit:clear:pwd:v:nvim:vim"
 export HISTCONTROL=ignoredups:ignorespace:erasedups
 export HISTSIZE=
@@ -39,7 +40,7 @@ if [ -f /usr/share/bash-completion/completions/git ]; then
 fi
 
 if [ -f ~/.ssh/known_hosts ]; then
-	complete -W "`cut -f 1 -d ' ' ~/.ssh/known_hosts | sed -e s/,.*//g | uniq | grep -v "\["`" ssh mosh scp
+  complete -W "`cut -f 1 -d ' ' ~/.ssh/known_hosts | sed -e s/,.*//g | uniq | grep -v "\["`" ssh mosh scp
 fi
 
 complete -c man which sudo      # complete commands
@@ -47,13 +48,18 @@ complete -A user su             # complete users
 bind '"\t":menu-complete'       # nice menu completion on tab
 
 # PS1
-rightprompt() { printf "%*s" $((COLUMNS - 3)) "[\A]"; }
-case $LOGNAME in  # root is in red
-	root) PS1="\[$(tput sc; rightprompt; tput rc)\]\e[31m\u\e[39m@\e[33m\h\e[39m \e[1m\w\e[0m "
-		;;
-	*) PS1="\[$(tput sc; rightprompt; tput rc)\]\e[34m\u\e[39m@\e[33m\h\e[39m \e[1m\w\e[0m "
-		;;
-esac
+rightprompt() { printf "%*s" $(($(tput cols) -3)) "[\A]"; }
+set_prompt_user_color() {
+  if [ "$LOGNAME" = "root" ]; then
+    echo "\e[31m"
+  else
+    echo "\e[34m"
+  fi
+}
+set_prompt() {
+  PS1="\[$(tput sc; rightprompt; tput rc)\]$(set_prompt_user_color)\u\e[39m@\e[33m\h\e[39m \e[1m\w\e[0m "
+}
+PROMPT_COMMAND=set_prompt
 
 # env
 export PATH=${PATH}:~/.local/bin
@@ -122,22 +128,22 @@ alias yl='youtube-dl --audio-format flac'
 # With arguments: acts like `git`
 g ()
 {
-    if [[ $# -gt 0 ]]; then
-      git "$@"
-    else
-      git st
-    fi
+  if [[ $# -gt 0 ]]; then
+    git "$@"
+  else
+    git st
+  fi
 }
 
 # No arguments: todo.sh list
 # with arguments: acts like todo.sh
 t ()
 {
-    if [[ $# -gt 0 ]]; then
-      todo.sh "$@"
-    else
-      todo.sh ls
-    fi
+  if [[ $# -gt 0 ]]; then
+    todo.sh "$@"
+  else
+    todo.sh ls
+  fi
 }
 
 mkcd() {
