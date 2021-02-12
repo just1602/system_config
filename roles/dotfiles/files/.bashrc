@@ -12,6 +12,8 @@ bind "set history-size 10000"      # big history
 bind "set menu-complete-display-prefix on"
 bind "set show-all-if-ambiguous on"  # show everything
 bind "set show-all-if-unmodified on" # show it!
+bind "set completion-query-items 0"
+bind "set page-completions off"
 shopt -s cdspell     # correct minor spelling errors in cd
 shopt -s autocd
 shopt -s checkhash   # tru the hashtable firse
