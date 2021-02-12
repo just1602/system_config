@@ -39,11 +39,6 @@ dotfiles_files:
   - .todo.actions.d/add
   - .todo.actions.d/e
   - .todo.actions.d/edit
-  - .zsh/aliases
-  - .zsh/functions
-  - .zsh/path
-  - .zshenv
-  - .zshrc
 
 templates_files:
   - .config/vdirsyncer/config
