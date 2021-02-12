@@ -30,7 +30,7 @@
 
 [core]
   editor = "nvim"
-  pager = "less"
+  pager = "less -R"
   excludesfile = ~/.gitignore
 
 [alias]
