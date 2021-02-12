@@ -33,8 +33,10 @@ export HISTFILESIZE=
 export HISTTIMEFORMAT="%y/%m/%d %T "
 
 # completions
-if [ -f /usr/share/bash_completion/bash_completion ]; then
-  . /usr/share/bash_completion/bash_completion
+# complete g as git
+if [ -f /usr/share/bash-completion/completions/git ]; then
+  . /usr/share/bash-completion/completions/git
+  __git_complete g __git_main
 fi
 
 if [ -f ~/.ssh/known_hosts ]; then
