@@ -35,10 +35,6 @@ if [ -f /usr/share/bash_completion/bash_completion ]; then
   . /usr/share/bash_completion/bash_completion
 fi
 
-if [ -f /usr/share/bash-completion/completions/git ]; then
-  . /usr/share/bash-completion/completions/git
-fi
-
 if [ -f ~/.ssh/known_hosts ]; then
   complete -W "`cut -f 1 -d ' ' ~/.ssh/known_hosts | sed -e s/,.*//g | uniq | grep -v "\["`" ssh mosh scp
 fi
