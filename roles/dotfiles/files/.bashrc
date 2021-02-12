@@ -86,7 +86,6 @@ alias pc='pass clip -f'
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 
-alias tm='tmux'
 alias ts='tmux new -s'
 alias tl='tmux ls'
 
