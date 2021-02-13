@@ -66,7 +66,7 @@ set_prompt() {
 PROMPT_COMMAND=set_prompt
 
 # env
-export PATH=${PATH}:~/.local/bin
+export PATH=~/.local/bin:${PATH}
 export LESS="-iF"  # ignore case, exit if fits on screen
 export EDITOR=nvim
 export COLORTERM=truecolor
