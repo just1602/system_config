@@ -78,6 +78,9 @@ if [ $? -ge 2 ]; then
   ssh-agent -a "$SSH_AUTH_SOCK" >/dev/null
 fi
 
+# ruby
+eval "$(rbenv init -)"
+
 # alaises
 alias ap='ansible-playbook -i inventory'
 
