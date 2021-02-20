@@ -48,7 +48,6 @@ complete -A user su             # complete users
 bind '"\t":menu-complete'       # nice menu completion on tab
 
 # PS1
-rightprompt() { printf "%*s" $(($(tput cols) -3)) "[\A]"; }
 set_prompt_user_color() {
   if [ "$LOGNAME" = "root" ]; then
     echo "$(tput setaf 1)" # red
@@ -61,7 +60,7 @@ set_prompt() {
   yellow=$(tput setaf 3)
   reset=$(tput sgr0)
   user_color=$(set_prompt_user_color)
-  PS1="\[$(tput sc; rightprompt; tput rc)\]\[$user_color\]\u\[$reset\]@\[$yellow\]\h\[$reset\] \[$bold\]\w\[$reset\] "
+  PS1="[\A] \[$user_color\]\u\[$reset\]@\[$yellow\]\h\[$reset\] \[$bold\]\w\[$reset\] "
 }
 PROMPT_COMMAND=set_prompt
 
