@@ -5,7 +5,8 @@ theme.dir = os.getenv("HOME") .. "/.config/awesome/just1602"
 theme.wallpaper = theme.dir .. "/wallpaper.jpg"
 
 --- General Fonts ---
-theme.font      = "sans 9"
+theme.font      = "sans 12"
+theme.wibar_height = 28
 
 --- Colors ---
 theme.fg_normal  = "#a89984"
@@ -21,13 +22,13 @@ theme.systray_icon_spacing = 4
 
 --- Taglist ---
 theme.taglist_spacing = 1
-theme.taglist_font = "sans 10"
+theme.taglist_font = "sans 12"
 theme.taglist_squares_sel   = "/usr/share/awesome/themes/zenburn/taglist/squarefz.png"
 theme.taglist_squares_unsel = "/usr/share/awesome/themes/zenburn/taglist/squarez.png"
 
 --- Tasklist ---
 theme.tasklist_spacing = 0
-theme.tsaklist_font = "sans 9"
+theme.tasklist_font = "sans 12"
 
 --- Borders ---
 theme.useless_gap   = 0
