@@ -172,10 +172,10 @@ screen.connect_signal("property::geometry", set_wallpaper)
 -- Each screen has it's own tag
 -- TODO: find a better to handle laptop and dynamic screen
 if screen[2] then
-  awful.tag({"email", "irc", "¤", "±", "~"}, screen[1], awful.layout.layouts[1])
+  awful.tag({"email", "irc", "im", "teams", "5", "6", "7"}, screen[1], awful.layout.layouts[1])
   awful.tag({"www", "code", "music", "tor", "foo", "bar"}, screen[2], awful.layout.layouts[1])
 else
-  awful.tag({"www", "code", "email", "irc", "music", "tor", "~", "±", "¤"}, screen[1], awful.layout.layouts[1])
+  awful.tag({"www", "code", "email", "irc", "music", "tor", "7", "8", "9"}, screen[1], awful.layout.layouts[1])
 end
 
 awful.screen.connect_for_each_screen(function(s)
