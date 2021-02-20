@@ -9,12 +9,12 @@ theme.font      = "sans 12"
 theme.wibar_height = 28
 
 --- Colors ---
-theme.fg_normal  = "#a89984"
-theme.fg_focus   = "#ebdbb2"
+theme.fg_normal  = "#c5c8c6"
+theme.fg_focus   = "#458588"
 theme.fg_urgent  = "#cc241d"
-theme.bg_normal  = "#282828"
-theme.bg_focus   = "#282828"
-theme.bg_urgent  = "#282828"
+theme.bg_normal  = "#1d1f21"
+theme.bg_focus   = "#1d1f21"
+theme.bg_urgent  = "#1d1f21"
 
 --- Systray ---
 theme.bg_systray = theme.bg_normal
