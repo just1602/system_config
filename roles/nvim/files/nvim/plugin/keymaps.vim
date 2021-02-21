@@ -8,8 +8,8 @@ nmap k gk
 " Use Ctrl-l to clear the search highlight
 nmap <C-l> :nohl<cr>
 
-" use lk as ESC to avoid reaching for ESC key
-imap lk <esc>
+" use kj as ESC to avoid reaching for ESC key
+imap kj <esc>
 
 " keep the selection after indenting
 vnoremap < <gv
