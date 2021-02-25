@@ -104,10 +104,6 @@ alias ll='l -l'
 
 alias pod='mpv --no-vid'
 
-alias cr='cargo run'
-alias cf='cargo-fmt'
-alias ct='cargo test'
-
 alias ip='ip --color=auto'
 
 alias rb='ruby'
