@@ -12,8 +12,8 @@ packadd packer.nvim
 try
 
 lua << END
-local package_path_str = "/home/goldman/.cache/nvim/packer_hererocks/2.0.5/share/lua/5.1/?.lua;/home/goldman/.cache/nvim/packer_hererocks/2.0.5/share/lua/5.1/?/init.lua;/home/goldman/.cache/nvim/packer_hererocks/2.0.5/lib/luarocks/rocks-5.1/?.lua;/home/goldman/.cache/nvim/packer_hererocks/2.0.5/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/home/goldman/.cache/nvim/packer_hererocks/2.0.5/lib/lua/5.1/?.so"
+local package_path_str = "/home/asd/.cache/nvim/packer_hererocks/2.0.5/share/lua/5.1/?.lua;/home/asd/.cache/nvim/packer_hererocks/2.0.5/share/lua/5.1/?/init.lua;/home/asd/.cache/nvim/packer_hererocks/2.0.5/lib/luarocks/rocks-5.1/?.lua;/home/asd/.cache/nvim/packer_hererocks/2.0.5/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/home/asd/.cache/nvim/packer_hererocks/2.0.5/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -34,95 +34,92 @@ end
 _G.packer_plugins = {
   ["colorbuddy.nvim"] = {
     loaded = true,
-    path = "/home/goldman/.local/share/nvim/site/pack/packer/start/colorbuddy.nvim"
+    path = "/home/asd/.local/share/nvim/site/pack/packer/start/colorbuddy.nvim"
   },
   ["completion-nvim"] = {
     loaded = true,
-    path = "/home/goldman/.local/share/nvim/site/pack/packer/start/completion-nvim"
+    path = "/home/asd/.local/share/nvim/site/pack/packer/start/completion-nvim"
   },
   ["lexima.vim"] = {
     loaded = true,
-    path = "/home/goldman/.local/share/nvim/site/pack/packer/start/lexima.vim"
+    path = "/home/asd/.local/share/nvim/site/pack/packer/start/lexima.vim"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
-    path = "/home/goldman/.local/share/nvim/site/pack/packer/start/nvim-lspconfig"
+    path = "/home/asd/.local/share/nvim/site/pack/packer/start/nvim-lspconfig"
   },
   ["nvim-treesitter"] = {
     loaded = true,
-    path = "/home/goldman/.local/share/nvim/site/pack/packer/start/nvim-treesitter"
+    path = "/home/asd/.local/share/nvim/site/pack/packer/start/nvim-treesitter"
   },
   onebuddy = {
     loaded = true,
-    path = "/home/goldman/.local/share/nvim/site/pack/packer/start/onebuddy"
+    path = "/home/asd/.local/share/nvim/site/pack/packer/start/onebuddy"
   },
   ["packer.nvim"] = {
     loaded = false,
-    needs_bufread = false,
-    path = "/home/goldman/.local/share/nvim/site/pack/packer/opt/packer.nvim"
+    path = "/home/asd/.local/share/nvim/site/pack/packer/opt/packer.nvim"
   },
   ["plenary.nvim"] = {
     loaded = true,
-    path = "/home/goldman/.local/share/nvim/site/pack/packer/start/plenary.nvim"
+    path = "/home/asd/.local/share/nvim/site/pack/packer/start/plenary.nvim"
   },
   ["popup.nvim"] = {
     loaded = true,
-    path = "/home/goldman/.local/share/nvim/site/pack/packer/start/popup.nvim"
+    path = "/home/asd/.local/share/nvim/site/pack/packer/start/popup.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
-    path = "/home/goldman/.local/share/nvim/site/pack/packer/start/telescope.nvim"
+    path = "/home/asd/.local/share/nvim/site/pack/packer/start/telescope.nvim"
   },
   ["vim-bundler"] = {
     loaded = true,
-    path = "/home/goldman/.local/share/nvim/site/pack/packer/start/vim-bundler"
+    path = "/home/asd/.local/share/nvim/site/pack/packer/start/vim-bundler"
   },
   ["vim-commentary"] = {
     loaded = true,
-    path = "/home/goldman/.local/share/nvim/site/pack/packer/start/vim-commentary"
+    path = "/home/asd/.local/share/nvim/site/pack/packer/start/vim-commentary"
   },
   ["vim-dispatch"] = {
     commands = { "Dispatch", "Make", "Focus", "Start" },
     loaded = false,
-    needs_bufread = false,
-    path = "/home/goldman/.local/share/nvim/site/pack/packer/opt/vim-dispatch"
+    path = "/home/asd/.local/share/nvim/site/pack/packer/opt/vim-dispatch"
   },
   ["vim-git"] = {
     loaded = true,
-    path = "/home/goldman/.local/share/nvim/site/pack/packer/start/vim-git"
+    path = "/home/asd/.local/share/nvim/site/pack/packer/start/vim-git"
   },
   ["vim-rails"] = {
     loaded = true,
-    path = "/home/goldman/.local/share/nvim/site/pack/packer/start/vim-rails"
+    path = "/home/asd/.local/share/nvim/site/pack/packer/start/vim-rails"
   },
   ["vim-rake"] = {
     loaded = true,
-    path = "/home/goldman/.local/share/nvim/site/pack/packer/start/vim-rake"
+    path = "/home/asd/.local/share/nvim/site/pack/packer/start/vim-rake"
   },
   ["vim-repeat"] = {
     loaded = true,
-    path = "/home/goldman/.local/share/nvim/site/pack/packer/start/vim-repeat"
+    path = "/home/asd/.local/share/nvim/site/pack/packer/start/vim-repeat"
   },
   ["vim-ruby"] = {
     loaded = false,
-    needs_bufread = true,
-    path = "/home/goldman/.local/share/nvim/site/pack/packer/opt/vim-ruby"
+    path = "/home/asd/.local/share/nvim/site/pack/packer/opt/vim-ruby"
   },
   ["vim-surround"] = {
     loaded = true,
-    path = "/home/goldman/.local/share/nvim/site/pack/packer/start/vim-surround"
+    path = "/home/asd/.local/share/nvim/site/pack/packer/start/vim-surround"
   },
   ["vim-textobj-erb"] = {
     loaded = true,
-    path = "/home/goldman/.local/share/nvim/site/pack/packer/start/vim-textobj-erb"
+    path = "/home/asd/.local/share/nvim/site/pack/packer/start/vim-textobj-erb"
   },
   ["vim-textobj-ruby"] = {
     loaded = true,
-    path = "/home/goldman/.local/share/nvim/site/pack/packer/start/vim-textobj-ruby"
+    path = "/home/asd/.local/share/nvim/site/pack/packer/start/vim-textobj-ruby"
   },
   ["vim-textobj-user"] = {
     loaded = true,
-    path = "/home/goldman/.local/share/nvim/site/pack/packer/start/vim-textobj-user"
+    path = "/home/asd/.local/share/nvim/site/pack/packer/start/vim-textobj-user"
   }
 }
 
@@ -137,10 +134,6 @@ vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
   -- Filetype lazy-loads
 vim.cmd [[au FileType ruby ++once lua require("packer.load")({'vim-ruby'}, { ft = "ruby" }, _G.packer_plugins)]]
-vim.cmd("augroup END")
-vim.cmd [[augroup filetypedetect]]
-vim.cmd [[source /home/goldman/.local/share/nvim/site/pack/packer/opt/vim-ruby/ftdetect/ruby.vim]]
-vim.cmd [[source /home/goldman/.local/share/nvim/site/pack/packer/opt/vim-ruby/ftdetect/ruby_extra.vim]]
 vim.cmd("augroup END")
 END
 
