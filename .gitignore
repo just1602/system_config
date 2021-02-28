@@ -12,3 +12,4 @@ emacs.d/auto-save-list
 # email caching
 user/.config/neomutt/accounts/net.riseup/
 user/.config/neomutt/accounts/ca.resist/
+roles/nvim/files/nvim/plugin/packer_compiled.vim
