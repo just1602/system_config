@@ -7,6 +7,7 @@ return require('packer').startup(function()
   use {'Th3Whit3Wolf/onebuddy', requires = {'tjdevries/colorbuddy.nvim'}}
 
   use {'cohama/lexima.vim'}
+  use {'kyazdani42/nvim-web-devicons'}
   use {
     'nvim-telescope/telescope.nvim',
     requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}}
