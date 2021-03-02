@@ -10,6 +10,7 @@
       - lightdm-gtk-greeter
       - light-locker
       - mpv
+      - powerline-fonts
       - pulseaudio
       - pulseaudio-alsa
       - pulsemixer
@@ -27,14 +28,6 @@
       - xorg-xrdb
     state: latest
   become: yes
-  tags:
-    - packages
-
-- name: wm | install patched fonts
-  aur:
-    name:
-      - ttf-dejavu-sans-mono-powerline-git
-      - urxvt-tabbedex
   tags:
     - packages
 
