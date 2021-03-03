@@ -10,7 +10,6 @@
       - lightdm-gtk-greeter
       - light-locker
       - mpv
-      - powerline-fonts
       - pulseaudio
       - pulseaudio-alsa
       - pulsemixer
@@ -18,7 +17,7 @@
       - rxvt-unicode-terminfo
       - shotgun
       - slop
-      - ttf-jetbrains-mono
+      - ttf-nerd-fonts-symbols-mono
       - vicious
       - xclip
       - xorg-server
