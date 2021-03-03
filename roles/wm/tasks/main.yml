@@ -18,6 +18,7 @@
       - rxvt-unicode-terminfo
       - shotgun
       - slop
+      - ttf-jetbrains-mono
       - vicious
       - xclip
       - xorg-server
