@@ -86,6 +86,7 @@ alias ap='ansible-playbook -i inventory'
 alias di='docker images'
 
 alias pc='pass clip -f'
+alias pwgen='pwgen -s -y -1'
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
