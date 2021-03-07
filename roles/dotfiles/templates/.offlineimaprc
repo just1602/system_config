@@ -19,7 +19,7 @@ ssl_version = tls1_2
 remotehost = imap.riseup.net
 remoteuser = just1602
 remotepass = {{ riseup_pass }}
-folderfilter = lambda foldername: foldername in ["INBOX", "Sent", "Drafts", "Archives"]
+folderfilter = lambda foldername: foldername in ["INBOX", "Sent", "Drafts", "Archives", "baraque"]
 
 [Account resist]
 localrepository = resist-local
