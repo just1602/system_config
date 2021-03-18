@@ -16,6 +16,8 @@ vim.wo.signcolumn = 'yes'
 -- buffer options
 vim.bo.formatoptions = "rnc1jl"
 vim.bo.omnifunc = 'v:lua.vim.lsp.omnifunc'
+vim.bo.tabstop = 8
+vim.bo.shiftwidth = 2
 
 -- general options
 vim.o.mouse = vim.o.mouse .. 'a'
@@ -49,8 +51,5 @@ vim.o.expandtab = true
 vim.o.smarttab = true
 vim.o.completeopt = "menu,menuone,noselect"
 vim.o.shiftround = true
-vim.o.tabstop = 8
-vim.o.softtabstop = 0
-vim.o.shiftwidth = 2
 vim.o.termguicolors = true
 vim.o.visualbell = true
