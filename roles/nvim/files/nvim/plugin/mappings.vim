@@ -14,6 +14,11 @@ nnoremap K i<cr><esc>
 " Use Ctrl-l to clear the search highlight
 nmap <C-l> :nohl<cr>
 
+" copy to system clipboard
+nnoremap <leader>y "+y
+vnoremap <leader>y "+y
+nnoremap <leader>Y gg"+yG
+
 " Telescope stuff
 nnoremap <leader>P <cmd>Telescope find_files<cr>
 nnoremap <leader>p <cmd>Telescope git_files<cr>
