@@ -5,6 +5,9 @@ command! Q q
 nmap j gj
 nmap k gk
 
+" make Y work as C and D
+nnoremap Y y$
+
 " Use Ctrl-l to clear the search highlight
 nmap <C-l> :nohl<cr>
 
