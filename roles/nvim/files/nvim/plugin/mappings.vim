@@ -8,10 +8,6 @@ nmap k gk
 " Use Ctrl-l to clear the search highlight
 nmap <C-l> :nohl<cr>
 
-" keep the selection after indenting
-vnoremap < <gv
-vnoremap > >gv
-
 " Telescope stuff
 nnoremap <leader>P <cmd>Telescope find_files<cr>
 nnoremap <leader>p <cmd>Telescope git_files<cr>
