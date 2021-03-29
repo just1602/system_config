@@ -8,6 +8,9 @@ nmap k gk
 " make Y work as C and D
 nnoremap Y y$
 
+" make K work as the reverse of J
+nnoremap K i<cr><esc>
+
 " Use Ctrl-l to clear the search highlight
 nmap <C-l> :nohl<cr>
 
