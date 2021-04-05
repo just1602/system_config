@@ -33,6 +33,7 @@ dotfiles_files:
   - .local/bin/nitterize
   - .local/bin/pass-age
   - .local/bin/paru
+  - .local/bin/rename-bandcamp-flac
   - .local/bin/tat
   - .rtorrent.rc
   - .ssh/config
