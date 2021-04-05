@@ -1,8 +1,8 @@
 require('plugins')
 require('treesitter')
 require('lsp')
+require('zephyr') -- colorscheme
 
-require('colorbuddy').colorscheme('onebuddy')
 
 vim.g.mapleader = ' '
 

@@ -4,7 +4,7 @@ return require('packer').startup(function()
 
   use {'wbthomason/packer.nvim', opt = true}
 
-  use {'Th3Whit3Wolf/onebuddy', requires = {'tjdevries/colorbuddy.nvim'}}
+  use {'glepnir/zephyr-nvim', requires = {'nvim-treesitter/nvim-treesitter'}}
 
   use {'cohama/lexima.vim'}
   use {'kyazdani42/nvim-web-devicons'}
