@@ -23,6 +23,8 @@ dotfiles_files:
   - .local/bin/alarm
   - .local/bin/bm
   - .local/bin/bma
+  - .local/bin/c2f
+  - .local/bin/f2c
   - .local/bin/configure-wacom
   - .local/bin/doi2bib
   - .local/bin/keyboard-layout-conf

@@ -1,0 +1,13 @@
+#!/usr/bin/env python
+
+import sys
+
+if len(sys.argv) != 2:
+    print(f'{sys.argv[0]} <celsius temperature>') 
+    sys.exit(-1)
+
+
+celsius = float(sys.argv[1])
+fahrenheit = (celsius * 1.8) + 32
+
+print(fahrenheit)
