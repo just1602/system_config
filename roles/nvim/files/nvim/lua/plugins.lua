@@ -4,8 +4,6 @@ return require('packer').startup(function()
 
   use {'wbthomason/packer.nvim', opt = true}
 
-  use {'glepnir/zephyr-nvim', requires = {'nvim-treesitter/nvim-treesitter'}}
-
   use {'cohama/lexima.vim'}
   use {'kyazdani42/nvim-web-devicons'}
   use {
@@ -16,6 +14,8 @@ return require('packer').startup(function()
   use {'neovim/nvim-lspconfig'}
   use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
   use {'tpope/vim-dispatch', cmd = {'Dispatch', 'Make', 'Focus', 'Start'}}
+
+  use {'glepnir/zephyr-nvim', requires = {'nvim-treesitter/nvim-treesitter'}}
 
   use {'tpope/vim-git'}
   use {'tpope/vim-commentary'}
