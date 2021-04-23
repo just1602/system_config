@@ -6,6 +6,15 @@
   tags:
     - packages
 
+- name: nvim | install gopls package
+  pacman:
+    name:
+      - gopls
+    state: latest
+  become: yes
+  tags:
+    - packages
+
 - name: nvim | symlink config
   file: src={{ role_path }}/files/nvim
         path=~/.config/nvim
