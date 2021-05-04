@@ -2,6 +2,7 @@
 [[ $- != *i* ]] && return
 
 ## options
+set -o vi
 bind "set bell-style visible"        # don't use sound
 bind "set blink-matching-paren on"   # blink on matchin parens
 bind "set colored-completion-prefix on"  # colourz!
