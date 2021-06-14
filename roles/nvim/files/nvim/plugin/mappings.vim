@@ -1,10 +1,6 @@
 " quit when I accidently type :Q
 command! Q q
 
-" map j to gj and k to gk to browse wrapped line as normal line
-nmap j gj
-nmap k gk
-
 " make Y work as C and D
 nnoremap Y y$
 
