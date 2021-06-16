@@ -1,10 +1,10 @@
 require('plugins')
+require('mappings')
 require('treesitter')
 require('lsp')
 require('zephyr') -- colorscheme
 
 
-vim.g.mapleader = ' '
 
 -- window related config
 vim.wo.number = true
