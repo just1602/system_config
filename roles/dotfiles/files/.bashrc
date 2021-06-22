@@ -114,7 +114,6 @@ alias b='bundle exec'
 
 alias diff='diff --color=always -u'
 alias serve='python -m http.server'
-alias feh='feh -F'
 
 alias ta='todo.sh add'
 alias tap='todo.sh add pri'
