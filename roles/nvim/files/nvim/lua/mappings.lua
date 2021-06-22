@@ -9,7 +9,7 @@ map('n', 'Y', 'y$', opts)
 -- copy to system clipboard
 map('n', '<leader>y', '"+y', opts)
 map('v', '<leader>y', '"+y', opts)
-map('n', '<leader>Y', 'gg"+yG', opts)
+map('n', '<leader>Y', '"+y$', opts)
 
 -- <C-l> hide the highlight
 map('n', '<C-l>', ':nohl<cr>', opts)
