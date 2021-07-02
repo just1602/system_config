@@ -2,7 +2,7 @@ require('plugins')
 require('mappings')
 require('treesitter')
 require('lsp')
-require('zephyr') -- colorscheme
+require('aurora')
 
 
 

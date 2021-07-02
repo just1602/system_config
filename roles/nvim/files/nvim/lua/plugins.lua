@@ -15,7 +15,7 @@ return require('packer').startup(function()
   use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
   use {'tpope/vim-dispatch', cmd = {'Dispatch', 'Make', 'Focus', 'Start'}}
 
-  use {'glepnir/zephyr-nvim', requires = {'nvim-treesitter/nvim-treesitter'}}
+  use {'ray-x/aurora', requires = {'nvim-treesitter/nvim-treesitter'}}
 
   use {'tpope/vim-git'}
   use {'tpope/vim-commentary'}
