@@ -1,3 +1,5 @@
+-- TODO: Add on_attach mappings for lsp
+
 require'lspconfig'.solargraph.setup {}
 require'lspconfig'.cssls.setup {
   cmd = { 'css-languageserver', '--stdio' }
