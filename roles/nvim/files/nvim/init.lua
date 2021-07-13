@@ -1,10 +1,9 @@
+require('completion')
 require('plugins')
 require('mappings')
 require('treesitter')
 require('lsp')
 require('aurora')
-
-
 
 -- window related config
 vim.wo.number = true
@@ -49,7 +48,7 @@ vim.o.smartcase = true
 vim.o.smartindent = true
 vim.o.expandtab = true
 vim.o.smarttab = true
-vim.o.completeopt = "menu,menuone,noselect"
+vim.o.completeopt = "menuone,noselect"
 vim.o.shiftround = true
 vim.o.termguicolors = true
 vim.o.visualbell = true

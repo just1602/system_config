@@ -5,12 +5,12 @@ return require('packer').startup(function()
   use {'wbthomason/packer.nvim', opt = true}
 
   use {'cohama/lexima.vim'}
+  use {'hrsh7th/nvim-compe'}
   use {'kyazdani42/nvim-web-devicons'}
   use {
     'nvim-telescope/telescope.nvim',
     requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}}
   }
-  use {'nvim-lua/completion-nvim'}
   use {'neovim/nvim-lspconfig'}
   use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
   use {'tpope/vim-dispatch', cmd = {'Dispatch', 'Make', 'Focus', 'Start'}}
