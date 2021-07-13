@@ -2,14 +2,11 @@
 *~
 *.log
 *.bak
-vim/.netrwhist
-
-# emacs stuff
-emacs.d/ac-comphist.dat
-emacs.d/elpa
-emacs.d/auto-save-list
 
 # email caching
 user/.config/neomutt/accounts/net.riseup/
 user/.config/neomutt/accounts/ca.resist/
+
+# neovim compiled files
 roles/nvim/files/nvim/plugin/packer_compiled.vim
+roles/nvim/files/nvim/plugin/packer_compiled.lua
