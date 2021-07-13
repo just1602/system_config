@@ -3,6 +3,7 @@
     name:
       - neovim-git
       - vscode-css-languageserver-bin
+      - lua-language-server
   tags:
     - packages
 
