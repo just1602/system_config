@@ -22,6 +22,7 @@
       - pwgen
       - python-virtualenvwrapper
       - ripgrep
+      - task
       - tmux
       - vdirsyncer
       - youtube-dl
@@ -40,7 +41,6 @@
       - pass-clip
       - rbenv
       - ruby-build
-      - todotxt
   tags:
     - packages
 
@@ -63,8 +63,6 @@
     - ~/.local
     - ~/.local/bin
     - ~/.ssh
-    - ~/.todo
-    - ~/.todo.actions.d
     - ~/.zsh
 
 - name: dotfiles | create symlinks

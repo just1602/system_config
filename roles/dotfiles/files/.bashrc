@@ -115,11 +115,10 @@ alias b='bundle exec'
 alias diff='diff --color=always -u'
 alias serve='python -m http.server'
 
-alias ta='todo.sh add'
-alias tap='todo.sh add pri'
-alias te='todo.sh edit'
-alias td='todo.sh do'
-alias tls='t ls'
+alias t='task'
+alias ta='task add'
+alias td='task done'
+alias tls='task list'
 
 alias xclip='xclip -selection c'
 
@@ -135,17 +134,6 @@ g ()
     git "$@"
   else
     git st
-  fi
-}
-
-# No arguments: todo.sh list
-# with arguments: acts like todo.sh
-t ()
-{
-  if [[ $# -gt 0 ]]; then
-    todo.sh "$@"
-  else
-    todo.sh ls
   fi
 }
 

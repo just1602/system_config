@@ -36,11 +36,8 @@ dotfiles_files:
   - .local/bin/tat
   - .rtorrent.rc
   - .ssh/config
+  - .taskrc
   - .tmux.conf
-  - .todo/config
-  - .todo.actions.d/add
-  - .todo.actions.d/e
-  - .todo.actions.d/edit
 
 templates_files:
   - .config/vdirsyncer/config
