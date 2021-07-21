@@ -3,7 +3,6 @@
     name:
       - neovim-git
       - vscode-css-languageserver-bin
-      - lua-language-server
   tags:
     - packages
 
@@ -11,6 +10,7 @@
   pacman:
     name:
       - gopls
+      - lua-language-server
     state: latest
   become: yes
   tags:
