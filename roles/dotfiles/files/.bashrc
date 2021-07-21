@@ -28,7 +28,7 @@ shopt -s histverify  # don't execute history, show line before
 shopt -s nocaseglob  # no case on pathname expansion
 shopt -s nocasematch # no case on matching
 shopt -s checkwinsize
-export HISTIGNORE="&:bg:fg:ls:l:history:exit:clear:pwd:v:nvim:vim:g:f:[ \t]*"
+export HISTIGNORE="&:bg:fg:ls:l:history:exit:clear:pwd:v:nvim:vim:g:f:[ ]*"
 export HISTCONTROL=ignoredups:ignorespace:erasedups
 export HISTSIZE=
 export HISTFILESIZE=
