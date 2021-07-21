@@ -118,7 +118,6 @@ alias serve='python -m http.server'
 alias t='task'
 alias ta='task add'
 alias td='task done'
-alias tls='task list'
 
 alias xclip='xclip -selection c'
 
